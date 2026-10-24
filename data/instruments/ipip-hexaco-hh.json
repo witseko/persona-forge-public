@@ -1,0 +1,359 @@
+{
+  "id": "ipip-hexaco-hh",
+  "name": "IPIP Honesty-Humility facets (preliminary HEXACO-PI proxies)",
+  "source_url": "https://ipip.ori.org/newHEXACO_PI_key.htm",
+  "retrieved": "2026-10-23",
+  "citation": "Preliminary IPIP scales measuring constructs similar to those in Lee and Ashton's HEXACO Personality Inventory. Goldberg, L. R. (1999). A broad-bandwidth, public domain, personality inventory measuring the lower-level facets of several five-factor models. In I. Mervielde et al. (Eds.), Personality Psychology in Europe, Vol. 7 (pp. 7-28). Tilburg University Press.",
+  "licence": "Public domain. https://ipip.ori.org/newPermission.htm: permission has already been automatically granted for any person to use IPIP items, scales, and inventories for any purpose, commercial or non-commercial.",
+  "attribution": "Items from the International Personality Item Pool (https://ipip.ori.org/).",
+  "instructions": "Describe yourself as you generally are now, not as you wish to be in the future. Describe yourself as you honestly see yourself, in relation to other people you know of the same sex as you are, and roughly your same age. So that you can describe yourself in an honest manner, your responses will be kept in absolute confidence. Indicate for each statement whether it is 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate as a description of you.",
+  "notes": "IPIP labels these scales preliminary. They are IPIP proxies, not the HEXACO-PI-R itself. The domain score pools all 40 items. Item order is interleaved.",
+  "aggregation": "mean",
+  "response_sets": [
+    {
+      "id": "accuracy",
+      "options": [
+        {
+          "value": 1,
+          "label": "Very Inaccurate"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Inaccurate"
+        },
+        {
+          "value": 3,
+          "label": "Neither Accurate Nor Inaccurate"
+        },
+        {
+          "value": 4,
+          "label": "Moderately Accurate"
+        },
+        {
+          "value": 5,
+          "label": "Very Accurate"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "hh-sincerity-1",
+      "text": "Don't pretend to be more than I am.",
+      "scale": "sincerity",
+      "reverse": false
+    },
+    {
+      "id": "hh-fairness-1",
+      "text": "Would never take things that aren't mine.",
+      "scale": "fairness",
+      "reverse": false
+    },
+    {
+      "id": "hh-greed-avoidance-1",
+      "text": "Would not enjoy being a famous celebrity.",
+      "scale": "greed-avoidance",
+      "reverse": false
+    },
+    {
+      "id": "hh-modesty-1",
+      "text": "Don't think that I'm better than other people.",
+      "scale": "modesty",
+      "reverse": false
+    },
+    {
+      "id": "hh-sincerity-2",
+      "text": "Use flattery to get ahead.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-2",
+      "text": "Would never cheat on my taxes.",
+      "scale": "fairness",
+      "reverse": false
+    },
+    {
+      "id": "hh-greed-avoidance-2",
+      "text": "Don't strive for elegance in my appearance.",
+      "scale": "greed-avoidance",
+      "reverse": false
+    },
+    {
+      "id": "hh-modesty-2",
+      "text": "See myself as an average person.",
+      "scale": "modesty",
+      "reverse": false
+    },
+    {
+      "id": "hh-sincerity-3",
+      "text": "Tell other people what they want to hear so that they will do what I want them to do.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-3",
+      "text": "Return extra change when a cashier makes a mistake.",
+      "scale": "fairness",
+      "reverse": false
+    },
+    {
+      "id": "hh-greed-avoidance-3",
+      "text": "Love luxury.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-3",
+      "text": "Am just an ordinary person.",
+      "scale": "modesty",
+      "reverse": false
+    },
+    {
+      "id": "hh-sincerity-4",
+      "text": "Put on a show to impress people.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-4",
+      "text": "Would feel very badly for a long time if I were to steal from someone.",
+      "scale": "fairness",
+      "reverse": false
+    },
+    {
+      "id": "hh-greed-avoidance-4",
+      "text": "Have a strong need for power.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-4",
+      "text": "Consider myself an average person.",
+      "scale": "modesty",
+      "reverse": false
+    },
+    {
+      "id": "hh-sincerity-5",
+      "text": "Switch my loyalties when I feel like it.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-5",
+      "text": "Try to follow the rules.",
+      "scale": "fairness",
+      "reverse": false
+    },
+    {
+      "id": "hh-greed-avoidance-5",
+      "text": "Seek status.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-5",
+      "text": "Would like to have more power than other people.",
+      "scale": "modesty",
+      "reverse": true
+    },
+    {
+      "id": "hh-sincerity-6",
+      "text": "Play a role in order to impress people.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-6",
+      "text": "Admire a really clever scam.",
+      "scale": "fairness",
+      "reverse": true
+    },
+    {
+      "id": "hh-greed-avoidance-6",
+      "text": "Am mainly interested in money.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-6",
+      "text": "Believe that I am better than others.",
+      "scale": "modesty",
+      "reverse": true
+    },
+    {
+      "id": "hh-sincerity-7",
+      "text": "Pretend to be concerned for others.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-7",
+      "text": "Cheat to get ahead.",
+      "scale": "fairness",
+      "reverse": true
+    },
+    {
+      "id": "hh-greed-avoidance-7",
+      "text": "Wish to stay young forever.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-7",
+      "text": "Like to attract attention.",
+      "scale": "modesty",
+      "reverse": true
+    },
+    {
+      "id": "hh-sincerity-8",
+      "text": "Act like different people in different situations.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-8",
+      "text": "Steal things.",
+      "scale": "fairness",
+      "reverse": true
+    },
+    {
+      "id": "hh-greed-avoidance-8",
+      "text": "Try to impress others.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-8",
+      "text": "Am more capable than most others.",
+      "scale": "modesty",
+      "reverse": true
+    },
+    {
+      "id": "hh-sincerity-9",
+      "text": "Find it necessary to please the people who have power.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-9",
+      "text": "Cheat on people who have trusted me.",
+      "scale": "fairness",
+      "reverse": true
+    },
+    {
+      "id": "hh-greed-avoidance-9",
+      "text": "Prefer to eat at expensive restaurants.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-9",
+      "text": "Am likely to show off if I get the chance.",
+      "scale": "modesty",
+      "reverse": true
+    },
+    {
+      "id": "hh-sincerity-10",
+      "text": "Let people push me around to help them feel important.",
+      "scale": "sincerity",
+      "reverse": true
+    },
+    {
+      "id": "hh-fairness-10",
+      "text": "Would not regret my behavior if I were to take advantage of someone impulsively.",
+      "scale": "fairness",
+      "reverse": true
+    },
+    {
+      "id": "hh-greed-avoidance-10",
+      "text": "Am out for my own personal gain.",
+      "scale": "greed-avoidance",
+      "reverse": true
+    },
+    {
+      "id": "hh-modesty-10",
+      "text": "Boast about my virtues.",
+      "scale": "modesty",
+      "reverse": true
+    }
+  ],
+  "scales": [
+    {
+      "id": "sincerity",
+      "name": "Sincerity",
+      "item_ids": [
+        "hh-sincerity-1",
+        "hh-sincerity-2",
+        "hh-sincerity-3",
+        "hh-sincerity-4",
+        "hh-sincerity-5",
+        "hh-sincerity-6",
+        "hh-sincerity-7",
+        "hh-sincerity-8",
+        "hh-sincerity-9",
+        "hh-sincerity-10"
+      ]
+    },
+    {
+      "id": "fairness",
+      "name": "Fairness",
+      "item_ids": [
+        "hh-fairness-1",
+        "hh-fairness-2",
+        "hh-fairness-3",
+        "hh-fairness-4",
+        "hh-fairness-5",
+        "hh-fairness-6",
+        "hh-fairness-7",
+        "hh-fairness-8",
+        "hh-fairness-9",
+        "hh-fairness-10"
+      ]
+    },
+    {
+      "id": "greed-avoidance",
+      "name": "Greed Avoidance",
+      "item_ids": [
+        "hh-greed-avoidance-1",
+        "hh-greed-avoidance-2",
+        "hh-greed-avoidance-3",
+        "hh-greed-avoidance-4",
+        "hh-greed-avoidance-5",
+        "hh-greed-avoidance-6",
+        "hh-greed-avoidance-7",
+        "hh-greed-avoidance-8",
+        "hh-greed-avoidance-9",
+        "hh-greed-avoidance-10"
+      ]
+    },
+    {
+      "id": "modesty",
+      "name": "Modesty",
+      "item_ids": [
+        "hh-modesty-1",
+        "hh-modesty-2",
+        "hh-modesty-3",
+        "hh-modesty-4",
+        "hh-modesty-5",
+        "hh-modesty-6",
+        "hh-modesty-7",
+        "hh-modesty-8",
+        "hh-modesty-9",
+        "hh-modesty-10"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "id": "honesty-humility",
+      "name": "Honesty-Humility",
+      "scale_ids": [
+        "sincerity",
+        "fairness",
+        "greed-avoidance",
+        "modesty"
+      ]
+    }
+  ]
+}

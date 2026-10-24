@@ -1,0 +1,139 @@
+{
+  "id": "product-manager",
+  "title": "Product manager situations",
+  "authored": "Project-authored reflective scenarios (2026-10-23). Not a validated situational judgment test; there are no correct answers.",
+  "scenarios": [
+    {
+      "id": "pm-conflicting-requests",
+      "title": "Conflicting stakeholder requests",
+      "prompt": "Sales wants a feature for a large deal; Support wants the same engineering time to fix the top cause of tickets.",
+      "options": [
+        {"id": "a", "text": "Decide yourself using impact estimates and explain the reasoning to both.", "weights": {"cooperation": 0.0, "directness": 1.0}},
+        {"id": "b", "text": "Bring both teams together to agree priorities in one meeting.", "weights": {"cooperation": 1.0, "directness": 0.75}},
+        {"id": "c", "text": "Split the capacity between both requests.", "weights": {"cooperation": 0.75, "directness": 0.25}},
+        {"id": "d", "text": "Escalate to your director for a call.", "weights": {"cooperation": 0.25, "directness": 0.5}}
+      ]
+    },
+    {
+      "id": "pm-data-vs-intuition",
+      "title": "Data versus intuition",
+      "prompt": "Usage data suggests a feature is rarely used. Your conversations with customers suggest the few who use it rely on it heavily.",
+      "options": [
+        {"id": "a", "text": "Keep it; the qualitative signal matters more here.", "weights": {"risk": 0.25, "structure": 0.25}},
+        {"id": "b", "text": "Remove it; maintenance cost should follow usage.", "weights": {"risk": 1.0, "structure": 0.5}},
+        {"id": "c", "text": "Segment the data by customer value before deciding.", "weights": {"risk": 0.25, "structure": 1.0}},
+        {"id": "d", "text": "Hide it behind a setting and watch who complains.", "weights": {"risk": 0.75, "structure": 0.0}}
+      ]
+    },
+    {
+      "id": "pm-launch-vs-quality",
+      "title": "Launch date or quality",
+      "prompt": "A launch is set for next week. Engineering reports that the onboarding flow is functional but clunky.",
+      "options": [
+        {"id": "a", "text": "Launch on time and schedule improvements for the following sprint.", "weights": {"pace": 1.0, "risk": 0.75}},
+        {"id": "b", "text": "Delay a week to polish onboarding; first impressions matter.", "weights": {"pace": 0.0, "risk": 0.0}},
+        {"id": "c", "text": "Launch to a small beta group first, then widen.", "weights": {"pace": 0.5, "risk": 0.25}},
+        {"id": "d", "text": "Launch on time with a guided walkthrough to cover the rough edges.", "weights": {"pace": 0.75, "risk": 0.5}}
+      ]
+    },
+    {
+      "id": "pm-research-says-no",
+      "title": "Research contradicts the plan",
+      "prompt": "User research shows little interest in a feature your leadership has already announced internally.",
+      "options": [
+        {"id": "a", "text": "Present the findings to leadership and recommend changing course.", "weights": {"directness": 1.0, "assertiveness": 1.0}},
+        {"id": "b", "text": "Look for a smaller version of the feature that users did want.", "weights": {"directness": 0.5, "assertiveness": 0.5}},
+        {"id": "c", "text": "Run a second study to make sure before raising it.", "weights": {"directness": 0.25, "assertiveness": 0.25}},
+        {"id": "d", "text": "Build it as announced; the strategic reasons may outweigh research.", "weights": {"directness": 0.0, "assertiveness": 0.0}}
+      ]
+    },
+    {
+      "id": "pm-big-customer",
+      "title": "Big customer request",
+      "prompt": "Your largest customer demands a custom feature no other customer has asked for, and hints they may leave without it.",
+      "options": [
+        {"id": "a", "text": "Build it; keeping the account is worth the cost.", "weights": {"risk": 0.0, "assertiveness": 0.0}},
+        {"id": "b", "text": "Decline politely and offer an integration or workaround.", "weights": {"risk": 1.0, "assertiveness": 1.0}},
+        {"id": "c", "text": "Look for a general version that serves other customers too.", "weights": {"risk": 0.5, "assertiveness": 0.5}},
+        {"id": "d", "text": "Ask the account team for the real revenue risk before deciding.", "weights": {"risk": 0.25, "assertiveness": 0.5}}
+      ]
+    },
+    {
+      "id": "pm-prioritisation",
+      "title": "Prioritisation method",
+      "prompt": "The team asks how you decide roadmap order. Today it is mostly your judgement.",
+      "options": [
+        {"id": "a", "text": "Introduce a scoring framework and publish the scores.", "weights": {"structure": 1.0, "cooperation": 0.5}},
+        {"id": "b", "text": "Explain your reasoning more often, but keep judgement-based decisions.", "weights": {"structure": 0.25, "cooperation": 0.25}},
+        {"id": "c", "text": "Run a quarterly prioritisation workshop with the team.", "weights": {"structure": 0.75, "cooperation": 1.0}},
+        {"id": "d", "text": "Keep it as it is; frameworks give false precision.", "weights": {"structure": 0.0, "cooperation": 0.0}}
+      ]
+    },
+    {
+      "id": "pm-eng-pushback",
+      "title": "Engineering pushes back on a spec",
+      "prompt": "Engineers say your spec is too detailed and leaves them no room to find a better solution.",
+      "options": [
+        {"id": "a", "text": "Rewrite it as a problem statement with goals and constraints only.", "weights": {"cooperation": 1.0, "structure": 0.25}},
+        {"id": "b", "text": "Keep the detail; it reflects decisions already validated with users.", "weights": {"cooperation": 0.0, "structure": 1.0}},
+        {"id": "c", "text": "Mark which parts are fixed and which are open for engineering to shape.", "weights": {"cooperation": 0.75, "structure": 0.75}},
+        {"id": "d", "text": "Hold a working session to co-design the solution.", "weights": {"cooperation": 1.0, "structure": 0.5}}
+      ]
+    },
+    {
+      "id": "pm-metric-drop",
+      "title": "Metric drops after launch",
+      "prompt": "A week after a launch, conversion has dropped two percent. The cause is unclear.",
+      "options": [
+        {"id": "a", "text": "Roll back immediately and investigate afterwards.", "weights": {"pace": 1.0, "risk": 0.0}},
+        {"id": "b", "text": "Investigate for two more days before acting; it may be noise.", "weights": {"pace": 0.25, "risk": 0.75}},
+        {"id": "c", "text": "Roll back for half of traffic to test the cause.", "weights": {"pace": 0.75, "risk": 0.25}},
+        {"id": "d", "text": "Keep it; the launch has other long-term benefits.", "weights": {"pace": 0.5, "risk": 1.0}}
+      ]
+    },
+    {
+      "id": "pm-exec-idea",
+      "title": "Executive's pet idea",
+      "prompt": "An executive pitches a feature idea in a hallway conversation and asks when it can ship.",
+      "options": [
+        {"id": "a", "text": "Tell them honestly it does not fit the current strategy and why.", "weights": {"directness": 1.0, "assertiveness": 1.0}},
+        {"id": "b", "text": "Say you will evaluate it alongside other ideas and report back.", "weights": {"directness": 0.5, "assertiveness": 0.5}},
+        {"id": "c", "text": "Add it to the roadmap; executive support helps the team.", "weights": {"directness": 0.0, "assertiveness": 0.0}},
+        {"id": "d", "text": "Ask what problem they want to solve and explore that instead.", "weights": {"directness": 0.75, "assertiveness": 0.75}}
+      ]
+    },
+    {
+      "id": "pm-discovery-time",
+      "title": "Discovery or delivery",
+      "prompt": "Delivery pressure leaves you no time for customer discovery. You worry the roadmap is drifting from real needs.",
+      "options": [
+        {"id": "a", "text": "Protect a fixed weekly slot for customer calls, no matter what.", "weights": {"structure": 1.0, "ownership": 1.0}},
+        {"id": "b", "text": "Ask a designer or researcher to run discovery for you.", "weights": {"structure": 0.5, "ownership": 0.0}},
+        {"id": "c", "text": "Do discovery opportunistically when delivery quietens down.", "weights": {"structure": 0.0, "ownership": 0.5}},
+        {"id": "d", "text": "Use support tickets and sales notes as a lightweight substitute.", "weights": {"structure": 0.25, "ownership": 0.75}}
+      ]
+    },
+    {
+      "id": "pm-competitor-launch",
+      "title": "Competitor launch",
+      "prompt": "A competitor launches a feature your customers have occasionally asked about. The sales team is anxious.",
+      "options": [
+        {"id": "a", "text": "Fast-track a comparable feature this quarter.", "weights": {"pace": 1.0, "risk": 0.75}},
+        {"id": "b", "text": "Interview customers about it before changing the roadmap.", "weights": {"pace": 0.0, "risk": 0.25}},
+        {"id": "c", "text": "Give sales talking points and keep the roadmap unchanged.", "weights": {"pace": 0.5, "risk": 0.5}},
+        {"id": "d", "text": "Look for a differentiated answer rather than a copy.", "weights": {"pace": 0.25, "risk": 1.0}}
+      ]
+    },
+    {
+      "id": "pm-inconclusive-test",
+      "title": "Inconclusive experiment",
+      "prompt": "An A/B test ends with no significant difference. The new variant is cleaner but costlier to maintain.",
+      "options": [
+        {"id": "a", "text": "Ship the new variant; cleaner experiences pay off over time.", "weights": {"pace": 1.0, "risk": 0.75}},
+        {"id": "b", "text": "Keep the old variant; no proven gain means no change.", "weights": {"pace": 0.75, "risk": 0.0}},
+        {"id": "c", "text": "Extend the test to get more statistical power.", "weights": {"pace": 0.0, "risk": 0.25}},
+        {"id": "d", "text": "Ask the team which variant they would rather maintain.", "weights": {"pace": 0.5, "risk": 0.5}}
+      ]
+    }
+  ]
+}

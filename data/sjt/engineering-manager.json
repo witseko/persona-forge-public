@@ -1,0 +1,139 @@
+{
+  "id": "engineering-manager",
+  "title": "Engineering manager situations",
+  "authored": "Project-authored reflective scenarios (2026-10-23). Not a validated situational judgment test; there are no correct answers.",
+  "scenarios": [
+    {
+      "id": "em-underperformer",
+      "title": "Underperformer 1:1",
+      "prompt": "An engineer on your team has missed several commitments this quarter. Peers have started working around them.",
+      "options": [
+        {"id": "a", "text": "Name the pattern plainly in your next 1:1 and agree a concrete improvement plan.", "weights": {"directness": 1.0, "structure": 1.0}},
+        {"id": "b", "text": "Ask open questions first to find out what is going on before naming a problem.", "weights": {"directness": 0.25, "structure": 0.5}},
+        {"id": "c", "text": "Give them smaller, clearer tasks for a few weeks and see if things improve.", "weights": {"directness": 0.0, "structure": 0.25}},
+        {"id": "d", "text": "Bring in HR early to make sure the process is handled correctly.", "weights": {"directness": 0.5, "structure": 1.0}}
+      ]
+    },
+    {
+      "id": "em-hiring-split",
+      "title": "Split hiring panel",
+      "prompt": "Two interviewers strongly support a candidate; one strongly objects, citing how the candidate treated a junior interviewer.",
+      "options": [
+        {"id": "a", "text": "Reject; a credible concern about behaviour outweighs strong skills.", "weights": {"risk": 0.0, "pace": 0.75}},
+        {"id": "b", "text": "Hold a debrief where each interviewer presents evidence, then decide.", "weights": {"risk": 0.25, "pace": 0.0}},
+        {"id": "c", "text": "Arrange one more conversation focused on collaboration.", "weights": {"risk": 0.5, "pace": 0.25}},
+        {"id": "d", "text": "Hire; the majority view and the skills gap on the team decide it.", "weights": {"risk": 1.0, "pace": 1.0}}
+      ]
+    },
+    {
+      "id": "em-senior-conflict",
+      "title": "Conflict between two seniors",
+      "prompt": "Two senior engineers have been arguing in pull request comments for weeks. The rest of the team is getting tired of it.",
+      "options": [
+        {"id": "a", "text": "Meet them together, name the impact and ask them to agree working rules.", "weights": {"directness": 1.0, "cooperation": 1.0}},
+        {"id": "b", "text": "Talk to each separately and coach them on how they come across.", "weights": {"directness": 0.5, "cooperation": 0.5}},
+        {"id": "c", "text": "Make the technical call yourself so the argument ends.", "weights": {"directness": 0.75, "cooperation": 0.0}},
+        {"id": "d", "text": "Give it time; strong engineers often argue before they converge.", "weights": {"directness": 0.0, "cooperation": 0.25}}
+      ]
+    },
+    {
+      "id": "em-reorg-news",
+      "title": "Reorganisation news",
+      "prompt": "You learn about an upcoming reorganisation affecting your team two weeks before it is announced. You are asked to keep it confidential.",
+      "options": [
+        {"id": "a", "text": "Keep it confidential and prepare answers for the questions you expect.", "weights": {"structure": 1.0, "directness": 0.25}},
+        {"id": "b", "text": "Push leadership to announce earlier, explaining the cost of rumours.", "weights": {"structure": 0.5, "directness": 1.0}},
+        {"id": "c", "text": "Carry on as normal and deal with it when it is public.", "weights": {"structure": 0.0, "directness": 0.0}},
+        {"id": "d", "text": "Quietly delay decisions the reorganisation might reverse.", "weights": {"structure": 0.75, "directness": 0.25}}
+      ]
+    },
+    {
+      "id": "em-burnout-signs",
+      "title": "Signs of strain",
+      "prompt": "A reliable engineer has been working late every night, has become short with colleagues and has stopped taking breaks.",
+      "options": [
+        {"id": "a", "text": "Tell them what you have noticed and ask how they are doing.", "weights": {"directness": 1.0, "ownership": 0.75}},
+        {"id": "b", "text": "Reduce their load quietly by moving work to others.", "weights": {"directness": 0.0, "ownership": 1.0}},
+        {"id": "c", "text": "Remind the whole team about working hours and time off.", "weights": {"directness": 0.25, "ownership": 0.5}},
+        {"id": "d", "text": "Point them to the employee support programme.", "weights": {"directness": 0.5, "ownership": 0.0}}
+      ]
+    },
+    {
+      "id": "em-promotion-case",
+      "title": "Promotion case",
+      "prompt": "You believe an engineer is ready for promotion, but their impact is hard to show with the evidence the committee usually expects.",
+      "options": [
+        {"id": "a", "text": "Write a strong case anyway and argue for it in the committee.", "weights": {"assertiveness": 1.0, "risk": 0.75}},
+        {"id": "b", "text": "Wait a cycle and help them build visible evidence first.", "weights": {"assertiveness": 0.25, "risk": 0.0}},
+        {"id": "c", "text": "Ask a respected peer manager to review the case before submitting.", "weights": {"assertiveness": 0.5, "risk": 0.25}},
+        {"id": "d", "text": "Submit it and let the committee decide without lobbying.", "weights": {"assertiveness": 0.0, "risk": 0.5}}
+      ]
+    },
+    {
+      "id": "em-commitment-capacity",
+      "title": "Commitment versus capacity",
+      "prompt": "Leadership asks your team to take on a new project. The team is already at full capacity.",
+      "options": [
+        {"id": "a", "text": "Say yes only if something specific is dropped, and name what.", "weights": {"assertiveness": 1.0, "structure": 0.75}},
+        {"id": "b", "text": "Say yes and find a way; the project matters to the company.", "weights": {"assertiveness": 0.0, "structure": 0.25}},
+        {"id": "c", "text": "Ask the team how they would make room before you answer.", "weights": {"assertiveness": 0.5, "structure": 0.5}},
+        {"id": "d", "text": "Present a capacity plan with options and let leadership choose.", "weights": {"assertiveness": 0.75, "structure": 1.0}}
+      ]
+    },
+    {
+      "id": "em-skip-level-feedback",
+      "title": "Skip-level feedback",
+      "prompt": "Your manager tells you that two of your reports said, in skip-level meetings, that they feel micromanaged.",
+      "options": [
+        {"id": "a", "text": "Raise it openly with the team and ask what you should do differently.", "weights": {"directness": 1.0, "cooperation": 1.0}},
+        {"id": "b", "text": "Reflect privately and step back from details without announcing it.", "weights": {"directness": 0.0, "cooperation": 0.25}},
+        {"id": "c", "text": "Ask your manager for specifics before changing anything.", "weights": {"directness": 0.5, "cooperation": 0.5}},
+        {"id": "d", "text": "Agree explicit decision rights with each report in your next 1:1s.", "weights": {"directness": 0.75, "cooperation": 0.75}}
+      ]
+    },
+    {
+      "id": "em-postmortem-blame",
+      "title": "Blame in a postmortem",
+      "prompt": "In an incident review, a senior leader repeatedly asks 'who pushed the change?' and a junior engineer looks uncomfortable.",
+      "options": [
+        {"id": "a", "text": "Interrupt and redirect to what in the system allowed the change through.", "weights": {"assertiveness": 1.0, "directness": 1.0}},
+        {"id": "b", "text": "Let the meeting continue, then speak to the leader privately afterwards.", "weights": {"assertiveness": 0.5, "directness": 0.5}},
+        {"id": "c", "text": "Answer the question yourself to take the attention off the junior.", "weights": {"assertiveness": 0.75, "directness": 0.25}},
+        {"id": "d", "text": "Stay neutral; the leader is entitled to ask.", "weights": {"assertiveness": 0.0, "directness": 0.0}}
+      ]
+    },
+    {
+      "id": "em-timezones",
+      "title": "Team across time zones",
+      "prompt": "Half of your team is eight hours ahead. The remote half says decisions get made without them.",
+      "options": [
+        {"id": "a", "text": "Move decisions into written proposals with a 24-hour comment window.", "weights": {"structure": 1.0, "cooperation": 1.0}},
+        {"id": "b", "text": "Rotate meeting times so the inconvenience is shared.", "weights": {"structure": 0.75, "cooperation": 0.75}},
+        {"id": "c", "text": "Give the remote half ownership of a clear area so they decide locally.", "weights": {"structure": 0.5, "cooperation": 0.0}},
+        {"id": "d", "text": "Record meetings and send summaries; that should be enough.", "weights": {"structure": 0.25, "cooperation": 0.25}}
+      ]
+    },
+    {
+      "id": "em-lead-rewrite",
+      "title": "Tech lead wants a rewrite",
+      "prompt": "Your respected tech lead proposes a six-month rewrite of the core service. Product leadership is sceptical.",
+      "options": [
+        {"id": "a", "text": "Back the tech lead publicly and make the case to product leadership.", "weights": {"risk": 1.0, "assertiveness": 1.0}},
+        {"id": "b", "text": "Ask for an incremental plan that delivers value every month.", "weights": {"risk": 0.5, "assertiveness": 0.5}},
+        {"id": "c", "text": "Commission a short spike to test the riskiest assumption first.", "weights": {"risk": 0.25, "assertiveness": 0.25}},
+        {"id": "d", "text": "Side with product leadership; six months is too long to justify now.", "weights": {"risk": 0.0, "assertiveness": 0.5}}
+      ]
+    },
+    {
+      "id": "em-flight-risk",
+      "title": "Top performer may leave",
+      "prompt": "You hear that your strongest engineer is interviewing elsewhere.",
+      "options": [
+        {"id": "a", "text": "Ask them directly and openly what would make them stay.", "weights": {"directness": 1.0, "pace": 1.0}},
+        {"id": "b", "text": "Wait for them to raise it; respect their privacy.", "weights": {"directness": 0.0, "pace": 0.0}},
+        {"id": "c", "text": "Quietly start a retention case with your manager and HR.", "weights": {"directness": 0.25, "pace": 0.75}},
+        {"id": "d", "text": "In your next 1:1, ask broadly about their goals and growth.", "weights": {"directness": 0.5, "pace": 0.5}}
+      ]
+    }
+  ]
+}

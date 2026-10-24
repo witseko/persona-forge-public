@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "code": "en",
+  "name": "English",
+  "status": "complete",
+  "instrument_ids": [
+    "mini-ipip",
+    "ipip-neo-120",
+    "ipip-hexaco-hh",
+    "ipip-via",
+    "cbi-work"
+  ]
+}

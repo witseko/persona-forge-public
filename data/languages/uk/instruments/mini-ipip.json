@@ -1,0 +1,42 @@
+{
+  "instrument_id": "mini-ipip",
+  "language": "uk",
+  "revision": 1,
+  "translated": "2026-10-23",
+  "source_url": "https://ipip.ori.org/MiniIPIPKey.htm",
+  "citation": "Donnellan, M. B., Oswald, F. L., Baird, B. M., & Lucas, R. E. (2006). The Mini-IPIP scales: Tiny-yet-effective measures of the Big Five factors of personality. Psychological Assessment, 18, 192-203.",
+  "licence": "IPIP public domain. Ukrainian translation authored by Persona Forge, not psychometrically validated. No published Ukrainian adaptation is claimed.",
+  "permission_url": "https://ipip.ori.org/",
+  "instructions": "Опишіть себе такими, якими ви зазвичай є зараз, а не такими, якими хотіли б бути в майбутньому. Опишіть себе чесно, порівнюючи з іншими знайомими вам людьми вашої статі та приблизно вашого віку. Щоб ви могли відповідати чесно, ваші відповіді зберігатимуться цілком конфіденційно. Для кожного твердження вкажіть, наскільки точно воно вас описує: 1. Зовсім неточно, 2. Доволі неточно, 3. Ані точно, ані неточно, 4. Доволі точно, 5. Дуже точно.",
+  "items": {
+    "mini-extraversion-1": "Я душа компанії.",
+    "mini-agreeableness-1": "Я співчуваю почуттям інших людей.",
+    "mini-conscientiousness-1": "Я одразу виконую повсякденні справи.",
+    "mini-neuroticism-1": "У мене часто змінюється настрій.",
+    "mini-intellect-imagination-1": "У мене жива уява.",
+    "mini-extraversion-2": "На вечірках я спілкуюся з багатьма різними людьми.",
+    "mini-agreeableness-2": "Я відчуваю емоції інших людей.",
+    "mini-conscientiousness-2": "Я люблю порядок.",
+    "mini-neuroticism-2": "Мене легко засмутити.",
+    "mini-intellect-imagination-2": "Мені складно розуміти абстрактні ідеї.",
+    "mini-extraversion-3": "Я мало розмовляю.",
+    "mini-agreeableness-3": "Інші люди мене не дуже цікавлять.",
+    "mini-conscientiousness-3": "Я часто забуваю повертати речі на їхнє місце.",
+    "mini-neuroticism-3": "Більшість часу я почуваюся розслаблено.",
+    "mini-intellect-imagination-3": "Мене не цікавлять абстрактні ідеї.",
+    "mini-extraversion-4": "Я тримаюся осторонь.",
+    "mini-agreeableness-4": "Мене не цікавлять проблеми інших людей.",
+    "mini-conscientiousness-4": "Я створюю безлад.",
+    "mini-neuroticism-4": "Я рідко почуваюся пригнічено.",
+    "mini-intellect-imagination-4": "У мене не дуже розвинена уява."
+  },
+  "response_sets": {
+    "accuracy": {
+      "1": "Зовсім неточно",
+      "2": "Доволі неточно",
+      "3": "Ані точно, ані неточно",
+      "4": "Доволі точно",
+      "5": "Дуже точно"
+    }
+  }
+}

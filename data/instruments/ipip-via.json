@@ -1,0 +1,1679 @@
+{
+  "id": "ipip-via",
+  "name": "Revised IPIP-VIA character strength scales",
+  "source_url": "https://ipip.ori.org/newVIAKey.htm",
+  "retrieved": "2026-10-23",
+  "citation": "IPIP scales measuring constructs similar to the Values in Action (VIA) classification. Peterson, C., & Seligman, M. E. P. (2004). Character strengths and virtues: A handbook and classification. Oxford University Press.",
+  "licence": "Public domain. https://ipip.ori.org/newPermission.htm: permission has already been automatically granted for any person to use IPIP items, scales, and inventories for any purpose, commercial or non-commercial.",
+  "attribution": "Items from the International Personality Item Pool (https://ipip.ori.org/).",
+  "instructions": "Describe yourself as you generally are now, not as you wish to be in the future. Describe yourself as you honestly see yourself, in relation to other people you know of the same sex as you are, and roughly your same age. So that you can describe yourself in an honest manner, your responses will be kept in absolute confidence. Indicate for each statement whether it is 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate as a description of you.",
+  "notes": "All 24 revised scales as published, without the items the key lists as Omitted. These are IPIP proxies, not the VIA Inventory of Strengths. Item order is interleaved across scales.",
+  "aggregation": "mean",
+  "response_sets": [
+    {
+      "id": "accuracy",
+      "options": [
+        {
+          "value": 1,
+          "label": "Very Inaccurate"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Inaccurate"
+        },
+        {
+          "value": 3,
+          "label": "Neither Accurate Nor Inaccurate"
+        },
+        {
+          "value": 4,
+          "label": "Moderately Accurate"
+        },
+        {
+          "value": 5,
+          "label": "Very Accurate"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "via-appreciation-of-beauty-1",
+      "text": "Feel it's important to live in a world of beauty.",
+      "scale": "appreciation-of-beauty",
+      "reverse": false
+    },
+    {
+      "id": "via-capacity-for-love-1",
+      "text": "Am willing to take risks to establish a relationship.",
+      "scale": "capacity-for-love",
+      "reverse": false
+    },
+    {
+      "id": "via-citizenship-teamwork-1",
+      "text": "Don't miss group meetings or team practices.",
+      "scale": "citizenship-teamwork",
+      "reverse": false
+    },
+    {
+      "id": "via-curiosity-1",
+      "text": "Find the world a very interesting place.",
+      "scale": "curiosity",
+      "reverse": false
+    },
+    {
+      "id": "via-equity-fairness-1",
+      "text": "Admit when I am wrong.",
+      "scale": "equity-fairness",
+      "reverse": false
+    },
+    {
+      "id": "via-forgiveness-mercy-1",
+      "text": "Let bygones be bygones.",
+      "scale": "forgiveness-mercy",
+      "reverse": false
+    },
+    {
+      "id": "via-gratitude-1",
+      "text": "Express my thanks to those who care about me.",
+      "scale": "gratitude",
+      "reverse": false
+    },
+    {
+      "id": "via-hope-optimism-1",
+      "text": "Look on the bright side.",
+      "scale": "hope-optimism",
+      "reverse": false
+    },
+    {
+      "id": "via-humor-playfulness-1",
+      "text": "Try to tease my friends out of their gloomy moods.",
+      "scale": "humor-playfulness",
+      "reverse": false
+    },
+    {
+      "id": "via-industry-perseverance-persistence-1",
+      "text": "Don't quit a task before it is finished.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": false
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-1",
+      "text": "Am trusted to keep secrets.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": false
+    },
+    {
+      "id": "via-judgment-open-mindedness-1",
+      "text": "Try to identify the reasons for my actions.",
+      "scale": "judgment-open-mindedness",
+      "reverse": false
+    },
+    {
+      "id": "via-kindness-generosity-1",
+      "text": "Am never too busy to help a friend.",
+      "scale": "kindness-generosity",
+      "reverse": false
+    },
+    {
+      "id": "via-leadership-1",
+      "text": "Try to make sure everyone in a group feels included.",
+      "scale": "leadership",
+      "reverse": false
+    },
+    {
+      "id": "via-love-of-learning-1",
+      "text": "Go out of my way to attend educational events.",
+      "scale": "love-of-learning",
+      "reverse": false
+    },
+    {
+      "id": "via-modesty-humility-1",
+      "text": "Am humble about the good things that have happened to me.",
+      "scale": "modesty-humility",
+      "reverse": false
+    },
+    {
+      "id": "via-originality-creativity-1",
+      "text": "Am able to come up with new and different ideas.",
+      "scale": "originality-creativity",
+      "reverse": false
+    },
+    {
+      "id": "via-perspective-wisdom-1",
+      "text": "Have a broad outlook on what is going on.",
+      "scale": "perspective-wisdom",
+      "reverse": false
+    },
+    {
+      "id": "via-prudence-1",
+      "text": "Have never deliberately hurt anyone.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-1",
+      "text": "Have no trouble eating healthy foods.",
+      "scale": "self-regulation-self-control",
+      "reverse": false
+    },
+    {
+      "id": "via-social-personal-emotional-intelligence-1",
+      "text": "Am able to fit into any situation.",
+      "scale": "social-personal-emotional-intelligence",
+      "reverse": false
+    },
+    {
+      "id": "via-spirituality-religiousness-1",
+      "text": "Believe in a universal power or God.",
+      "scale": "spirituality-religiousness",
+      "reverse": false
+    },
+    {
+      "id": "via-valor-bravery-courage-1",
+      "text": "Have taken frequent stands in the face of strong opposition.",
+      "scale": "valor-bravery-courage",
+      "reverse": false
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-1",
+      "text": "Prefer to participate fully rather than view life from the sidelines.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": false
+    },
+    {
+      "id": "via-appreciation-of-beauty-2",
+      "text": "Can become tearful thinking of the goodness of others.",
+      "scale": "appreciation-of-beauty",
+      "reverse": false
+    },
+    {
+      "id": "via-capacity-for-love-2",
+      "text": "Know that there are people in my life who care as much for me as for themselves.",
+      "scale": "capacity-for-love",
+      "reverse": false
+    },
+    {
+      "id": "via-citizenship-teamwork-2",
+      "text": "Enjoy being part of a group.",
+      "scale": "citizenship-teamwork",
+      "reverse": false
+    },
+    {
+      "id": "via-curiosity-2",
+      "text": "Am never bored.",
+      "scale": "curiosity",
+      "reverse": false
+    },
+    {
+      "id": "via-equity-fairness-2",
+      "text": "Treat all people equally.",
+      "scale": "equity-fairness",
+      "reverse": false
+    },
+    {
+      "id": "via-forgiveness-mercy-2",
+      "text": "Never seek vengeance.",
+      "scale": "forgiveness-mercy",
+      "reverse": false
+    },
+    {
+      "id": "via-gratitude-2",
+      "text": "Have been richly blessed in my life.",
+      "scale": "gratitude",
+      "reverse": false
+    },
+    {
+      "id": "via-hope-optimism-2",
+      "text": "Can find the positive in what seems negative to others.",
+      "scale": "hope-optimism",
+      "reverse": false
+    },
+    {
+      "id": "via-humor-playfulness-2",
+      "text": "Use laughter to brighten the days of others.",
+      "scale": "humor-playfulness",
+      "reverse": false
+    },
+    {
+      "id": "via-industry-perseverance-persistence-2",
+      "text": "Am a goal-oriented person.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": false
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-2",
+      "text": "Keep my promises.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": false
+    },
+    {
+      "id": "via-judgment-open-mindedness-2",
+      "text": "Make decisions only after I have all of the facts.",
+      "scale": "judgment-open-mindedness",
+      "reverse": false
+    },
+    {
+      "id": "via-kindness-generosity-2",
+      "text": "Go out of my way to cheer up people who appear down.",
+      "scale": "kindness-generosity",
+      "reverse": false
+    },
+    {
+      "id": "via-leadership-2",
+      "text": "Am good at helping people work well together.",
+      "scale": "leadership",
+      "reverse": false
+    },
+    {
+      "id": "via-love-of-learning-2",
+      "text": "Am thrilled when I learn something new.",
+      "scale": "love-of-learning",
+      "reverse": false
+    },
+    {
+      "id": "via-modesty-humility-2",
+      "text": "Believe that others are drawn to me because I am humble.",
+      "scale": "modesty-humility",
+      "reverse": false
+    },
+    {
+      "id": "via-originality-creativity-2",
+      "text": "Like to think of new ways to do things.",
+      "scale": "originality-creativity",
+      "reverse": false
+    },
+    {
+      "id": "via-perspective-wisdom-2",
+      "text": "Have an excellent view of the world.",
+      "scale": "perspective-wisdom",
+      "reverse": false
+    },
+    {
+      "id": "via-prudence-2",
+      "text": "Cannot imagine lying or cheating.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-2",
+      "text": "Am a highly disciplined person.",
+      "scale": "self-regulation-self-control",
+      "reverse": false
+    },
+    {
+      "id": "via-social-personal-emotional-intelligence-2",
+      "text": "Have the ability to make others feel interesting.",
+      "scale": "social-personal-emotional-intelligence",
+      "reverse": false
+    },
+    {
+      "id": "via-spirituality-religiousness-2",
+      "text": "Am a spiritual person.",
+      "scale": "spirituality-religiousness",
+      "reverse": false
+    },
+    {
+      "id": "via-valor-bravery-courage-2",
+      "text": "Don't hesitate to express an unpopular opinion.",
+      "scale": "valor-bravery-courage",
+      "reverse": false
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-2",
+      "text": "Don't approach things halfheartedly.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": false
+    },
+    {
+      "id": "via-appreciation-of-beauty-3",
+      "text": "Experience deep emotions when I see beautiful things.",
+      "scale": "appreciation-of-beauty",
+      "reverse": false
+    },
+    {
+      "id": "via-capacity-for-love-3",
+      "text": "Know that some others accept my shortcomings.",
+      "scale": "capacity-for-love",
+      "reverse": false
+    },
+    {
+      "id": "via-citizenship-teamwork-3",
+      "text": "Support my teammates or fellow group members.",
+      "scale": "citizenship-teamwork",
+      "reverse": false
+    },
+    {
+      "id": "via-curiosity-3",
+      "text": "Am always busy with something interesting.",
+      "scale": "curiosity",
+      "reverse": false
+    },
+    {
+      "id": "via-equity-fairness-3",
+      "text": "Am a good listener.",
+      "scale": "equity-fairness",
+      "reverse": false
+    },
+    {
+      "id": "via-forgiveness-mercy-3",
+      "text": "Allow others to make a fresh start.",
+      "scale": "forgiveness-mercy",
+      "reverse": false
+    },
+    {
+      "id": "via-gratitude-3",
+      "text": "Stop to count my blessings.",
+      "scale": "gratitude",
+      "reverse": false
+    },
+    {
+      "id": "via-hope-optimism-3",
+      "text": "Remain hopeful despite challenges.",
+      "scale": "hope-optimism",
+      "reverse": false
+    },
+    {
+      "id": "via-humor-playfulness-3",
+      "text": "Try to have fun in all kinds of situations.",
+      "scale": "humor-playfulness",
+      "reverse": false
+    },
+    {
+      "id": "via-industry-perseverance-persistence-3",
+      "text": "Finish things despite obstacles in the way.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": false
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-3",
+      "text": "Believe that honesty is the basis for trust.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": false
+    },
+    {
+      "id": "via-judgment-open-mindedness-3",
+      "text": "Am valued by others for my objectivity.",
+      "scale": "judgment-open-mindedness",
+      "reverse": false
+    },
+    {
+      "id": "via-kindness-generosity-3",
+      "text": "Love to make other people happy.",
+      "scale": "kindness-generosity",
+      "reverse": false
+    },
+    {
+      "id": "via-leadership-3",
+      "text": "Am told that I am a strong but fair leader.",
+      "scale": "leadership",
+      "reverse": false
+    },
+    {
+      "id": "via-love-of-learning-3",
+      "text": "Look forward to the opportunity to learn and grow.",
+      "scale": "love-of-learning",
+      "reverse": false
+    },
+    {
+      "id": "via-modesty-humility-3",
+      "text": "Don't act is if I'm a special person.",
+      "scale": "modesty-humility",
+      "reverse": false
+    },
+    {
+      "id": "via-originality-creativity-3",
+      "text": "Come up with new ways to do things.",
+      "scale": "originality-creativity",
+      "reverse": false
+    },
+    {
+      "id": "via-perspective-wisdom-3",
+      "text": "Have been described as wise beyond my years.",
+      "scale": "perspective-wisdom",
+      "reverse": false
+    },
+    {
+      "id": "via-prudence-3",
+      "text": "Believe it is always better to be safe than sorry.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-3",
+      "text": "Forego things that are bad for me in the long run even if they make me feel good in the short run.",
+      "scale": "self-regulation-self-control",
+      "reverse": false
+    },
+    {
+      "id": "via-social-personal-emotional-intelligence-3",
+      "text": "Know what makes others tick.",
+      "scale": "social-personal-emotional-intelligence",
+      "reverse": false
+    },
+    {
+      "id": "via-spirituality-religiousness-3",
+      "text": "Keep my faith even during hard times.",
+      "scale": "spirituality-religiousness",
+      "reverse": false
+    },
+    {
+      "id": "via-valor-bravery-courage-3",
+      "text": "Call for action while others talk.",
+      "scale": "valor-bravery-courage",
+      "reverse": false
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-3",
+      "text": "Love what I do.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": false
+    },
+    {
+      "id": "via-appreciation-of-beauty-4",
+      "text": "Have been left speechless by the beauty depicted in a movie.",
+      "scale": "appreciation-of-beauty",
+      "reverse": false
+    },
+    {
+      "id": "via-capacity-for-love-4",
+      "text": "Am the most important person in someone else's life.",
+      "scale": "capacity-for-love",
+      "reverse": false
+    },
+    {
+      "id": "via-citizenship-teamwork-4",
+      "text": "Feel I must respect the decisions made by my group.",
+      "scale": "citizenship-teamwork",
+      "reverse": false
+    },
+    {
+      "id": "via-curiosity-4",
+      "text": "Am excited by many different activities.",
+      "scale": "curiosity",
+      "reverse": false
+    },
+    {
+      "id": "via-equity-fairness-4",
+      "text": "Believe that everyone's rights are equally important.",
+      "scale": "equity-fairness",
+      "reverse": false
+    },
+    {
+      "id": "via-forgiveness-mercy-4",
+      "text": "Believe that it is best to forgive and forget.",
+      "scale": "forgiveness-mercy",
+      "reverse": false
+    },
+    {
+      "id": "via-gratitude-4",
+      "text": "Am an extremely grateful person.",
+      "scale": "gratitude",
+      "reverse": false
+    },
+    {
+      "id": "via-hope-optimism-4",
+      "text": "Will succeed with the goals I set for myself.",
+      "scale": "hope-optimism",
+      "reverse": false
+    },
+    {
+      "id": "via-humor-playfulness-4",
+      "text": "Try to add some humor to whatever I do.",
+      "scale": "humor-playfulness",
+      "reverse": false
+    },
+    {
+      "id": "via-industry-perseverance-persistence-4",
+      "text": "Am a hard worker.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": false
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-4",
+      "text": "Can be trusted to keep my promises.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": false
+    },
+    {
+      "id": "via-judgment-open-mindedness-4",
+      "text": "Am a firm believer in thinking things through.",
+      "scale": "judgment-open-mindedness",
+      "reverse": false
+    },
+    {
+      "id": "via-kindness-generosity-4",
+      "text": "Helped a neighbor in the last month.",
+      "scale": "kindness-generosity",
+      "reverse": false
+    },
+    {
+      "id": "via-leadership-4",
+      "text": "Try to make my group members happy.",
+      "scale": "leadership",
+      "reverse": false
+    },
+    {
+      "id": "via-love-of-learning-4",
+      "text": "Am a true life-long learner.",
+      "scale": "love-of-learning",
+      "reverse": false
+    },
+    {
+      "id": "via-modesty-humility-4",
+      "text": "Don't brag about my accomplishments.",
+      "scale": "modesty-humility",
+      "reverse": false
+    },
+    {
+      "id": "via-originality-creativity-4",
+      "text": "Am an original thinker.",
+      "scale": "originality-creativity",
+      "reverse": false
+    },
+    {
+      "id": "via-perspective-wisdom-4",
+      "text": "Have a mature view on life.",
+      "scale": "perspective-wisdom",
+      "reverse": false
+    },
+    {
+      "id": "via-prudence-4",
+      "text": "Think before I speak.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-4",
+      "text": "Can stay on a diet.",
+      "scale": "self-regulation-self-control",
+      "reverse": false
+    },
+    {
+      "id": "via-social-personal-emotional-intelligence-4",
+      "text": "Get along well with people I have just met.",
+      "scale": "social-personal-emotional-intelligence",
+      "reverse": false
+    },
+    {
+      "id": "via-spirituality-religiousness-4",
+      "text": "Have spent at least 30 minutes in the last 24 hours in prayer or meditation.",
+      "scale": "spirituality-religiousness",
+      "reverse": false
+    },
+    {
+      "id": "via-valor-bravery-courage-4",
+      "text": "Can face my fears.",
+      "scale": "valor-bravery-courage",
+      "reverse": false
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-4",
+      "text": "Look forward to each new day.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": false
+    },
+    {
+      "id": "via-appreciation-of-beauty-5",
+      "text": "Appreciate all forms of art.",
+      "scale": "appreciation-of-beauty",
+      "reverse": false
+    },
+    {
+      "id": "via-capacity-for-love-5",
+      "text": "Can express love to someone else.",
+      "scale": "capacity-for-love",
+      "reverse": false
+    },
+    {
+      "id": "via-citizenship-teamwork-5",
+      "text": "Am not good at working with a group.",
+      "scale": "citizenship-teamwork",
+      "reverse": true
+    },
+    {
+      "id": "via-curiosity-5",
+      "text": "Can find something of interest in any situation.",
+      "scale": "curiosity",
+      "reverse": false
+    },
+    {
+      "id": "via-equity-fairness-5",
+      "text": "Give everyone a chance.",
+      "scale": "equity-fairness",
+      "reverse": false
+    },
+    {
+      "id": "via-forgiveness-mercy-5",
+      "text": "Don't try to get even.",
+      "scale": "forgiveness-mercy",
+      "reverse": false
+    },
+    {
+      "id": "via-gratitude-5",
+      "text": "Feel thankful for what I have received in life.",
+      "scale": "gratitude",
+      "reverse": false
+    },
+    {
+      "id": "via-hope-optimism-5",
+      "text": "Think about what is good in my life when I feel down.",
+      "scale": "hope-optimism",
+      "reverse": false
+    },
+    {
+      "id": "via-humor-playfulness-5",
+      "text": "Keep my sense of humor even in gloomy situations.",
+      "scale": "humor-playfulness",
+      "reverse": false
+    },
+    {
+      "id": "via-industry-perseverance-persistence-5",
+      "text": "Don't get sidetracked when I work.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": false
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-5",
+      "text": "Am true to my own values.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": false
+    },
+    {
+      "id": "via-judgment-open-mindedness-5",
+      "text": "Weigh the pro's and the con's.",
+      "scale": "judgment-open-mindedness",
+      "reverse": false
+    },
+    {
+      "id": "via-kindness-generosity-5",
+      "text": "Get as excited about the good fortunes of others as I am about my own.",
+      "scale": "kindness-generosity",
+      "reverse": false
+    },
+    {
+      "id": "via-leadership-5",
+      "text": "Have difficulty getting others to work together.",
+      "scale": "leadership",
+      "reverse": true
+    },
+    {
+      "id": "via-love-of-learning-5",
+      "text": "Read all the time.",
+      "scale": "love-of-learning",
+      "reverse": false
+    },
+    {
+      "id": "via-modesty-humility-5",
+      "text": "Am proud that I am an ordinary person.",
+      "scale": "modesty-humility",
+      "reverse": false
+    },
+    {
+      "id": "via-originality-creativity-5",
+      "text": "Have an imagination that stretches beyond that of my friends.",
+      "scale": "originality-creativity",
+      "reverse": false
+    },
+    {
+      "id": "via-perspective-wisdom-5",
+      "text": "Consider myself to be a wise person.",
+      "scale": "perspective-wisdom",
+      "reverse": false
+    },
+    {
+      "id": "via-prudence-5",
+      "text": "Follow the rules.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-5",
+      "text": "Can always say \"enough is enough.\"",
+      "scale": "self-regulation-self-control",
+      "reverse": false
+    },
+    {
+      "id": "via-social-personal-emotional-intelligence-5",
+      "text": "Am good at sensing what others are feeling.",
+      "scale": "social-personal-emotional-intelligence",
+      "reverse": false
+    },
+    {
+      "id": "via-spirituality-religiousness-5",
+      "text": "Am who I am because of my faith.",
+      "scale": "spirituality-religiousness",
+      "reverse": false
+    },
+    {
+      "id": "via-valor-bravery-courage-5",
+      "text": "Speak up in protest when I hear someone say mean things.",
+      "scale": "valor-bravery-courage",
+      "reverse": false
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-5",
+      "text": "Can’t wait to get started on a project.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": false
+    },
+    {
+      "id": "via-appreciation-of-beauty-6",
+      "text": "Am in awe of simple things in life that others might take for granted.",
+      "scale": "appreciation-of-beauty",
+      "reverse": false
+    },
+    {
+      "id": "via-capacity-for-love-6",
+      "text": "Know someone whom I really care about as a person.",
+      "scale": "capacity-for-love",
+      "reverse": false
+    },
+    {
+      "id": "via-citizenship-teamwork-6",
+      "text": "Prefer to do everything alone.",
+      "scale": "citizenship-teamwork",
+      "reverse": true
+    },
+    {
+      "id": "via-curiosity-6",
+      "text": "Think that my life is extremely interesting.",
+      "scale": "curiosity",
+      "reverse": false
+    },
+    {
+      "id": "via-equity-fairness-6",
+      "text": "Am committed to principles of justice and equality.",
+      "scale": "equity-fairness",
+      "reverse": false
+    },
+    {
+      "id": "via-forgiveness-mercy-6",
+      "text": "Hate to see anyone suffer, even my worst enemy.",
+      "scale": "forgiveness-mercy",
+      "reverse": false
+    },
+    {
+      "id": "via-gratitude-6",
+      "text": "Feel a profound sense of appreciation every day.",
+      "scale": "gratitude",
+      "reverse": false
+    },
+    {
+      "id": "via-hope-optimism-6",
+      "text": "Expect the worst.",
+      "scale": "hope-optimism",
+      "reverse": true
+    },
+    {
+      "id": "via-humor-playfulness-6",
+      "text": "Have a great sense of humor.",
+      "scale": "humor-playfulness",
+      "reverse": false
+    },
+    {
+      "id": "via-industry-perseverance-persistence-6",
+      "text": "Don't finish what I start.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": true
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-6",
+      "text": "Lie to get myself out of trouble.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": true
+    },
+    {
+      "id": "via-judgment-open-mindedness-6",
+      "text": "Try to have good reasons for my important decisions.",
+      "scale": "judgment-open-mindedness",
+      "reverse": false
+    },
+    {
+      "id": "via-kindness-generosity-6",
+      "text": "Call my friends when they are sick.",
+      "scale": "kindness-generosity",
+      "reverse": false
+    },
+    {
+      "id": "via-leadership-6",
+      "text": "Am not good at taking charge of a group.",
+      "scale": "leadership",
+      "reverse": true
+    },
+    {
+      "id": "via-love-of-learning-6",
+      "text": "Consult the library or the Internet immediately if I want to know something.",
+      "scale": "love-of-learning",
+      "reverse": false
+    },
+    {
+      "id": "via-modesty-humility-6",
+      "text": "Don't call attention to myself.",
+      "scale": "modesty-humility",
+      "reverse": false
+    },
+    {
+      "id": "via-originality-creativity-6",
+      "text": "Don't pride myself on being original.",
+      "scale": "originality-creativity",
+      "reverse": true
+    },
+    {
+      "id": "via-perspective-wisdom-6",
+      "text": "Am considered to be a wise person.",
+      "scale": "perspective-wisdom",
+      "reverse": false
+    },
+    {
+      "id": "via-prudence-6",
+      "text": "Avoid activities that are physically dangerous.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-6",
+      "text": "Do not exercise on a regular basis.",
+      "scale": "self-regulation-self-control",
+      "reverse": true
+    },
+    {
+      "id": "via-social-personal-emotional-intelligence-6",
+      "text": "Know what to say to make people feel good.",
+      "scale": "social-personal-emotional-intelligence",
+      "reverse": false
+    },
+    {
+      "id": "via-spirituality-religiousness-6",
+      "text": "Believe that each person has a purpose in life.",
+      "scale": "spirituality-religiousness",
+      "reverse": false
+    },
+    {
+      "id": "via-valor-bravery-courage-6",
+      "text": "Am a brave person.",
+      "scale": "valor-bravery-courage",
+      "reverse": false
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-6",
+      "text": "Can hardly wait to see what life has in store for me in the years ahead.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": false
+    },
+    {
+      "id": "via-appreciation-of-beauty-7",
+      "text": "Crave the experience of great art.",
+      "scale": "appreciation-of-beauty",
+      "reverse": false
+    },
+    {
+      "id": "via-capacity-for-love-7",
+      "text": "Do not easily share my feelings with others.",
+      "scale": "capacity-for-love",
+      "reverse": true
+    },
+    {
+      "id": "via-citizenship-teamwork-7",
+      "text": "Work best when I am alone.",
+      "scale": "citizenship-teamwork",
+      "reverse": true
+    },
+    {
+      "id": "via-curiosity-7",
+      "text": "Love to hear about other countries and cultures.",
+      "scale": "curiosity",
+      "reverse": false
+    },
+    {
+      "id": "via-equity-fairness-7",
+      "text": "Believe that everyone should have a say.",
+      "scale": "equity-fairness",
+      "reverse": false
+    },
+    {
+      "id": "via-forgiveness-mercy-7",
+      "text": "Try to respond with understanding when someone treats me badly.",
+      "scale": "forgiveness-mercy",
+      "reverse": false
+    },
+    {
+      "id": "via-gratitude-7",
+      "text": "Do not see the need to acknowledge others who are good to me.",
+      "scale": "gratitude",
+      "reverse": true
+    },
+    {
+      "id": "via-hope-optimism-7",
+      "text": "Have no plan for my life five years from now.",
+      "scale": "hope-optimism",
+      "reverse": true
+    },
+    {
+      "id": "via-humor-playfulness-7",
+      "text": "Am not known for my sense of humor.",
+      "scale": "humor-playfulness",
+      "reverse": true
+    },
+    {
+      "id": "via-industry-perseverance-persistence-7",
+      "text": "Give up easily.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": true
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-7",
+      "text": "Am hard to understand.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": true
+    },
+    {
+      "id": "via-judgment-open-mindedness-7",
+      "text": "Am valued by my friends for my good judgment.",
+      "scale": "judgment-open-mindedness",
+      "reverse": false
+    },
+    {
+      "id": "via-kindness-generosity-7",
+      "text": "Love to let others share the spotlight.",
+      "scale": "kindness-generosity",
+      "reverse": false
+    },
+    {
+      "id": "via-leadership-7",
+      "text": "Am not good at planning group activities.",
+      "scale": "leadership",
+      "reverse": true
+    },
+    {
+      "id": "via-love-of-learning-7",
+      "text": "Read a large variety of books.",
+      "scale": "love-of-learning",
+      "reverse": false
+    },
+    {
+      "id": "via-modesty-humility-7",
+      "text": "Would never be described as arrogant.",
+      "scale": "modesty-humility",
+      "reverse": false
+    },
+    {
+      "id": "via-originality-creativity-7",
+      "text": "Am not considered to have new and different ideas.",
+      "scale": "originality-creativity",
+      "reverse": true
+    },
+    {
+      "id": "via-perspective-wisdom-7",
+      "text": "Lose sight of what is most important in life.",
+      "scale": "perspective-wisdom",
+      "reverse": true
+    },
+    {
+      "id": "via-prudence-7",
+      "text": "Keep straight right from wrong.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-7",
+      "text": "Can't resist eating candy or cookies if they are around.",
+      "scale": "self-regulation-self-control",
+      "reverse": true
+    },
+    {
+      "id": "via-social-personal-emotional-intelligence-7",
+      "text": "Don't know how to handle myself in a new social situation.",
+      "scale": "social-personal-emotional-intelligence",
+      "reverse": true
+    },
+    {
+      "id": "via-spirituality-religiousness-7",
+      "text": "Know that my beliefs make my life important.",
+      "scale": "spirituality-religiousness",
+      "reverse": false
+    },
+    {
+      "id": "via-valor-bravery-courage-7",
+      "text": "Avoid dealing with uncomfortable emotions.",
+      "scale": "valor-bravery-courage",
+      "reverse": true
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-7",
+      "text": "Awaken with a sense of excitement about the day's possibilities.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": false
+    },
+    {
+      "id": "via-appreciation-of-beauty-8",
+      "text": "Fail to notice beauty until others comment on it.",
+      "scale": "appreciation-of-beauty",
+      "reverse": true
+    },
+    {
+      "id": "via-capacity-for-love-8",
+      "text": "Feel isolated from other people.",
+      "scale": "capacity-for-love",
+      "reverse": true
+    },
+    {
+      "id": "via-citizenship-teamwork-8",
+      "text": "Keep to myself.",
+      "scale": "citizenship-teamwork",
+      "reverse": true
+    },
+    {
+      "id": "via-curiosity-8",
+      "text": "Am not all that curious about the world.",
+      "scale": "curiosity",
+      "reverse": true
+    },
+    {
+      "id": "via-equity-fairness-8",
+      "text": "Take advantage of others.",
+      "scale": "equity-fairness",
+      "reverse": true
+    },
+    {
+      "id": "via-forgiveness-mercy-8",
+      "text": "Hold grudges.",
+      "scale": "forgiveness-mercy",
+      "reverse": true
+    },
+    {
+      "id": "via-gratitude-8",
+      "text": "Find few things in my life to be grateful for.",
+      "scale": "gratitude",
+      "reverse": true
+    },
+    {
+      "id": "via-hope-optimism-8",
+      "text": "Am not confident that my way of doing things will work out for the best.",
+      "scale": "hope-optimism",
+      "reverse": true
+    },
+    {
+      "id": "via-humor-playfulness-8",
+      "text": "Am not fun to be with.",
+      "scale": "humor-playfulness",
+      "reverse": true
+    },
+    {
+      "id": "via-industry-perseverance-persistence-8",
+      "text": "Do not tend to stick with what I decide to do.",
+      "scale": "industry-perseverance-persistence",
+      "reverse": true
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-8",
+      "text": "Feel like an imposter.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": true
+    },
+    {
+      "id": "via-judgment-open-mindedness-8",
+      "text": "Don't think about different possibilities when making decisions.",
+      "scale": "judgment-open-mindedness",
+      "reverse": true
+    },
+    {
+      "id": "via-kindness-generosity-8",
+      "text": "Get impatient when others talk to me about their problems.",
+      "scale": "kindness-generosity",
+      "reverse": true
+    },
+    {
+      "id": "via-love-of-learning-8",
+      "text": "Don't like to learn new things.",
+      "scale": "love-of-learning",
+      "reverse": true
+    },
+    {
+      "id": "via-modesty-humility-8",
+      "text": "Like to stand out in a crowd.",
+      "scale": "modesty-humility",
+      "reverse": true
+    },
+    {
+      "id": "via-originality-creativity-8",
+      "text": "Have no special urge to do something original.",
+      "scale": "originality-creativity",
+      "reverse": true
+    },
+    {
+      "id": "via-perspective-wisdom-8",
+      "text": "Am not good at figuring out what really matters.",
+      "scale": "perspective-wisdom",
+      "reverse": true
+    },
+    {
+      "id": "via-prudence-8",
+      "text": "Make careful choices.",
+      "scale": "prudence",
+      "reverse": false
+    },
+    {
+      "id": "via-self-regulation-self-control-8",
+      "text": "Am not very good at getting things done.",
+      "scale": "self-regulation-self-control",
+      "reverse": true
+    },
+    {
+      "id": "via-spirituality-religiousness-8",
+      "text": "Do not practice any religion.",
+      "scale": "spirituality-religiousness",
+      "reverse": true
+    },
+    {
+      "id": "via-valor-bravery-courage-8",
+      "text": "Avoid dealing with awkward situations.",
+      "scale": "valor-bravery-courage",
+      "reverse": true
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-8",
+      "text": "Dread getting up in the morning.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": true
+    },
+    {
+      "id": "via-capacity-for-love-9",
+      "text": "Have difficulty accepting love from anyone.",
+      "scale": "capacity-for-love",
+      "reverse": true
+    },
+    {
+      "id": "via-citizenship-teamwork-9",
+      "text": "Don’t think it’s important to socialize with others.",
+      "scale": "citizenship-teamwork",
+      "reverse": true
+    },
+    {
+      "id": "via-curiosity-9",
+      "text": "Find it difficult to entertain myself.",
+      "scale": "curiosity",
+      "reverse": true
+    },
+    {
+      "id": "via-equity-fairness-9",
+      "text": "Treat others differently if I don't like them.",
+      "scale": "equity-fairness",
+      "reverse": true
+    },
+    {
+      "id": "via-forgiveness-mercy-9",
+      "text": "Do not give anyone a second chance to hurt me.",
+      "scale": "forgiveness-mercy",
+      "reverse": true
+    },
+    {
+      "id": "via-humor-playfulness-9",
+      "text": "Do not go out of my way to make others smile or laugh.",
+      "scale": "humor-playfulness",
+      "reverse": true
+    },
+    {
+      "id": "via-integrity-honesty-authenticity-9",
+      "text": "Like to exaggerate my troubles.",
+      "scale": "integrity-honesty-authenticity",
+      "reverse": true
+    },
+    {
+      "id": "via-judgment-open-mindedness-9",
+      "text": "Don't tend to think things through critically.",
+      "scale": "judgment-open-mindedness",
+      "reverse": true
+    },
+    {
+      "id": "via-kindness-generosity-9",
+      "text": "Try not to do favors for others.",
+      "scale": "kindness-generosity",
+      "reverse": true
+    },
+    {
+      "id": "via-love-of-learning-9",
+      "text": "Do not like to visit museums.",
+      "scale": "love-of-learning",
+      "reverse": true
+    },
+    {
+      "id": "via-modesty-humility-9",
+      "text": "Like to talk about myself.",
+      "scale": "modesty-humility",
+      "reverse": true
+    },
+    {
+      "id": "via-perspective-wisdom-9",
+      "text": "Am rarely consulted for advice by others.",
+      "scale": "perspective-wisdom",
+      "reverse": true
+    },
+    {
+      "id": "via-prudence-9",
+      "text": "Behave in unusual and strange ways.",
+      "scale": "prudence",
+      "reverse": true
+    },
+    {
+      "id": "via-self-regulation-self-control-9",
+      "text": "Let myself be taken over by urges to spend or eat too much.",
+      "scale": "self-regulation-self-control",
+      "reverse": true
+    },
+    {
+      "id": "via-spirituality-religiousness-9",
+      "text": "Do not believe in a universal power or a God.",
+      "scale": "spirituality-religiousness",
+      "reverse": true
+    },
+    {
+      "id": "via-valor-bravery-courage-9",
+      "text": "Do not stand up for my beliefs.",
+      "scale": "valor-bravery-courage",
+      "reverse": true
+    },
+    {
+      "id": "via-zest-enthusiasm-vitality-9",
+      "text": "Don't have much energy.",
+      "scale": "zest-enthusiasm-vitality",
+      "reverse": true
+    },
+    {
+      "id": "via-curiosity-10",
+      "text": "Have few interests.",
+      "scale": "curiosity",
+      "reverse": true
+    },
+    {
+      "id": "via-kindness-generosity-10",
+      "text": "Am only kind to others if they have been kind to me.",
+      "scale": "kindness-generosity",
+      "reverse": true
+    },
+    {
+      "id": "via-love-of-learning-10",
+      "text": "Don't read nonfiction books for fun.",
+      "scale": "love-of-learning",
+      "reverse": true
+    },
+    {
+      "id": "via-self-regulation-self-control-10",
+      "text": "Do my tasks only just before they need to be done.",
+      "scale": "self-regulation-self-control",
+      "reverse": true
+    },
+    {
+      "id": "via-valor-bravery-courage-10",
+      "text": "Don't speak my mind freely when there might be negative results.",
+      "scale": "valor-bravery-courage",
+      "reverse": true
+    },
+    {
+      "id": "via-self-regulation-self-control-11",
+      "text": "Give in to my urges.",
+      "scale": "self-regulation-self-control",
+      "reverse": true
+    }
+  ],
+  "scales": [
+    {
+      "id": "appreciation-of-beauty",
+      "name": "Appreciation of Beauty",
+      "item_ids": [
+        "via-appreciation-of-beauty-1",
+        "via-appreciation-of-beauty-2",
+        "via-appreciation-of-beauty-3",
+        "via-appreciation-of-beauty-4",
+        "via-appreciation-of-beauty-5",
+        "via-appreciation-of-beauty-6",
+        "via-appreciation-of-beauty-7",
+        "via-appreciation-of-beauty-8"
+      ]
+    },
+    {
+      "id": "capacity-for-love",
+      "name": "Capacity for Love",
+      "item_ids": [
+        "via-capacity-for-love-1",
+        "via-capacity-for-love-2",
+        "via-capacity-for-love-3",
+        "via-capacity-for-love-4",
+        "via-capacity-for-love-5",
+        "via-capacity-for-love-6",
+        "via-capacity-for-love-7",
+        "via-capacity-for-love-8",
+        "via-capacity-for-love-9"
+      ]
+    },
+    {
+      "id": "citizenship-teamwork",
+      "name": "Citizenship/Teamwork",
+      "item_ids": [
+        "via-citizenship-teamwork-1",
+        "via-citizenship-teamwork-2",
+        "via-citizenship-teamwork-3",
+        "via-citizenship-teamwork-4",
+        "via-citizenship-teamwork-5",
+        "via-citizenship-teamwork-6",
+        "via-citizenship-teamwork-7",
+        "via-citizenship-teamwork-8",
+        "via-citizenship-teamwork-9"
+      ]
+    },
+    {
+      "id": "curiosity",
+      "name": "Curiosity",
+      "item_ids": [
+        "via-curiosity-1",
+        "via-curiosity-2",
+        "via-curiosity-3",
+        "via-curiosity-4",
+        "via-curiosity-5",
+        "via-curiosity-6",
+        "via-curiosity-7",
+        "via-curiosity-8",
+        "via-curiosity-9",
+        "via-curiosity-10"
+      ]
+    },
+    {
+      "id": "equity-fairness",
+      "name": "Equity/Fairness",
+      "item_ids": [
+        "via-equity-fairness-1",
+        "via-equity-fairness-2",
+        "via-equity-fairness-3",
+        "via-equity-fairness-4",
+        "via-equity-fairness-5",
+        "via-equity-fairness-6",
+        "via-equity-fairness-7",
+        "via-equity-fairness-8",
+        "via-equity-fairness-9"
+      ]
+    },
+    {
+      "id": "forgiveness-mercy",
+      "name": "Forgiveness/Mercy",
+      "item_ids": [
+        "via-forgiveness-mercy-1",
+        "via-forgiveness-mercy-2",
+        "via-forgiveness-mercy-3",
+        "via-forgiveness-mercy-4",
+        "via-forgiveness-mercy-5",
+        "via-forgiveness-mercy-6",
+        "via-forgiveness-mercy-7",
+        "via-forgiveness-mercy-8",
+        "via-forgiveness-mercy-9"
+      ]
+    },
+    {
+      "id": "gratitude",
+      "name": "Gratitude",
+      "item_ids": [
+        "via-gratitude-1",
+        "via-gratitude-2",
+        "via-gratitude-3",
+        "via-gratitude-4",
+        "via-gratitude-5",
+        "via-gratitude-6",
+        "via-gratitude-7",
+        "via-gratitude-8"
+      ]
+    },
+    {
+      "id": "hope-optimism",
+      "name": "Hope/Optimism",
+      "item_ids": [
+        "via-hope-optimism-1",
+        "via-hope-optimism-2",
+        "via-hope-optimism-3",
+        "via-hope-optimism-4",
+        "via-hope-optimism-5",
+        "via-hope-optimism-6",
+        "via-hope-optimism-7",
+        "via-hope-optimism-8"
+      ]
+    },
+    {
+      "id": "humor-playfulness",
+      "name": "Humor/Playfulness",
+      "item_ids": [
+        "via-humor-playfulness-1",
+        "via-humor-playfulness-2",
+        "via-humor-playfulness-3",
+        "via-humor-playfulness-4",
+        "via-humor-playfulness-5",
+        "via-humor-playfulness-6",
+        "via-humor-playfulness-7",
+        "via-humor-playfulness-8",
+        "via-humor-playfulness-9"
+      ]
+    },
+    {
+      "id": "industry-perseverance-persistence",
+      "name": "Industry/Perseverance/Persistence",
+      "item_ids": [
+        "via-industry-perseverance-persistence-1",
+        "via-industry-perseverance-persistence-2",
+        "via-industry-perseverance-persistence-3",
+        "via-industry-perseverance-persistence-4",
+        "via-industry-perseverance-persistence-5",
+        "via-industry-perseverance-persistence-6",
+        "via-industry-perseverance-persistence-7",
+        "via-industry-perseverance-persistence-8"
+      ]
+    },
+    {
+      "id": "integrity-honesty-authenticity",
+      "name": "Integrity/Honesty/Authenticity",
+      "item_ids": [
+        "via-integrity-honesty-authenticity-1",
+        "via-integrity-honesty-authenticity-2",
+        "via-integrity-honesty-authenticity-3",
+        "via-integrity-honesty-authenticity-4",
+        "via-integrity-honesty-authenticity-5",
+        "via-integrity-honesty-authenticity-6",
+        "via-integrity-honesty-authenticity-7",
+        "via-integrity-honesty-authenticity-8",
+        "via-integrity-honesty-authenticity-9"
+      ]
+    },
+    {
+      "id": "judgment-open-mindedness",
+      "name": "Judgment/Open-mindedness",
+      "item_ids": [
+        "via-judgment-open-mindedness-1",
+        "via-judgment-open-mindedness-2",
+        "via-judgment-open-mindedness-3",
+        "via-judgment-open-mindedness-4",
+        "via-judgment-open-mindedness-5",
+        "via-judgment-open-mindedness-6",
+        "via-judgment-open-mindedness-7",
+        "via-judgment-open-mindedness-8",
+        "via-judgment-open-mindedness-9"
+      ]
+    },
+    {
+      "id": "kindness-generosity",
+      "name": "Kindness/Generosity",
+      "item_ids": [
+        "via-kindness-generosity-1",
+        "via-kindness-generosity-2",
+        "via-kindness-generosity-3",
+        "via-kindness-generosity-4",
+        "via-kindness-generosity-5",
+        "via-kindness-generosity-6",
+        "via-kindness-generosity-7",
+        "via-kindness-generosity-8",
+        "via-kindness-generosity-9",
+        "via-kindness-generosity-10"
+      ]
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership",
+      "item_ids": [
+        "via-leadership-1",
+        "via-leadership-2",
+        "via-leadership-3",
+        "via-leadership-4",
+        "via-leadership-5",
+        "via-leadership-6",
+        "via-leadership-7"
+      ]
+    },
+    {
+      "id": "love-of-learning",
+      "name": "Love of Learning",
+      "item_ids": [
+        "via-love-of-learning-1",
+        "via-love-of-learning-2",
+        "via-love-of-learning-3",
+        "via-love-of-learning-4",
+        "via-love-of-learning-5",
+        "via-love-of-learning-6",
+        "via-love-of-learning-7",
+        "via-love-of-learning-8",
+        "via-love-of-learning-9",
+        "via-love-of-learning-10"
+      ]
+    },
+    {
+      "id": "modesty-humility",
+      "name": "Modesty/Humility",
+      "item_ids": [
+        "via-modesty-humility-1",
+        "via-modesty-humility-2",
+        "via-modesty-humility-3",
+        "via-modesty-humility-4",
+        "via-modesty-humility-5",
+        "via-modesty-humility-6",
+        "via-modesty-humility-7",
+        "via-modesty-humility-8",
+        "via-modesty-humility-9"
+      ]
+    },
+    {
+      "id": "originality-creativity",
+      "name": "Originality/Creativity",
+      "item_ids": [
+        "via-originality-creativity-1",
+        "via-originality-creativity-2",
+        "via-originality-creativity-3",
+        "via-originality-creativity-4",
+        "via-originality-creativity-5",
+        "via-originality-creativity-6",
+        "via-originality-creativity-7",
+        "via-originality-creativity-8"
+      ]
+    },
+    {
+      "id": "perspective-wisdom",
+      "name": "Perspective/Wisdom",
+      "item_ids": [
+        "via-perspective-wisdom-1",
+        "via-perspective-wisdom-2",
+        "via-perspective-wisdom-3",
+        "via-perspective-wisdom-4",
+        "via-perspective-wisdom-5",
+        "via-perspective-wisdom-6",
+        "via-perspective-wisdom-7",
+        "via-perspective-wisdom-8",
+        "via-perspective-wisdom-9"
+      ]
+    },
+    {
+      "id": "prudence",
+      "name": "Prudence",
+      "item_ids": [
+        "via-prudence-1",
+        "via-prudence-2",
+        "via-prudence-3",
+        "via-prudence-4",
+        "via-prudence-5",
+        "via-prudence-6",
+        "via-prudence-7",
+        "via-prudence-8",
+        "via-prudence-9"
+      ]
+    },
+    {
+      "id": "self-regulation-self-control",
+      "name": "Self-regulation/Self-control",
+      "item_ids": [
+        "via-self-regulation-self-control-1",
+        "via-self-regulation-self-control-2",
+        "via-self-regulation-self-control-3",
+        "via-self-regulation-self-control-4",
+        "via-self-regulation-self-control-5",
+        "via-self-regulation-self-control-6",
+        "via-self-regulation-self-control-7",
+        "via-self-regulation-self-control-8",
+        "via-self-regulation-self-control-9",
+        "via-self-regulation-self-control-10",
+        "via-self-regulation-self-control-11"
+      ]
+    },
+    {
+      "id": "social-personal-emotional-intelligence",
+      "name": "Social/Personal/Emotional Intelligence",
+      "item_ids": [
+        "via-social-personal-emotional-intelligence-1",
+        "via-social-personal-emotional-intelligence-2",
+        "via-social-personal-emotional-intelligence-3",
+        "via-social-personal-emotional-intelligence-4",
+        "via-social-personal-emotional-intelligence-5",
+        "via-social-personal-emotional-intelligence-6",
+        "via-social-personal-emotional-intelligence-7"
+      ]
+    },
+    {
+      "id": "spirituality-religiousness",
+      "name": "Spirituality/Religiousness",
+      "item_ids": [
+        "via-spirituality-religiousness-1",
+        "via-spirituality-religiousness-2",
+        "via-spirituality-religiousness-3",
+        "via-spirituality-religiousness-4",
+        "via-spirituality-religiousness-5",
+        "via-spirituality-religiousness-6",
+        "via-spirituality-religiousness-7",
+        "via-spirituality-religiousness-8",
+        "via-spirituality-religiousness-9"
+      ]
+    },
+    {
+      "id": "valor-bravery-courage",
+      "name": "Valor/Bravery/Courage",
+      "item_ids": [
+        "via-valor-bravery-courage-1",
+        "via-valor-bravery-courage-2",
+        "via-valor-bravery-courage-3",
+        "via-valor-bravery-courage-4",
+        "via-valor-bravery-courage-5",
+        "via-valor-bravery-courage-6",
+        "via-valor-bravery-courage-7",
+        "via-valor-bravery-courage-8",
+        "via-valor-bravery-courage-9",
+        "via-valor-bravery-courage-10"
+      ]
+    },
+    {
+      "id": "zest-enthusiasm-vitality",
+      "name": "Zest/Enthusiasm/Vitality",
+      "item_ids": [
+        "via-zest-enthusiasm-vitality-1",
+        "via-zest-enthusiasm-vitality-2",
+        "via-zest-enthusiasm-vitality-3",
+        "via-zest-enthusiasm-vitality-4",
+        "via-zest-enthusiasm-vitality-5",
+        "via-zest-enthusiasm-vitality-6",
+        "via-zest-enthusiasm-vitality-7",
+        "via-zest-enthusiasm-vitality-8",
+        "via-zest-enthusiasm-vitality-9"
+      ]
+    }
+  ],
+  "domains": []
+}

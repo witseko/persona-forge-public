@@ -1,0 +1,139 @@
+{
+  "id": "product-owner",
+  "title": "Product owner situations",
+  "authored": "Project-authored reflective scenarios (2026-10-23). Not a validated situational judgment test; there are no correct answers.",
+  "scenarios": [
+    {
+      "id": "po-midsprint-change",
+      "title": "Mid-sprint change",
+      "prompt": "Three days into a sprint, a stakeholder asks for an urgent item to be added.",
+      "options": [
+        {"id": "a", "text": "Refuse; the sprint is committed and the item goes to the next one.", "weights": {"assertiveness": 1.0, "structure": 1.0}},
+        {"id": "b", "text": "Ask the team what they could swap out to make room.", "weights": {"assertiveness": 0.5, "structure": 0.5}},
+        {"id": "c", "text": "Add it; urgent business needs come first.", "weights": {"assertiveness": 0.0, "structure": 0.0}},
+        {"id": "d", "text": "Check how urgent it really is before deciding anything.", "weights": {"assertiveness": 0.75, "structure": 0.75}}
+      ]
+    },
+    {
+      "id": "po-vague-stories",
+      "title": "Vague stories in refinement",
+      "prompt": "The team says several backlog items are too vague to estimate. Refinement keeps running over time.",
+      "options": [
+        {"id": "a", "text": "Write fuller stories with acceptance criteria before each session.", "weights": {"structure": 1.0, "ownership": 1.0}},
+        {"id": "b", "text": "Invite the team to write the stories with you during refinement.", "weights": {"structure": 0.5, "ownership": 0.25}},
+        {"id": "c", "text": "Let the team start with a spike and refine the details as they learn.", "weights": {"structure": 0.0, "ownership": 0.25}},
+        {"id": "d", "text": "Ask a business analyst to help shape the backlog.", "weights": {"structure": 0.75, "ownership": 0.0}}
+      ]
+    },
+    {
+      "id": "po-acceptance-dispute",
+      "title": "Acceptance criteria dispute",
+      "prompt": "The team says a story is done. You think one acceptance criterion is not really met, though it is arguable.",
+      "options": [
+        {"id": "a", "text": "Reject the story and explain exactly what is missing.", "weights": {"directness": 1.0, "assertiveness": 1.0}},
+        {"id": "b", "text": "Accept it and create a follow-up story for the gap.", "weights": {"directness": 0.25, "assertiveness": 0.25}},
+        {"id": "c", "text": "Discuss it with the team and agree together what done means here.", "weights": {"directness": 0.75, "assertiveness": 0.5}},
+        {"id": "d", "text": "Accept it; the disagreement is not worth the friction.", "weights": {"directness": 0.0, "assertiveness": 0.0}}
+      ]
+    },
+    {
+      "id": "po-velocity-drop",
+      "title": "Velocity drop",
+      "prompt": "The team's delivered points dropped for three sprints. Stakeholders are asking why.",
+      "options": [
+        {"id": "a", "text": "Ask the team in the retrospective what is slowing them down.", "weights": {"cooperation": 1.0, "ownership": 0.5}},
+        {"id": "b", "text": "Explain to stakeholders that velocity is not a productivity measure.", "weights": {"cooperation": 0.25, "ownership": 0.75}},
+        {"id": "c", "text": "Analyse the sprint data yourself to find the pattern.", "weights": {"cooperation": 0.0, "ownership": 1.0}},
+        {"id": "d", "text": "Leave it to the Scrum Master and engineering manager.", "weights": {"cooperation": 0.5, "ownership": 0.0}}
+      ]
+    },
+    {
+      "id": "po-demo-feedback",
+      "title": "Harsh demo feedback",
+      "prompt": "At a sprint review, a stakeholder criticises a delivered feature harshly in front of the team.",
+      "options": [
+        {"id": "a", "text": "Defend the team's work and the decisions behind it on the spot.", "weights": {"assertiveness": 1.0, "directness": 1.0}},
+        {"id": "b", "text": "Thank them, capture the feedback and follow up privately.", "weights": {"assertiveness": 0.25, "directness": 0.25}},
+        {"id": "c", "text": "Ask clarifying questions to separate the real issues from frustration.", "weights": {"assertiveness": 0.5, "directness": 0.75}},
+        {"id": "d", "text": "Accept the criticism and promise changes in the next sprint.", "weights": {"assertiveness": 0.0, "directness": 0.5}}
+      ]
+    },
+    {
+      "id": "po-bug-vs-feature",
+      "title": "Bug or feature",
+      "prompt": "A moderate bug affects a few users. A promised feature for many users is ready to start.",
+      "options": [
+        {"id": "a", "text": "Fix the bug first; quality issues erode trust.", "weights": {"risk": 0.0, "structure": 0.75}},
+        {"id": "b", "text": "Start the feature; it delivers more value overall.", "weights": {"risk": 1.0, "structure": 0.25}},
+        {"id": "c", "text": "Apply a bug-priority policy agreed with stakeholders in advance.", "weights": {"risk": 0.25, "structure": 1.0}},
+        {"id": "d", "text": "Ask whether a workaround for the bug is acceptable for now.", "weights": {"risk": 0.5, "structure": 0.0}}
+      ]
+    },
+    {
+      "id": "po-done-shortcut",
+      "title": "Shortcut on the definition of done",
+      "prompt": "To make a release, the team proposes skipping documentation that the definition of done requires.",
+      "options": [
+        {"id": "a", "text": "Hold the line; the definition of done exists for moments like this.", "weights": {"structure": 1.0, "risk": 0.0}},
+        {"id": "b", "text": "Allow it once, with a story to finish the documentation next sprint.", "weights": {"structure": 0.5, "risk": 0.5}},
+        {"id": "c", "text": "Allow it; documentation can follow when there is time.", "weights": {"structure": 0.0, "risk": 1.0}},
+        {"id": "d", "text": "Write the essential documentation yourself so the release can go.", "weights": {"structure": 0.75, "risk": 0.25}}
+      ]
+    },
+    {
+      "id": "po-epic-splitting",
+      "title": "Splitting a large epic",
+      "prompt": "An epic is too large for one release. The team proposes splitting by technical layer; you would rather split by user value.",
+      "options": [
+        {"id": "a", "text": "Insist on value slices and explain why releases should be usable.", "weights": {"assertiveness": 1.0, "cooperation": 0.25}},
+        {"id": "b", "text": "Go with the team's split; they understand the technical risks.", "weights": {"assertiveness": 0.0, "cooperation": 0.75}},
+        {"id": "c", "text": "Run a story-mapping session to find a split everyone accepts.", "weights": {"assertiveness": 0.5, "cooperation": 1.0}},
+        {"id": "d", "text": "Combine both: a thin technical foundation, then value slices.", "weights": {"assertiveness": 0.5, "cooperation": 0.5}}
+      ]
+    },
+    {
+      "id": "po-availability",
+      "title": "Availability to the team",
+      "prompt": "Stakeholder meetings take most of your week, and developers say they cannot reach you with questions.",
+      "options": [
+        {"id": "a", "text": "Hold a fixed daily office hour for the team.", "weights": {"structure": 1.0, "ownership": 1.0}},
+        {"id": "b", "text": "Delegate day-to-day decisions to a senior developer within clear limits.", "weights": {"structure": 0.75, "ownership": 0.0}},
+        {"id": "c", "text": "Answer questions asynchronously in the team channel whenever you can.", "weights": {"structure": 0.0, "ownership": 0.75}},
+        {"id": "d", "text": "Cut back stakeholder meetings so the team comes first.", "weights": {"structure": 0.5, "ownership": 1.0}}
+      ]
+    },
+    {
+      "id": "po-two-managers",
+      "title": "Two managers, two priorities",
+      "prompt": "Two senior managers give you conflicting priorities for the same quarter.",
+      "options": [
+        {"id": "a", "text": "Get them in one room and ask them to agree a single order.", "weights": {"directness": 1.0, "cooperation": 1.0}},
+        {"id": "b", "text": "Decide based on product goals and inform both of the reasoning.", "weights": {"directness": 0.75, "cooperation": 0.0}},
+        {"id": "c", "text": "Serve both partially so neither is blocked.", "weights": {"directness": 0.0, "cooperation": 0.5}},
+        {"id": "d", "text": "Escalate to the person both managers report to.", "weights": {"directness": 0.5, "cooperation": 0.25}}
+      ]
+    },
+    {
+      "id": "po-refinement-overrun",
+      "title": "Refinement runs long",
+      "prompt": "A refinement meeting has run 40 minutes over. The team is discussing implementation details of one story.",
+      "options": [
+        {"id": "a", "text": "Stop the discussion and move the details to a separate session.", "weights": {"structure": 1.0, "assertiveness": 1.0}},
+        {"id": "b", "text": "Let it run; the discussion seems valuable.", "weights": {"structure": 0.0, "assertiveness": 0.0}},
+        {"id": "c", "text": "Ask the team whether to continue or park it.", "weights": {"structure": 0.5, "assertiveness": 0.25}},
+        {"id": "d", "text": "Time-box the remaining discussion to ten minutes.", "weights": {"structure": 0.75, "assertiveness": 0.75}}
+      ]
+    },
+    {
+      "id": "po-release-communication",
+      "title": "Release communication",
+      "prompt": "A release includes a change that will surprise some users, though it is an improvement overall.",
+      "options": [
+        {"id": "a", "text": "Announce it clearly in advance, including what users lose.", "weights": {"directness": 1.0, "structure": 1.0}},
+        {"id": "b", "text": "Ship it with release notes and handle feedback as it comes.", "weights": {"directness": 0.5, "structure": 0.25}},
+        {"id": "c", "text": "Highlight the benefits and keep the downsides brief.", "weights": {"directness": 0.0, "structure": 0.5}},
+        {"id": "d", "text": "Contact the most affected users personally before release.", "weights": {"directness": 1.0, "structure": 0.5}}
+      ]
+    }
+  ]
+}

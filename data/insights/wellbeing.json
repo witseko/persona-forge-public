@@ -1,0 +1,10 @@
+{
+  "authored": "Project-authored wording (2026-10-23) for the opt-in wellbeing module. Non-diagnostic by design.",
+  "report_note_high": "Your answers suggest that work has been draining your energy lately. This is not a diagnosis, and a short questionnaire cannot tell you why. If this has lasted a while, consider talking it through with someone you trust, your manager, or a qualified professional such as your doctor or an occupational health service.",
+  "report_note_other": "Your answers do not suggest unusual work-related exhaustion right now. This is a snapshot, not a diagnosis.",
+  "practical_tips": [
+    "Break work into small steps with a clear finish line.",
+    "Suggest a natural pause point after each completed milestone.",
+    "Keep task lists short and prioritised; name the single next action."
+  ]
+}

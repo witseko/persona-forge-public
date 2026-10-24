@@ -1,0 +1,131 @@
+{
+  "id": "cbi-work",
+  "name": "Copenhagen Burnout Inventory, work-related burnout scale",
+  "source_url": "https://www.nfa.dk/media/a4wheblj/cbi-scales.pdf",
+  "retrieved": "2026-10-23",
+  "citation": "Borritz, M., et al. (2006). Burnout among employees in human service work: design and baseline findings of the PUMA study. Scandinavian Journal of Public Health, 34, 49-58. Kristensen, T. S., Borritz, M., Villadsen, E., & Christensen, K. B. (2005). The Copenhagen Burnout Inventory: A new tool for the assessment of burnout. Work & Stress, 19(3), 192-207.",
+  "licence": "NFA (https://www.nfa.dk/vaerktoejer/spoergeskemaer/spoergeskema-til-maaling-af-udbraendthed-cbi/copenhagen-burnout-inventory-cbi): \"may be used freely for non-commercial and commercial purposes, provided that the following source is clearly cited: Borritz M et al. (2006).\"",
+  "attribution": "Copenhagen Burnout Inventory, National Research Centre for the Working Environment (NFA), Denmark. Source: Borritz M et al., Scand J Public Health 2006; 34: 49-58.",
+  "instructions": "Please answer each question about your work.",
+  "notes": "Opt-in wellbeing module. Instructions are project-authored. Scoring follows the source: 100, 75, 50, 25, 0 per answer, last question reversed, scale score is the mean. Results are reflective only and never diagnostic.",
+  "aggregation": "mean",
+  "response_sets": [
+    {
+      "id": "degree",
+      "options": [
+        {
+          "value": 100,
+          "label": "To a very high degree"
+        },
+        {
+          "value": 75,
+          "label": "To a high degree"
+        },
+        {
+          "value": 50,
+          "label": "Somewhat"
+        },
+        {
+          "value": 25,
+          "label": "To a low degree"
+        },
+        {
+          "value": 0,
+          "label": "To a very low degree"
+        }
+      ]
+    },
+    {
+      "id": "frequency",
+      "options": [
+        {
+          "value": 100,
+          "label": "Always"
+        },
+        {
+          "value": 75,
+          "label": "Often"
+        },
+        {
+          "value": 50,
+          "label": "Sometimes"
+        },
+        {
+          "value": 25,
+          "label": "Seldom"
+        },
+        {
+          "value": 0,
+          "label": "Never/almost never"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "cbi-work-1",
+      "text": "Is your work emotionally exhausting?",
+      "scale": "work-burnout",
+      "reverse": false,
+      "response_set": "degree"
+    },
+    {
+      "id": "cbi-work-2",
+      "text": "Do you feel burnt out because of your work?",
+      "scale": "work-burnout",
+      "reverse": false,
+      "response_set": "degree"
+    },
+    {
+      "id": "cbi-work-3",
+      "text": "Does your work frustrate you?",
+      "scale": "work-burnout",
+      "reverse": false,
+      "response_set": "degree"
+    },
+    {
+      "id": "cbi-work-4",
+      "text": "Do you feel worn out at the end of the working day?",
+      "scale": "work-burnout",
+      "reverse": false,
+      "response_set": "frequency"
+    },
+    {
+      "id": "cbi-work-5",
+      "text": "Are you exhausted in the morning at the thought of another day at work?",
+      "scale": "work-burnout",
+      "reverse": false,
+      "response_set": "frequency"
+    },
+    {
+      "id": "cbi-work-6",
+      "text": "Do you feel that every working hour is tiring for you?",
+      "scale": "work-burnout",
+      "reverse": false,
+      "response_set": "frequency"
+    },
+    {
+      "id": "cbi-work-7",
+      "text": "Do you have enough energy for family and friends during leisure time?",
+      "scale": "work-burnout",
+      "reverse": true,
+      "response_set": "frequency"
+    }
+  ],
+  "scales": [
+    {
+      "id": "work-burnout",
+      "name": "Work-related burnout",
+      "item_ids": [
+        "cbi-work-1",
+        "cbi-work-2",
+        "cbi-work-3",
+        "cbi-work-4",
+        "cbi-work-5",
+        "cbi-work-6",
+        "cbi-work-7"
+      ]
+    }
+  ],
+  "domains": []
+}

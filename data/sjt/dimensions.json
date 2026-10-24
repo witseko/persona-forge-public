@@ -1,0 +1,47 @@
+{
+  "note": "Project-authored reflective dimensions for IT work situations. They are not validated psychological constructs. Each runs from 0 (left pole) to 1 (right pole); scores near the middle mean a balanced or situational approach.",
+  "dimensions": [
+    {
+      "id": "pace",
+      "name": "Decision pace",
+      "low_label": "deliberate and thorough",
+      "high_label": "fast and decisive"
+    },
+    {
+      "id": "risk",
+      "name": "Risk appetite",
+      "low_label": "cautious",
+      "high_label": "bold"
+    },
+    {
+      "id": "directness",
+      "name": "Directness",
+      "low_label": "diplomatic and indirect",
+      "high_label": "candid and direct"
+    },
+    {
+      "id": "assertiveness",
+      "name": "Assertiveness in disagreement",
+      "low_label": "accommodating",
+      "high_label": "holding your position"
+    },
+    {
+      "id": "cooperation",
+      "name": "Collaboration",
+      "low_label": "independent",
+      "high_label": "consensus-seeking"
+    },
+    {
+      "id": "ownership",
+      "name": "Ownership",
+      "low_label": "delegating or escalating",
+      "high_label": "taking it on personally"
+    },
+    {
+      "id": "structure",
+      "name": "Structure",
+      "low_label": "adaptive and improvised",
+      "high_label": "planned and process-led"
+    }
+  ]
+}

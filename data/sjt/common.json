@@ -1,0 +1,139 @@
+{
+  "id": "common",
+  "title": "Situations shared by every IT role",
+  "authored": "Project-authored reflective scenarios (2026-10-23). Not a validated situational judgment test; there are no correct answers.",
+  "scenarios": [
+    {
+      "id": "common-review-dispute",
+      "title": "Code review dispute",
+      "prompt": "A colleague's pull request works, but it introduces a pattern you think will make the module harder to maintain. They reply that it is a matter of taste and the deadline is tomorrow.",
+      "options": [
+        {"id": "a", "text": "Approve it, add a follow-up ticket, and raise the pattern at the next team sync.", "weights": {"assertiveness": 0.25, "directness": 0.5}},
+        {"id": "b", "text": "Request changes and explain clearly why the pattern will cost more later.", "weights": {"assertiveness": 1.0, "directness": 1.0}},
+        {"id": "c", "text": "Ask a third engineer for a quick opinion before deciding.", "weights": {"assertiveness": 0.5, "directness": 0.25}},
+        {"id": "d", "text": "Approve without comment; it is their code and the deadline matters more.", "weights": {"assertiveness": 0.0, "directness": 0.0}}
+      ]
+    },
+    {
+      "id": "common-night-incident",
+      "title": "2 a.m. incident",
+      "prompt": "At 2 a.m. you are paged: checkout errors are rising. You recognise a likely cause, but the service belongs to another team whose on-call has not answered yet.",
+      "options": [
+        {"id": "a", "text": "Roll back their last deploy yourself and post a detailed note in their channel.", "weights": {"ownership": 1.0, "risk": 0.75}},
+        {"id": "b", "text": "Keep escalating to their on-call and manager while you gather evidence.", "weights": {"ownership": 0.25, "risk": 0.0}},
+        {"id": "c", "text": "Apply a narrow mitigation you fully understand, such as a feature flag, and wait for them.", "weights": {"ownership": 0.75, "risk": 0.25}},
+        {"id": "d", "text": "Open an incident bridge and hand coordination to the incident commander rota.", "weights": {"ownership": 0.0, "risk": 0.25}}
+      ]
+    },
+    {
+      "id": "common-scope-creep",
+      "title": "Scope creep",
+      "prompt": "Halfway through a two-week piece of work, a stakeholder asks for 'one small addition' that you estimate would add four days.",
+      "options": [
+        {"id": "a", "text": "Say no for now and offer to plan it as the next piece of work.", "weights": {"assertiveness": 1.0, "structure": 1.0}},
+        {"id": "b", "text": "Agree and quietly absorb it by working longer hours.", "weights": {"assertiveness": 0.0, "structure": 0.0}},
+        {"id": "c", "text": "Lay out the trade-off and let the stakeholder choose what to drop.", "weights": {"assertiveness": 0.5, "structure": 0.75}},
+        {"id": "d", "text": "Build a rough version of the addition and see if it is enough.", "weights": {"assertiveness": 0.25, "structure": 0.0}}
+      ]
+    },
+    {
+      "id": "common-estimate-pressure",
+      "title": "Estimate pressure",
+      "prompt": "You estimated a project at six weeks. A senior leader says it has to be three, because a partner announcement is planned.",
+      "options": [
+        {"id": "a", "text": "Hold the six-week estimate and explain the specific risks of compressing it.", "weights": {"assertiveness": 1.0, "risk": 0.0}},
+        {"id": "b", "text": "Propose a reduced scope that can genuinely ship in three weeks.", "weights": {"assertiveness": 0.5, "risk": 0.5}},
+        {"id": "c", "text": "Commit to three weeks and figure out the details along the way.", "weights": {"assertiveness": 0.0, "risk": 1.0}},
+        {"id": "d", "text": "Ask for two days to re-estimate with the team before answering.", "weights": {"assertiveness": 0.5, "risk": 0.25}}
+      ]
+    },
+    {
+      "id": "common-tech-debt",
+      "title": "Tech debt or features",
+      "prompt": "The team keeps tripping over an old, fragile module. The roadmap for the next quarter is full of features.",
+      "options": [
+        {"id": "a", "text": "Write a short proposal with the cost of the debt and ask for dedicated time.", "weights": {"structure": 1.0, "ownership": 0.75}},
+        {"id": "b", "text": "Fix it in small steps inside feature work, without making it a separate project.", "weights": {"structure": 0.25, "ownership": 1.0}},
+        {"id": "c", "text": "Leave the decision to whoever owns the roadmap and flag the risk once.", "weights": {"structure": 0.5, "ownership": 0.0}},
+        {"id": "d", "text": "Ship the features and deal with the module when it actually breaks.", "weights": {"structure": 0.0, "ownership": 0.25}}
+      ]
+    },
+    {
+      "id": "common-ambiguous-requirements",
+      "title": "Ambiguous requirements",
+      "prompt": "You receive a request that is one sentence long and can be read at least two different ways. The requester is busy this week.",
+      "options": [
+        {"id": "a", "text": "Write down both interpretations and wait for an answer before starting.", "weights": {"pace": 0.0, "structure": 1.0}},
+        {"id": "b", "text": "Pick the more likely reading, build a small slice, and show it early.", "weights": {"pace": 1.0, "structure": 0.25}},
+        {"id": "c", "text": "Ask someone who knows the requester well and proceed from their read.", "weights": {"pace": 0.5, "structure": 0.5}},
+        {"id": "d", "text": "Build the version that covers both readings, even if it takes longer.", "weights": {"pace": 0.25, "structure": 0.0}}
+      ]
+    },
+    {
+      "id": "common-stakeholder-escalation",
+      "title": "Stakeholder escalation",
+      "prompt": "A stakeholder unhappy with a delay goes over your head to your manager with an inaccurate account of what happened.",
+      "options": [
+        {"id": "a", "text": "Contact the stakeholder directly, correct the facts calmly and agree next steps.", "weights": {"directness": 1.0, "cooperation": 0.5}},
+        {"id": "b", "text": "Give your manager a factual timeline and let them handle the stakeholder.", "weights": {"directness": 0.5, "cooperation": 0.25}},
+        {"id": "c", "text": "Propose a joint meeting with the stakeholder and your manager to reset expectations.", "weights": {"directness": 0.75, "cooperation": 1.0}},
+        {"id": "d", "text": "Let it go and focus on finishing the work quickly.", "weights": {"directness": 0.0, "cooperation": 0.0}}
+      ]
+    },
+    {
+      "id": "common-build-vs-buy",
+      "title": "Build or buy",
+      "prompt": "Your team needs a feature-flag system. A paid service covers 90 percent of the need; building it in-house would take about a month.",
+      "options": [
+        {"id": "a", "text": "Buy the service now and revisit if the missing 10 percent starts to hurt.", "weights": {"pace": 1.0, "risk": 0.5}},
+        {"id": "b", "text": "Run a structured comparison with a scoring matrix before deciding.", "weights": {"pace": 0.0, "risk": 0.25}},
+        {"id": "c", "text": "Build it; owning the core system is worth the month.", "weights": {"pace": 0.5, "risk": 1.0}},
+        {"id": "d", "text": "Trial the service for two weeks on one low-risk team first.", "weights": {"pace": 0.5, "risk": 0.0}}
+      ]
+    },
+    {
+      "id": "common-flaky-release",
+      "title": "Flaky tests before a release",
+      "prompt": "A release is due today. Two end-to-end tests fail intermittently, and nobody is sure whether they reveal a real bug.",
+      "options": [
+        {"id": "a", "text": "Hold the release until someone understands the failures.", "weights": {"risk": 0.0, "ownership": 0.75}},
+        {"id": "b", "text": "Release, watch the dashboards closely and keep a rollback ready.", "weights": {"risk": 1.0, "ownership": 0.75}},
+        {"id": "c", "text": "Ask the test owners to decide whether it is safe.", "weights": {"risk": 0.5, "ownership": 0.0}},
+        {"id": "d", "text": "Dig into the tests yourself for an hour, then decide.", "weights": {"risk": 0.25, "ownership": 1.0}}
+      ]
+    },
+    {
+      "id": "common-new-tool",
+      "title": "Adopting a new tool",
+      "prompt": "A new AI coding tool is getting attention. Some colleagues love it; others worry about quality and security.",
+      "options": [
+        {"id": "a", "text": "Start using it on your own work right away and share what you learn.", "weights": {"risk": 1.0, "cooperation": 0.25}},
+        {"id": "b", "text": "Propose a small team pilot with agreed rules and a review date.", "weights": {"risk": 0.5, "cooperation": 1.0}},
+        {"id": "c", "text": "Wait until the security and legal questions are answered.", "weights": {"risk": 0.0, "cooperation": 0.5}},
+        {"id": "d", "text": "Try it privately on side projects before forming a view.", "weights": {"risk": 0.25, "cooperation": 0.0}}
+      ]
+    },
+    {
+      "id": "common-focus-time",
+      "title": "Meetings or focus time",
+      "prompt": "Your calendar is filling with meetings and you have had no uninterrupted block for deep work in two weeks.",
+      "options": [
+        {"id": "a", "text": "Block fixed focus time in your calendar and decline what conflicts with it.", "weights": {"structure": 1.0, "assertiveness": 1.0}},
+        {"id": "b", "text": "Accept the meetings and do deep work early in the morning or late at night.", "weights": {"structure": 0.25, "assertiveness": 0.0}},
+        {"id": "c", "text": "Ask meeting owners whether you are really needed, one by one.", "weights": {"structure": 0.5, "assertiveness": 0.75}},
+        {"id": "d", "text": "Go with the flow; some weeks are like that.", "weights": {"structure": 0.0, "assertiveness": 0.25}}
+      ]
+    },
+    {
+      "id": "common-own-mistake",
+      "title": "Your own mistake",
+      "prompt": "You realise a change you shipped last week has been silently corrupting a small share of records. Nobody else has noticed yet.",
+      "options": [
+        {"id": "a", "text": "Announce it immediately to the team and affected owners, then start fixing.", "weights": {"directness": 1.0, "ownership": 1.0}},
+        {"id": "b", "text": "Fix the bug and repair the data first, then explain what happened.", "weights": {"directness": 0.5, "ownership": 1.0}},
+        {"id": "c", "text": "Tell your manager privately and agree together how to handle it.", "weights": {"directness": 0.5, "ownership": 0.5}},
+        {"id": "d", "text": "Raise it with the data team so the repair is handled by the right experts.", "weights": {"directness": 0.75, "ownership": 0.0}}
+      ]
+    }
+  ]
+}

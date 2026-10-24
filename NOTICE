@@ -1,0 +1,51 @@
+persona-forge third-party notices
+
+The project's code is under the MIT licence (see LICENSE). That licence does not
+apply to the questionnaire content listed below. Each instrument keeps its own terms,
+recorded in data/instruments/<id>.json and summarised in data/permissions.json. Project-authored work scenarios, preferences,
+interpretation statements and agent tips are not validated instruments.
+
+Included in every edition
+-------------------------
+
+International Personality Item Pool (IPIP): Mini-IPIP, IPIP-NEO-120, IPIP
+Honesty-Humility facets and revised IPIP-VIA scales.
+  Items from the International Personality Item Pool (https://ipip.ori.org/), placed
+  in the public domain. The Honesty-Humility and VIA scales are IPIP proxies, not the
+  proprietary HEXACO-PI-R or VIA Inventory of Strengths.
+  - Donnellan, M. B., Oswald, F. L., Baird, B. M., & Lucas, R. E. (2006). The Mini-IPIP
+    scales: Tiny-yet-effective measures of the Big Five factors of personality.
+    Psychological Assessment, 18, 192-203.
+  - Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a
+    120-item public domain inventory: Development of the IPIP-NEO-120. Journal of
+    Research in Personality, 51, 78-89.
+  - Goldberg, L. R. (1999). A broad-bandwidth, public domain, personality inventory
+    measuring the lower-level facets of several five-factor models. In I. Mervielde et
+    al. (Eds.), Personality Psychology in Europe, Vol. 7 (pp. 7-28). Tilburg University
+    Press.
+  - Peterson, C., & Seligman, M. E. P. (2004). Character strengths and virtues: A
+    handbook and classification. Oxford University Press.
+  Ukrainian versions are Persona Forge project translations and have not been
+  psychometrically validated.
+
+Copenhagen Burnout Inventory, work-related burnout scale (English).
+  Copenhagen Burnout Inventory, National Research Centre for the Working Environment
+  (NFA), Denmark. Source: Borritz M et al., Scand J Public Health 2006; 34: 49-58.
+  Used under NFA's free-use grant for commercial and noncommercial use with citation:
+  https://nfa.dk/vaerktoejer/spoergeskemaer/spoergeskema-til-maaling-af-udbraendthed-cbi/copenhagen-burnout-inventory-cbi
+
+Private edition only
+--------------------
+
+The public edition leaves out the following content until the rights holders
+confirm the uses listed in data/permissions.json. The private repository keeps it
+for personal use under the terms recorded in each instrument file.
+
+- General Self-Efficacy Scale by Ralf Schwarzer and Matthias Jerusalem (1995).
+- NCS-6 items from Lins de Holanda Coelho, Hanel and Wolf (2020), CC BY 4.0, based on
+  the Need for Cognition Scale by Cacioppo, Petty and Kao (1984).
+- O*NET Interest Profiler Short Form. Includes information from the O*NET Career
+  Exploration Tools by the U.S. Department of Labor, Employment and Training
+  Administration (USDOL/ETA), used under the CC BY-ND 4.0 license. O*NET is a
+  trademark of USDOL/ETA.
+- Persona Forge Ukrainian translations of NCS-6 and the Copenhagen Burnout Inventory.

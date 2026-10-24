@@ -1,0 +1,391 @@
+{
+ "authored": "Project-authored interpretation rules (2026-10-23). Statements describe tendencies suggested by self-report, not fixed traits, diagnoses or abilities. Bands are not population norms.",
+ "rules": [
+  {
+   "id": "big5-e-high",
+   "trait": "big5:extraversion",
+   "band": "high",
+   "section": "communication",
+   "statement": "I tend to think out loud and get energy from discussion.",
+   "softened": "I sometimes think out loud and can get energy from discussion.",
+   "agent_tip": "Engage conversationally: propose ideas, invite reactions and think through options together."
+  },
+  {
+   "id": "big5-e-low",
+   "trait": "big5:extraversion",
+   "band": "low",
+   "section": "communication",
+   "statement": "I tend to prefer reflecting quietly before discussing.",
+   "softened": "I sometimes prefer to reflect before discussing.",
+   "agent_tip": "Give me written material I can read and think about; avoid rapid back-and-forth questions."
+  },
+  {
+   "id": "big5-a-high",
+   "trait": "big5:agreeableness",
+   "band": "high",
+   "section": "communication",
+   "statement": "I tend to value harmony and consider how others are affected.",
+   "softened": "I often consider how others are affected.",
+   "agent_tip": "When drafting messages to people, keep them considerate; when reviewing my decisions, still name the hard trade-offs."
+  },
+  {
+   "id": "big5-a-low",
+   "trait": "big5:agreeableness",
+   "band": "low",
+   "section": "communication",
+   "statement": "I tend to be sceptical and comfortable challenging others.",
+   "softened": "I can be sceptical and willing to challenge others.",
+   "agent_tip": "Support claims with evidence; I am more convinced by reasons than by reassurance."
+  },
+  {
+   "id": "big5-c-high",
+   "trait": "big5:conscientiousness",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to be organised, thorough and reliable about follow-through.",
+   "softened": "I am often organised and thorough.",
+   "agent_tip": "Match my thoroughness: close loops, list remaining TODOs and do not leave work half-finished."
+  },
+  {
+   "id": "big5-c-low",
+   "trait": "big5:conscientiousness",
+   "band": "low",
+   "section": "growth",
+   "statement": "I tend to prefer flexibility over plans and may leave loose ends.",
+   "softened": "I sometimes prefer flexibility and may leave loose ends.",
+   "agent_tip": "At the end of a task, list loose ends and propose the next concrete step."
+  },
+  {
+   "id": "big5-n-high",
+   "trait": "big5:neuroticism",
+   "band": "high",
+   "section": "communication",
+   "statement": "I tend to feel pressure and setbacks strongly.",
+   "softened": "Pressure and setbacks sometimes weigh on me.",
+   "agent_tip": "When something breaks, lead with a calm summary and a concrete recovery plan before details."
+  },
+  {
+   "id": "big5-n-low",
+   "trait": "big5:neuroticism",
+   "band": "low",
+   "section": "strengths",
+   "statement": "I tend to stay calm under pressure.",
+   "softened": "I often stay calm under pressure.",
+   "agent_tip": "Do not soften bad news; state problems plainly and move to options."
+  },
+  {
+   "id": "big5-o-high",
+   "trait": "big5:openness",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to enjoy new ideas, abstraction and unconventional approaches.",
+   "softened": "I often enjoy new ideas and abstraction.",
+   "agent_tip": "Offer alternative approaches and the underlying concepts, not only the conventional fix."
+  },
+  {
+   "id": "big5-o-low",
+   "trait": "big5:openness",
+   "band": "low",
+   "section": "decisions",
+   "statement": "I tend to prefer proven, practical approaches over novelty.",
+   "softened": "I often prefer proven, practical approaches.",
+   "agent_tip": "Prefer established tools and patterns; justify anything new with concrete benefits."
+  },
+  {
+   "id": "neo-c6-low",
+   "trait": "neo:c6",
+   "band": "low",
+   "section": "growth",
+   "statement": "I tend to jump into action before thinking everything through.",
+   "softened": "I sometimes act before thinking everything through.",
+   "agent_tip": "Before large or irreversible changes, pause and list risks in one short paragraph."
+  },
+  {
+   "id": "neo-c6-high",
+   "trait": "neo:c6",
+   "band": "high",
+   "section": "decisions",
+   "statement": "I tend to think carefully before acting.",
+   "softened": "I often think carefully before acting.",
+   "agent_tip": "Surface risks and edge cases early; I prefer to decide with them in view."
+  },
+  {
+   "id": "neo-c5-low",
+   "trait": "neo:c5",
+   "band": "low",
+   "section": "growth",
+   "statement": "Getting started on tasks can be hard for me.",
+   "softened": "Getting started on tasks is sometimes hard for me.",
+   "agent_tip": "Break work into a small first step I can finish quickly."
+  },
+  {
+   "id": "neo-c2-low",
+   "trait": "neo:c2",
+   "band": "low",
+   "section": "growth",
+   "statement": "Tidiness and order are not a natural priority for me.",
+   "softened": "Tidiness and order are not always a priority for me.",
+   "agent_tip": "Keep files, names and structure tidy without being asked, and point out clutter worth cleaning."
+  },
+  {
+   "id": "neo-e3-high",
+   "trait": "neo:e3",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to take charge and lead.",
+   "softened": "I often take charge.",
+   "agent_tip": "Give me decision-ready summaries with a recommendation, not open-ended lists."
+  },
+  {
+   "id": "neo-e3-low",
+   "trait": "neo:e3",
+   "band": "low",
+   "section": "growth",
+   "statement": "I tend to wait for others to set direction.",
+   "softened": "I sometimes wait for others to set direction.",
+   "agent_tip": "When I hesitate between options, recommend one clearly and explain why."
+  },
+  {
+   "id": "neo-a4-low",
+   "trait": "neo:a4",
+   "band": "low",
+   "section": "growth",
+   "statement": "I tend to engage readily in confrontation.",
+   "softened": "I sometimes engage readily in confrontation.",
+   "agent_tip": "When I draft tense messages, suggest a calmer version alongside mine."
+  },
+  {
+   "id": "neo-n6-high",
+   "trait": "neo:n6",
+   "band": "high",
+   "section": "growth",
+   "statement": "Under heavy pressure I can feel overwhelmed.",
+   "softened": "Under heavy pressure I sometimes feel overwhelmed.",
+   "agent_tip": "In busy moments, help me prioritise: name the one thing to do next."
+  },
+  {
+   "id": "neo-o5-high",
+   "trait": "neo:o5",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to enjoy challenging, theoretical material.",
+   "softened": "I often enjoy challenging material.",
+   "agent_tip": "Do not oversimplify; reference the underlying theory when it helps."
+  },
+  {
+   "id": "neo-c4-high",
+   "trait": "neo:c4",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to push myself to do more than expected.",
+   "softened": "I often push myself to do more than expected.",
+   "agent_tip": "Point out when extra polish no longer pays off, so effort goes where it matters."
+  },
+  {
+   "id": "hh-high",
+   "trait": "hh:honesty-humility",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to value fairness and sincerity over status.",
+   "softened": "I often value fairness and sincerity.",
+   "agent_tip": "Be transparent about limitations and uncertainty; never overstate results."
+  },
+  {
+   "id": "hh-low",
+   "trait": "hh:honesty-humility",
+   "band": "low",
+   "section": "growth",
+   "statement": "Status and recognition tend to matter to me.",
+   "softened": "Status and recognition sometimes matter to me.",
+   "agent_tip": "When I make claims about results, help me check that they are fully supported."
+  },
+  {
+   "id": "gse-high",
+   "trait": "gse:self-efficacy",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to trust my ability to handle difficult or unexpected problems.",
+   "softened": "I often trust my ability to handle difficult problems.",
+   "agent_tip": "Hand me hard problems straight; skip reassurance and get to the substance."
+  },
+  {
+   "id": "gse-low",
+   "trait": "gse:self-efficacy",
+   "band": "low",
+   "section": "growth",
+   "statement": "I tend to doubt whether I can handle unexpected problems.",
+   "softened": "I sometimes doubt whether I can handle unexpected problems.",
+   "agent_tip": "Break hard problems into steps and point out progress already made."
+  },
+  {
+   "id": "ncs-high",
+   "trait": "ncs:need-for-cognition",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to enjoy effortful thinking and complex problems.",
+   "softened": "I often enjoy complex problems.",
+   "agent_tip": "Share the reasoning behind non-obvious solutions; I enjoy understanding why."
+  },
+  {
+   "id": "ncs-low",
+   "trait": "ncs:need-for-cognition",
+   "band": "low",
+   "section": "decisions",
+   "statement": "I tend to prefer clear, practical answers over long deliberation.",
+   "softened": "I often prefer clear, practical answers.",
+   "agent_tip": "Give the practical answer first and keep theory optional."
+  },
+  {
+   "id": "sjt-pace-high",
+   "trait": "sjt:pace",
+   "band": "high",
+   "section": "decisions",
+   "statement": "In work situations I tend to decide quickly and adjust later.",
+   "softened": "In work situations I often decide quickly.",
+   "agent_tip": "Move fast with me, but flag decisions that are expensive to reverse."
+  },
+  {
+   "id": "sjt-pace-low",
+   "trait": "sjt:pace",
+   "band": "low",
+   "section": "decisions",
+   "statement": "In work situations I tend to gather information before deciding.",
+   "softened": "In work situations I often gather information first.",
+   "agent_tip": "Give me the key facts and open questions before recommending; tell me when more research would not change the answer."
+  },
+  {
+   "id": "sjt-risk-high",
+   "trait": "sjt:risk",
+   "band": "high",
+   "section": "decisions",
+   "statement": "I tend to accept risk to move forward.",
+   "softened": "I sometimes accept risk to move forward.",
+   "agent_tip": "Name the worst realistic outcome of risky choices in one line, then help me proceed."
+  },
+  {
+   "id": "sjt-risk-low",
+   "trait": "sjt:risk",
+   "band": "low",
+   "section": "decisions",
+   "statement": "I tend to favour safe, reversible options.",
+   "softened": "I often favour safe options.",
+   "agent_tip": "Prefer reversible changes, feature flags and rollback plans."
+  },
+  {
+   "id": "sjt-directness-high",
+   "trait": "sjt:directness",
+   "band": "high",
+   "section": "communication",
+   "statement": "I tend to address issues head-on and say things plainly.",
+   "softened": "I often address issues plainly.",
+   "agent_tip": "Be equally direct with me: state problems plainly without hedging."
+  },
+  {
+   "id": "sjt-directness-low",
+   "trait": "sjt:directness",
+   "band": "low",
+   "section": "growth",
+   "statement": "I tend to avoid raising uncomfortable issues directly.",
+   "softened": "I sometimes avoid raising uncomfortable issues directly.",
+   "agent_tip": "When I draft messages that hint at a problem, suggest a clearer, still respectful wording."
+  },
+  {
+   "id": "sjt-assertiveness-high",
+   "trait": "sjt:assertiveness",
+   "band": "high",
+   "section": "communication",
+   "statement": "In disagreements I tend to hold my position.",
+   "softened": "In disagreements I often hold my position.",
+   "agent_tip": "If you think I am wrong, argue with evidence; I respond to well-made counterarguments."
+  },
+  {
+   "id": "sjt-assertiveness-low",
+   "trait": "sjt:assertiveness",
+   "band": "low",
+   "section": "growth",
+   "statement": "In disagreements I tend to accommodate others.",
+   "softened": "In disagreements I sometimes accommodate others.",
+   "agent_tip": "When I give way on something important, ask whether I really agree or should push back."
+  },
+  {
+   "id": "sjt-cooperation-high",
+   "trait": "sjt:cooperation",
+   "band": "high",
+   "section": "collaboration",
+   "statement": "I tend to involve others and seek agreement.",
+   "softened": "I often involve others.",
+   "agent_tip": "Suggest who else should review or weigh in on decisions."
+  },
+  {
+   "id": "sjt-cooperation-low",
+   "trait": "sjt:cooperation",
+   "band": "low",
+   "section": "collaboration",
+   "statement": "I tend to work independently and decide on my own.",
+   "softened": "I often work independently.",
+   "agent_tip": "Point out when a decision affects others enough that they should be consulted."
+  },
+  {
+   "id": "sjt-ownership-high",
+   "trait": "sjt:ownership",
+   "band": "high",
+   "section": "strengths",
+   "statement": "I tend to take problems on personally and see them through.",
+   "softened": "I often take problems on personally.",
+   "agent_tip": "Help me notice when delegating would be better than doing it myself."
+  },
+  {
+   "id": "sjt-ownership-low",
+   "trait": "sjt:ownership",
+   "band": "low",
+   "section": "collaboration",
+   "statement": "I tend to route problems to the right owner rather than fix them myself.",
+   "softened": "I often route problems to the right owner.",
+   "agent_tip": "When drafting hand-offs, make them complete and actionable for the receiving owner."
+  },
+  {
+   "id": "sjt-structure-high",
+   "trait": "sjt:structure",
+   "band": "high",
+   "section": "decisions",
+   "statement": "I tend to rely on plans, processes and written agreements.",
+   "softened": "I often rely on plans and processes.",
+   "agent_tip": "Structure work as explicit plans and checklists."
+  },
+  {
+   "id": "sjt-structure-low",
+   "trait": "sjt:structure",
+   "band": "low",
+   "section": "decisions",
+   "statement": "I tend to improvise and adapt as I go.",
+   "softened": "I often adapt as I go.",
+   "agent_tip": "Keep plans lightweight and easy to change; avoid heavy process."
+  },
+  {
+   "id": "em-directness-low",
+   "trait": "sjt:directness",
+   "band": "low",
+   "section": "growth",
+   "roles": [
+    "engineering-manager",
+    "cto"
+   ],
+   "statement": "As a leader I may delay difficult conversations.",
+   "softened": "As a leader I sometimes delay difficult conversations.",
+   "agent_tip": "When I prepare 1:1s or feedback, help me state the core message in the first two sentences."
+  },
+  {
+   "id": "pm-pace-high",
+   "trait": "sjt:pace",
+   "band": "high",
+   "section": "growth",
+   "roles": [
+    "product-manager",
+    "product-owner"
+   ],
+   "statement": "In product decisions I may commit before evidence is in.",
+   "softened": "In product decisions I sometimes commit early.",
+   "agent_tip": "When I plan a launch or roadmap change, ask what evidence would change my mind."
+  }
+ ]
+}

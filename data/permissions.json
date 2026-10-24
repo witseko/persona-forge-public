@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "checked": "2026-10-24",
+  "instruments": {
+    "mini-ipip": {
+      "item_provenance": "verified",
+      "redistribution": "granted",
+      "commercial_use": "granted",
+      "translation": "granted",
+      "evidence_url": "https://ipip.ori.org/",
+      "validation": "Published English short form. Project Ukrainian translation is not psychometrically validated.",
+      "note": "IPIP places its items and scales in the public domain for any purpose, including translation."
+    },
+    "ipip-neo-120": {
+      "item_provenance": "verified",
+      "redistribution": "granted",
+      "commercial_use": "granted",
+      "translation": "granted",
+      "evidence_url": "https://ipip.ori.org/",
+      "validation": "Published English inventory. Project Ukrainian translation is not psychometrically validated.",
+      "note": "IPIP places its items and scales in the public domain for any purpose, including translation."
+    },
+    "ipip-hexaco-hh": {
+      "item_provenance": "verified",
+      "redistribution": "granted",
+      "commercial_use": "granted",
+      "translation": "granted",
+      "evidence_url": "https://ipip.ori.org/",
+      "validation": "IPIP proxy for preliminary HEXACO-PI facets, not the proprietary HEXACO-PI-R. Project Ukrainian translation is not psychometrically validated.",
+      "note": "IPIP places its items and scales in the public domain for any purpose, including translation."
+    },
+    "ipip-via": {
+      "item_provenance": "verified",
+      "redistribution": "granted",
+      "commercial_use": "granted",
+      "translation": "granted",
+      "evidence_url": "https://ipip.ori.org/",
+      "validation": "Revised IPIP-VIA proxy, not the proprietary VIA Inventory of Strengths. Project Ukrainian translation is not psychometrically validated.",
+      "note": "IPIP places its items and scales in the public domain for any purpose, including translation."
+    },
+    "gse": {
+      "item_provenance": "verified",
+      "redistribution": "unclear",
+      "commercial_use": "unclear",
+      "translation": "unclear",
+      "evidence_url": "https://userpage.fu-berlin.de/~health/faq_gse.pdf",
+      "validation": "Published English scale.",
+      "note": "The authors' FAQ grants reproduction for research studies with credit. Public redistribution, commercial software and translation are not clearly covered. Private only until written clarification."
+    },
+    "ncs-6": {
+      "item_provenance": "verified",
+      "redistribution": "unclear",
+      "commercial_use": "unclear",
+      "translation": "unclear",
+      "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7545655/",
+      "validation": "Published English short form. Project Ukrainian translation is not psychometrically validated.",
+      "note": "The article and appendix carry CC BY 4.0, but the six items derive from older Need for Cognition Scale content whose rights are unresolved. Private only until clarified."
+    },
+    "onet-ip-sf": {
+      "item_provenance": "verified",
+      "redistribution": "unclear",
+      "commercial_use": "granted",
+      "translation": "unclear",
+      "evidence_url": "https://www.onetcenter.org/license_tools.html",
+      "validation": "Published English career-interest measure. Its use for collaboration guidance is not validated.",
+      "note": "Verbatim redistribution is allowed under CC BY-ND 4.0; modified content or purpose needs the Developer License and validation. Private only until an audit of the current integration confirms compliance."
+    },
+    "cbi-work": {
+      "item_provenance": "verified",
+      "redistribution": "granted",
+      "commercial_use": "granted",
+      "translation": "unclear",
+      "evidence_url": "https://nfa.dk/vaerktoejer/spoergeskemaer/spoergeskema-til-maaling-af-udbraendthed-cbi/copenhagen-burnout-inventory-cbi",
+      "validation": "Published English work-related burnout scale, used here report-only and non-diagnostic.",
+      "note": "NFA permits commercial and noncommercial use with the Borritz et al. (2006) citation. The grant does not discuss translation, so the project Ukrainian overlay is private only until NFA confirms."
+    }
+  }
+}

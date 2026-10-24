@@ -1,0 +1,139 @@
+{
+  "id": "cto",
+  "title": "CTO and head of engineering situations",
+  "authored": "Project-authored reflective scenarios (2026-10-23). Not a validated situational judgment test; there are no correct answers.",
+  "scenarios": [
+    {
+      "id": "cto-platform-vs-product",
+      "title": "Platform or product",
+      "prompt": "Product teams keep rebuilding the same infrastructure. Building a platform team would slow product delivery for two quarters.",
+      "options": [
+        {"id": "a", "text": "Create the platform team now; the duplication will only grow.", "weights": {"risk": 1.0, "structure": 1.0}},
+        {"id": "b", "text": "Let one product team build shared components as they go.", "weights": {"risk": 0.5, "structure": 0.25}},
+        {"id": "c", "text": "Measure the duplication cost first, then decide.", "weights": {"risk": 0.25, "structure": 0.75}},
+        {"id": "d", "text": "Keep teams autonomous; duplication is the price of speed.", "weights": {"risk": 0.5, "structure": 0.0}}
+      ]
+    },
+    {
+      "id": "cto-vendor-lock-in",
+      "title": "Vendor lock-in",
+      "prompt": "A cloud provider offers a large discount for committing to its proprietary database for three years.",
+      "options": [
+        {"id": "a", "text": "Take the deal; the savings are certain and migration is hypothetical.", "weights": {"risk": 1.0, "pace": 1.0}},
+        {"id": "b", "text": "Decline; portability is worth more than the discount.", "weights": {"risk": 0.0, "pace": 0.75}},
+        {"id": "c", "text": "Accept with an abstraction layer that keeps an exit path.", "weights": {"risk": 0.5, "pace": 0.5}},
+        {"id": "d", "text": "Model exit costs with finance before deciding.", "weights": {"risk": 0.25, "pace": 0.0}}
+      ]
+    },
+    {
+      "id": "cto-breach-disclosure",
+      "title": "Security incident disclosure",
+      "prompt": "Your team finds evidence that an attacker accessed a database with customer emails. The investigation is incomplete.",
+      "options": [
+        {"id": "a", "text": "Inform leadership, legal and affected customers as early as possible.", "weights": {"directness": 1.0, "pace": 1.0}},
+        {"id": "b", "text": "Finish the investigation to know the scope before telling anyone outside.", "weights": {"directness": 0.25, "pace": 0.0}},
+        {"id": "c", "text": "Let legal decide the timing; you focus on containment.", "weights": {"directness": 0.5, "pace": 0.5}},
+        {"id": "d", "text": "Brief the board immediately and follow their lead on disclosure.", "weights": {"directness": 0.75, "pace": 0.75}}
+      ]
+    },
+    {
+      "id": "cto-cost-cut",
+      "title": "Cut costs by 20 percent",
+      "prompt": "The board asks engineering to cut costs by 20 percent within two quarters.",
+      "options": [
+        {"id": "a", "text": "Cut infrastructure spend aggressively before touching headcount.", "weights": {"risk": 0.75, "cooperation": 0.25}},
+        {"id": "b", "text": "Ask each team lead to propose savings, then decide together.", "weights": {"risk": 0.5, "cooperation": 1.0}},
+        {"id": "c", "text": "Push back with the impact on the roadmap and negotiate the target.", "weights": {"risk": 0.25, "cooperation": 0.5}},
+        {"id": "d", "text": "Stop the lowest-value projects outright and reassign people.", "weights": {"risk": 1.0, "cooperation": 0.0}}
+      ]
+    },
+    {
+      "id": "cto-vp-hire",
+      "title": "Hiring a VP of Engineering",
+      "prompt": "Your top VP candidate is brilliant but has a reputation for being hard on teams. The runner-up is steady and well liked.",
+      "options": [
+        {"id": "a", "text": "Hire the brilliant candidate and coach them closely.", "weights": {"risk": 1.0, "pace": 1.0}},
+        {"id": "b", "text": "Hire the steady candidate; culture is harder to fix than skills.", "weights": {"risk": 0.0, "pace": 1.0}},
+        {"id": "c", "text": "Do deep back-channel references on the top candidate first.", "weights": {"risk": 0.5, "pace": 0.0}},
+        {"id": "d", "text": "Let senior engineers meet both candidates and weigh in.", "weights": {"risk": 0.25, "pace": 0.25}}
+      ]
+    },
+    {
+      "id": "cto-ceo-demand",
+      "title": "CEO demand versus tech strategy",
+      "prompt": "The CEO promises a customer an integration your architecture cannot support without a significant shortcut.",
+      "options": [
+        {"id": "a", "text": "Tell the CEO plainly what the shortcut costs and propose an alternative.", "weights": {"directness": 1.0, "assertiveness": 1.0}},
+        {"id": "b", "text": "Deliver the shortcut and plan the clean-up afterwards.", "weights": {"directness": 0.25, "assertiveness": 0.0}},
+        {"id": "c", "text": "Meet the customer with the CEO to reshape the request.", "weights": {"directness": 0.75, "assertiveness": 0.5}},
+        {"id": "d", "text": "Ask your architects to find a creative path before responding.", "weights": {"directness": 0.25, "assertiveness": 0.5}}
+      ]
+    },
+    {
+      "id": "cto-public-outage",
+      "title": "Public outage",
+      "prompt": "A major outage lasts four hours and trends on social media. Customers want answers.",
+      "options": [
+        {"id": "a", "text": "Publish a candid public postmortem within days, including what you got wrong.", "weights": {"directness": 1.0, "ownership": 1.0}},
+        {"id": "b", "text": "Send a short apology now and a fuller report when the analysis is complete.", "weights": {"directness": 0.75, "ownership": 0.75}},
+        {"id": "c", "text": "Let communications handle the public message; you focus on the fix.", "weights": {"directness": 0.25, "ownership": 0.25}},
+        {"id": "d", "text": "Communicate privately with key customers and keep public statements minimal.", "weights": {"directness": 0.25, "ownership": 0.5}}
+      ]
+    },
+    {
+      "id": "cto-due-diligence",
+      "title": "Acquisition due diligence",
+      "prompt": "You have two weeks to assess the technology of a company your firm wants to acquire. Leadership is enthusiastic.",
+      "options": [
+        {"id": "a", "text": "Run a structured review and report risks bluntly, even if it cools the deal.", "weights": {"structure": 1.0, "directness": 1.0}},
+        {"id": "b", "text": "Focus on the few areas most likely to hide serious problems.", "weights": {"structure": 0.5, "directness": 0.75}},
+        {"id": "c", "text": "Bring in an external firm to do the assessment.", "weights": {"structure": 0.75, "directness": 0.5}},
+        {"id": "d", "text": "Flag only deal-breakers; the rest can be fixed after the acquisition.", "weights": {"structure": 0.25, "directness": 0.25}}
+      ]
+    },
+    {
+      "id": "cto-ai-policy",
+      "title": "AI adoption policy",
+      "prompt": "Engineers are already using various AI assistants without an agreed policy. Legal is nervous.",
+      "options": [
+        {"id": "a", "text": "Publish a clear policy quickly with approved tools and data rules.", "weights": {"structure": 1.0, "pace": 1.0}},
+        {"id": "b", "text": "Pause all use until legal and security finish their review.", "weights": {"structure": 0.75, "pace": 0.0}},
+        {"id": "c", "text": "Form a working group of engineers and legal to draft the policy.", "weights": {"structure": 0.75, "pace": 0.25}},
+        {"id": "d", "text": "Encourage use and ask teams to share good practices informally.", "weights": {"structure": 0.0, "pace": 0.75}}
+      ]
+    },
+    {
+      "id": "cto-migration",
+      "title": "Multi-year migration",
+      "prompt": "Moving from a monolith to services is planned to take three years. After one year, progress is half of what was expected.",
+      "options": [
+        {"id": "a", "text": "Re-plan honestly, communicate the new timeline and cut scope.", "weights": {"directness": 1.0, "structure": 1.0}},
+        {"id": "b", "text": "Add people and push harder to recover the schedule.", "weights": {"directness": 0.25, "structure": 0.5}},
+        {"id": "c", "text": "Question whether the migration is still worth finishing at all.", "weights": {"directness": 0.75, "structure": 0.25}},
+        {"id": "d", "text": "Keep going; large migrations are always slow at first.", "weights": {"directness": 0.0, "structure": 0.25}}
+      ]
+    },
+    {
+      "id": "cto-culture-issue",
+      "title": "Culture problem",
+      "prompt": "An engagement survey shows engineers feel blamed for failures and afraid to take risks.",
+      "options": [
+        {"id": "a", "text": "Address it in an all-hands, own your part, and commit to blameless reviews.", "weights": {"directness": 1.0, "ownership": 1.0}},
+        {"id": "b", "text": "Ask managers to run listening sessions and report back.", "weights": {"directness": 0.5, "ownership": 0.25}},
+        {"id": "c", "text": "Change specific processes, such as incident reviews, without a big announcement.", "weights": {"directness": 0.25, "ownership": 0.75}},
+        {"id": "d", "text": "Bring in an external coach to work with leadership.", "weights": {"directness": 0.5, "ownership": 0.0}}
+      ]
+    },
+    {
+      "id": "cto-license-risk",
+      "title": "Open-source licence risk",
+      "prompt": "A core product depends on a library that has just changed to a restrictive licence.",
+      "options": [
+        {"id": "a", "text": "Start replacing it immediately, even if it delays features.", "weights": {"risk": 0.0, "pace": 1.0}},
+        {"id": "b", "text": "Pin the last permissive version and plan a replacement over time.", "weights": {"risk": 0.5, "pace": 0.5}},
+        {"id": "c", "text": "Ask legal for a full assessment before doing anything.", "weights": {"risk": 0.25, "pace": 0.0}},
+        {"id": "d", "text": "Negotiate a commercial licence with the maintainers.", "weights": {"risk": 0.75, "pace": 0.75}}
+      ]
+    }
+  ]
+}

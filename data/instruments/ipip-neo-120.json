@@ -1,0 +1,1125 @@
+{
+  "id": "ipip-neo-120",
+  "name": "IPIP-NEO-120 (30 facets, 5 domains)",
+  "source_url": "https://ipip.ori.org/30FacetNEO-PI-RItems.htm",
+  "retrieved": "2026-10-23",
+  "citation": "Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.",
+  "licence": "Public domain. https://ipip.ori.org/newPermission.htm: permission has already been automatically granted for any person to use IPIP items, scales, and inventories for any purpose, commercial or non-commercial.",
+  "attribution": "Items from the International Personality Item Pool (https://ipip.ori.org/).",
+  "instructions": "Describe yourself as you generally are now, not as you wish to be in the future. Describe yourself as you honestly see yourself, in relation to other people you know of the same sex as you are, and roughly your same age. So that you can describe yourself in an honest manner, your responses will be kept in absolute confidence. Indicate for each statement whether it is 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate as a description of you.",
+  "notes": "Facet labels follow the IPIP page in title case. Domain scores pool the 24 items of each domain's six facets. Item order is interleaved across facets.",
+  "aggregation": "mean",
+  "response_sets": [
+    {
+      "id": "accuracy",
+      "options": [
+        {
+          "value": 1,
+          "label": "Very Inaccurate"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Inaccurate"
+        },
+        {
+          "value": 3,
+          "label": "Neither Accurate Nor Inaccurate"
+        },
+        {
+          "value": 4,
+          "label": "Moderately Accurate"
+        },
+        {
+          "value": 5,
+          "label": "Very Accurate"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "neo-n1-1",
+      "text": "Worry about things.",
+      "scale": "n1",
+      "reverse": false
+    },
+    {
+      "id": "neo-n2-1",
+      "text": "Get angry easily.",
+      "scale": "n2",
+      "reverse": false
+    },
+    {
+      "id": "neo-n3-1",
+      "text": "Often feel blue.",
+      "scale": "n3",
+      "reverse": false
+    },
+    {
+      "id": "neo-n4-1",
+      "text": "Find it difficult to approach others.",
+      "scale": "n4",
+      "reverse": false
+    },
+    {
+      "id": "neo-n5-1",
+      "text": "Go on binges.",
+      "scale": "n5",
+      "reverse": false
+    },
+    {
+      "id": "neo-n6-1",
+      "text": "Panic easily.",
+      "scale": "n6",
+      "reverse": false
+    },
+    {
+      "id": "neo-e1-1",
+      "text": "Make friends easily.",
+      "scale": "e1",
+      "reverse": false
+    },
+    {
+      "id": "neo-e2-1",
+      "text": "Love large parties.",
+      "scale": "e2",
+      "reverse": false
+    },
+    {
+      "id": "neo-e3-1",
+      "text": "Take charge.",
+      "scale": "e3",
+      "reverse": false
+    },
+    {
+      "id": "neo-e4-1",
+      "text": "Am always busy.",
+      "scale": "e4",
+      "reverse": false
+    },
+    {
+      "id": "neo-e5-1",
+      "text": "Love excitement.",
+      "scale": "e5",
+      "reverse": false
+    },
+    {
+      "id": "neo-e6-1",
+      "text": "Radiate joy.",
+      "scale": "e6",
+      "reverse": false
+    },
+    {
+      "id": "neo-o1-1",
+      "text": "Have a vivid imagination.",
+      "scale": "o1",
+      "reverse": false
+    },
+    {
+      "id": "neo-o2-1",
+      "text": "Believe in the importance of art.",
+      "scale": "o2",
+      "reverse": false
+    },
+    {
+      "id": "neo-o3-1",
+      "text": "Experience my emotions intensely.",
+      "scale": "o3",
+      "reverse": false
+    },
+    {
+      "id": "neo-o4-1",
+      "text": "Prefer variety to routine.",
+      "scale": "o4",
+      "reverse": false
+    },
+    {
+      "id": "neo-o5-1",
+      "text": "Love to read challenging material.",
+      "scale": "o5",
+      "reverse": false
+    },
+    {
+      "id": "neo-o6-1",
+      "text": "Tend to vote for liberal political candidates.",
+      "scale": "o6",
+      "reverse": false
+    },
+    {
+      "id": "neo-a1-1",
+      "text": "Trust others.",
+      "scale": "a1",
+      "reverse": false
+    },
+    {
+      "id": "neo-a2-1",
+      "text": "Use others for my own ends.",
+      "scale": "a2",
+      "reverse": true
+    },
+    {
+      "id": "neo-a3-1",
+      "text": "Am concerned about others.",
+      "scale": "a3",
+      "reverse": false
+    },
+    {
+      "id": "neo-a4-1",
+      "text": "Love a good fight.",
+      "scale": "a4",
+      "reverse": true
+    },
+    {
+      "id": "neo-a5-1",
+      "text": "Believe that I am better than others.",
+      "scale": "a5",
+      "reverse": true
+    },
+    {
+      "id": "neo-a6-1",
+      "text": "Sympathize with the homeless.",
+      "scale": "a6",
+      "reverse": false
+    },
+    {
+      "id": "neo-c1-1",
+      "text": "Complete tasks successfully.",
+      "scale": "c1",
+      "reverse": false
+    },
+    {
+      "id": "neo-c2-1",
+      "text": "Like to tidy up.",
+      "scale": "c2",
+      "reverse": false
+    },
+    {
+      "id": "neo-c3-1",
+      "text": "Keep my promises.",
+      "scale": "c3",
+      "reverse": false
+    },
+    {
+      "id": "neo-c4-1",
+      "text": "Do more than what's expected of me.",
+      "scale": "c4",
+      "reverse": false
+    },
+    {
+      "id": "neo-c5-1",
+      "text": "Am always prepared.",
+      "scale": "c5",
+      "reverse": false
+    },
+    {
+      "id": "neo-c6-1",
+      "text": "Jump into things without thinking.",
+      "scale": "c6",
+      "reverse": true
+    },
+    {
+      "id": "neo-n1-2",
+      "text": "Fear for the worst.",
+      "scale": "n1",
+      "reverse": false
+    },
+    {
+      "id": "neo-n2-2",
+      "text": "Get irritated easily.",
+      "scale": "n2",
+      "reverse": false
+    },
+    {
+      "id": "neo-n3-2",
+      "text": "Dislike myself.",
+      "scale": "n3",
+      "reverse": false
+    },
+    {
+      "id": "neo-n4-2",
+      "text": "Am afraid to draw attention to myself.",
+      "scale": "n4",
+      "reverse": false
+    },
+    {
+      "id": "neo-n5-2",
+      "text": "Rarely overindulge.",
+      "scale": "n5",
+      "reverse": true
+    },
+    {
+      "id": "neo-n6-2",
+      "text": "Become overwhelmed by events.",
+      "scale": "n6",
+      "reverse": false
+    },
+    {
+      "id": "neo-e1-2",
+      "text": "Feel comfortable around people.",
+      "scale": "e1",
+      "reverse": false
+    },
+    {
+      "id": "neo-e2-2",
+      "text": "Talk to a lot of different people at parties.",
+      "scale": "e2",
+      "reverse": false
+    },
+    {
+      "id": "neo-e3-2",
+      "text": "Try to lead others.",
+      "scale": "e3",
+      "reverse": false
+    },
+    {
+      "id": "neo-e4-2",
+      "text": "Am always on the go.",
+      "scale": "e4",
+      "reverse": false
+    },
+    {
+      "id": "neo-e5-2",
+      "text": "Seek adventure.",
+      "scale": "e5",
+      "reverse": false
+    },
+    {
+      "id": "neo-e6-2",
+      "text": "Have a lot of fun.",
+      "scale": "e6",
+      "reverse": false
+    },
+    {
+      "id": "neo-o1-2",
+      "text": "Enjoy wild flights of fantasy.",
+      "scale": "o1",
+      "reverse": false
+    },
+    {
+      "id": "neo-o2-2",
+      "text": "See beauty in things that others might not notice.",
+      "scale": "o2",
+      "reverse": false
+    },
+    {
+      "id": "neo-o3-2",
+      "text": "Feel others' emotions.",
+      "scale": "o3",
+      "reverse": false
+    },
+    {
+      "id": "neo-o4-2",
+      "text": "Prefer to stick with things that I know.",
+      "scale": "o4",
+      "reverse": true
+    },
+    {
+      "id": "neo-o5-2",
+      "text": "Avoid philosophical discussions.",
+      "scale": "o5",
+      "reverse": true
+    },
+    {
+      "id": "neo-o6-2",
+      "text": "Believe that there is no absolute right and wrong.",
+      "scale": "o6",
+      "reverse": false
+    },
+    {
+      "id": "neo-a1-2",
+      "text": "Believe that others have good intentions.",
+      "scale": "a1",
+      "reverse": false
+    },
+    {
+      "id": "neo-a2-2",
+      "text": "Cheat to get ahead.",
+      "scale": "a2",
+      "reverse": true
+    },
+    {
+      "id": "neo-a3-2",
+      "text": "Love to help others.",
+      "scale": "a3",
+      "reverse": false
+    },
+    {
+      "id": "neo-a4-2",
+      "text": "Yell at people.",
+      "scale": "a4",
+      "reverse": true
+    },
+    {
+      "id": "neo-a5-2",
+      "text": "Think highly of myself.",
+      "scale": "a5",
+      "reverse": true
+    },
+    {
+      "id": "neo-a6-2",
+      "text": "Feel sympathy for those who are worse off than myself.",
+      "scale": "a6",
+      "reverse": false
+    },
+    {
+      "id": "neo-c1-2",
+      "text": "Excel in what I do.",
+      "scale": "c1",
+      "reverse": false
+    },
+    {
+      "id": "neo-c2-2",
+      "text": "Often forget to put things back in their proper place.",
+      "scale": "c2",
+      "reverse": true
+    },
+    {
+      "id": "neo-c3-2",
+      "text": "Tell the truth.",
+      "scale": "c3",
+      "reverse": false
+    },
+    {
+      "id": "neo-c4-2",
+      "text": "Work hard.",
+      "scale": "c4",
+      "reverse": false
+    },
+    {
+      "id": "neo-c5-2",
+      "text": "Carry out my plans.",
+      "scale": "c5",
+      "reverse": false
+    },
+    {
+      "id": "neo-c6-2",
+      "text": "Make rash decisions.",
+      "scale": "c6",
+      "reverse": true
+    },
+    {
+      "id": "neo-n1-3",
+      "text": "Am afraid of many things.",
+      "scale": "n1",
+      "reverse": false
+    },
+    {
+      "id": "neo-n2-3",
+      "text": "Lose my temper.",
+      "scale": "n2",
+      "reverse": false
+    },
+    {
+      "id": "neo-n3-3",
+      "text": "Am often down in the dumps.",
+      "scale": "n3",
+      "reverse": false
+    },
+    {
+      "id": "neo-n4-3",
+      "text": "Only feel comfortable with friends.",
+      "scale": "n4",
+      "reverse": false
+    },
+    {
+      "id": "neo-n5-3",
+      "text": "Easily resist temptations.",
+      "scale": "n5",
+      "reverse": true
+    },
+    {
+      "id": "neo-n6-3",
+      "text": "Feel that I'm unable to deal with things.",
+      "scale": "n6",
+      "reverse": false
+    },
+    {
+      "id": "neo-e1-3",
+      "text": "Avoid contacts with others.",
+      "scale": "e1",
+      "reverse": true
+    },
+    {
+      "id": "neo-e2-3",
+      "text": "Prefer to be alone.",
+      "scale": "e2",
+      "reverse": true
+    },
+    {
+      "id": "neo-e3-3",
+      "text": "Take control of things.",
+      "scale": "e3",
+      "reverse": false
+    },
+    {
+      "id": "neo-e4-3",
+      "text": "Do a lot in my spare time.",
+      "scale": "e4",
+      "reverse": false
+    },
+    {
+      "id": "neo-e5-3",
+      "text": "Enjoy being reckless.",
+      "scale": "e5",
+      "reverse": false
+    },
+    {
+      "id": "neo-e6-3",
+      "text": "Love life.",
+      "scale": "e6",
+      "reverse": false
+    },
+    {
+      "id": "neo-o1-3",
+      "text": "Love to daydream.",
+      "scale": "o1",
+      "reverse": false
+    },
+    {
+      "id": "neo-o2-3",
+      "text": "Do not like poetry.",
+      "scale": "o2",
+      "reverse": true
+    },
+    {
+      "id": "neo-o3-3",
+      "text": "Rarely notice my emotional reactions.",
+      "scale": "o3",
+      "reverse": true
+    },
+    {
+      "id": "neo-o4-3",
+      "text": "Dislike changes.",
+      "scale": "o4",
+      "reverse": true
+    },
+    {
+      "id": "neo-o5-3",
+      "text": "Have difficulty understanding abstract ideas.",
+      "scale": "o5",
+      "reverse": true
+    },
+    {
+      "id": "neo-o6-3",
+      "text": "Tend to vote for conservative political candidates.",
+      "scale": "o6",
+      "reverse": true
+    },
+    {
+      "id": "neo-a1-3",
+      "text": "Trust what people say.",
+      "scale": "a1",
+      "reverse": false
+    },
+    {
+      "id": "neo-a2-3",
+      "text": "Take advantage of others.",
+      "scale": "a2",
+      "reverse": true
+    },
+    {
+      "id": "neo-a3-3",
+      "text": "Am indifferent to the feelings of others.",
+      "scale": "a3",
+      "reverse": true
+    },
+    {
+      "id": "neo-a4-3",
+      "text": "Insult people.",
+      "scale": "a4",
+      "reverse": true
+    },
+    {
+      "id": "neo-a5-3",
+      "text": "Have a high opinion of myself.",
+      "scale": "a5",
+      "reverse": true
+    },
+    {
+      "id": "neo-a6-3",
+      "text": "Am not interested in other people's problems.",
+      "scale": "a6",
+      "reverse": true
+    },
+    {
+      "id": "neo-c1-3",
+      "text": "Handle tasks smoothly.",
+      "scale": "c1",
+      "reverse": false
+    },
+    {
+      "id": "neo-c2-3",
+      "text": "Leave a mess in my room.",
+      "scale": "c2",
+      "reverse": true
+    },
+    {
+      "id": "neo-c3-3",
+      "text": "Break rules.",
+      "scale": "c3",
+      "reverse": true
+    },
+    {
+      "id": "neo-c4-3",
+      "text": "Put little time and effort into my work.",
+      "scale": "c4",
+      "reverse": true
+    },
+    {
+      "id": "neo-c5-3",
+      "text": "Waste my time.",
+      "scale": "c5",
+      "reverse": true
+    },
+    {
+      "id": "neo-c6-3",
+      "text": "Rush into things.",
+      "scale": "c6",
+      "reverse": true
+    },
+    {
+      "id": "neo-n1-4",
+      "text": "Get stressed out easily.",
+      "scale": "n1",
+      "reverse": false
+    },
+    {
+      "id": "neo-n2-4",
+      "text": "Am not easily annoyed.",
+      "scale": "n2",
+      "reverse": true
+    },
+    {
+      "id": "neo-n3-4",
+      "text": "Feel comfortable with myself.",
+      "scale": "n3",
+      "reverse": true
+    },
+    {
+      "id": "neo-n4-4",
+      "text": "Am not bothered by difficult social situations.",
+      "scale": "n4",
+      "reverse": true
+    },
+    {
+      "id": "neo-n5-4",
+      "text": "Am able to control my cravings.",
+      "scale": "n5",
+      "reverse": true
+    },
+    {
+      "id": "neo-n6-4",
+      "text": "Remain calm under pressure.",
+      "scale": "n6",
+      "reverse": true
+    },
+    {
+      "id": "neo-e1-4",
+      "text": "Keep others at a distance.",
+      "scale": "e1",
+      "reverse": true
+    },
+    {
+      "id": "neo-e2-4",
+      "text": "Avoid crowds.",
+      "scale": "e2",
+      "reverse": true
+    },
+    {
+      "id": "neo-e3-4",
+      "text": "Wait for others to lead the way.",
+      "scale": "e3",
+      "reverse": true
+    },
+    {
+      "id": "neo-e4-4",
+      "text": "Like to take it easy.",
+      "scale": "e4",
+      "reverse": true
+    },
+    {
+      "id": "neo-e5-4",
+      "text": "Act wild and crazy.",
+      "scale": "e5",
+      "reverse": false
+    },
+    {
+      "id": "neo-e6-4",
+      "text": "Look at the bright side of life.",
+      "scale": "e6",
+      "reverse": false
+    },
+    {
+      "id": "neo-o1-4",
+      "text": "Like to get lost in thought.",
+      "scale": "o1",
+      "reverse": false
+    },
+    {
+      "id": "neo-o2-4",
+      "text": "Do not enjoy going to art museums.",
+      "scale": "o2",
+      "reverse": true
+    },
+    {
+      "id": "neo-o3-4",
+      "text": "Don't understand people who get emotional.",
+      "scale": "o3",
+      "reverse": true
+    },
+    {
+      "id": "neo-o4-4",
+      "text": "Am attached to conventional ways.",
+      "scale": "o4",
+      "reverse": true
+    },
+    {
+      "id": "neo-o5-4",
+      "text": "Am not interested in theoretical discussions.",
+      "scale": "o5",
+      "reverse": true
+    },
+    {
+      "id": "neo-o6-4",
+      "text": "Believe that we should be tough on crime.",
+      "scale": "o6",
+      "reverse": true
+    },
+    {
+      "id": "neo-a1-4",
+      "text": "Distrust people.",
+      "scale": "a1",
+      "reverse": true
+    },
+    {
+      "id": "neo-a2-4",
+      "text": "Obstruct others' plans.",
+      "scale": "a2",
+      "reverse": true
+    },
+    {
+      "id": "neo-a3-4",
+      "text": "Take no time for others.",
+      "scale": "a3",
+      "reverse": true
+    },
+    {
+      "id": "neo-a4-4",
+      "text": "Get back at others.",
+      "scale": "a4",
+      "reverse": true
+    },
+    {
+      "id": "neo-a5-4",
+      "text": "Boast about my virtues.",
+      "scale": "a5",
+      "reverse": true
+    },
+    {
+      "id": "neo-a6-4",
+      "text": "Try not to think about the needy.",
+      "scale": "a6",
+      "reverse": true
+    },
+    {
+      "id": "neo-c1-4",
+      "text": "Know how to get things done.",
+      "scale": "c1",
+      "reverse": false
+    },
+    {
+      "id": "neo-c2-4",
+      "text": "Leave my belongings around.",
+      "scale": "c2",
+      "reverse": true
+    },
+    {
+      "id": "neo-c3-4",
+      "text": "Break my promises.",
+      "scale": "c3",
+      "reverse": true
+    },
+    {
+      "id": "neo-c4-4",
+      "text": "Do just enough work to get by.",
+      "scale": "c4",
+      "reverse": true
+    },
+    {
+      "id": "neo-c5-4",
+      "text": "Have difficulty starting tasks.",
+      "scale": "c5",
+      "reverse": true
+    },
+    {
+      "id": "neo-c6-4",
+      "text": "Act without thinking.",
+      "scale": "c6",
+      "reverse": true
+    }
+  ],
+  "scales": [
+    {
+      "id": "n1",
+      "name": "Anxiety",
+      "item_ids": [
+        "neo-n1-1",
+        "neo-n1-2",
+        "neo-n1-3",
+        "neo-n1-4"
+      ]
+    },
+    {
+      "id": "n2",
+      "name": "Anger",
+      "item_ids": [
+        "neo-n2-1",
+        "neo-n2-2",
+        "neo-n2-3",
+        "neo-n2-4"
+      ]
+    },
+    {
+      "id": "n3",
+      "name": "Depression",
+      "item_ids": [
+        "neo-n3-1",
+        "neo-n3-2",
+        "neo-n3-3",
+        "neo-n3-4"
+      ]
+    },
+    {
+      "id": "n4",
+      "name": "Self-Consciousness",
+      "item_ids": [
+        "neo-n4-1",
+        "neo-n4-2",
+        "neo-n4-3",
+        "neo-n4-4"
+      ]
+    },
+    {
+      "id": "n5",
+      "name": "Immoderation",
+      "item_ids": [
+        "neo-n5-1",
+        "neo-n5-2",
+        "neo-n5-3",
+        "neo-n5-4"
+      ]
+    },
+    {
+      "id": "n6",
+      "name": "Vulnerability",
+      "item_ids": [
+        "neo-n6-1",
+        "neo-n6-2",
+        "neo-n6-3",
+        "neo-n6-4"
+      ]
+    },
+    {
+      "id": "e1",
+      "name": "Friendliness",
+      "item_ids": [
+        "neo-e1-1",
+        "neo-e1-2",
+        "neo-e1-3",
+        "neo-e1-4"
+      ]
+    },
+    {
+      "id": "e2",
+      "name": "Gregariousness",
+      "item_ids": [
+        "neo-e2-1",
+        "neo-e2-2",
+        "neo-e2-3",
+        "neo-e2-4"
+      ]
+    },
+    {
+      "id": "e3",
+      "name": "Assertiveness",
+      "item_ids": [
+        "neo-e3-1",
+        "neo-e3-2",
+        "neo-e3-3",
+        "neo-e3-4"
+      ]
+    },
+    {
+      "id": "e4",
+      "name": "Activity Level",
+      "item_ids": [
+        "neo-e4-1",
+        "neo-e4-2",
+        "neo-e4-3",
+        "neo-e4-4"
+      ]
+    },
+    {
+      "id": "e5",
+      "name": "Excitement-Seeking",
+      "item_ids": [
+        "neo-e5-1",
+        "neo-e5-2",
+        "neo-e5-3",
+        "neo-e5-4"
+      ]
+    },
+    {
+      "id": "e6",
+      "name": "Cheerfulness",
+      "item_ids": [
+        "neo-e6-1",
+        "neo-e6-2",
+        "neo-e6-3",
+        "neo-e6-4"
+      ]
+    },
+    {
+      "id": "o1",
+      "name": "Imagination",
+      "item_ids": [
+        "neo-o1-1",
+        "neo-o1-2",
+        "neo-o1-3",
+        "neo-o1-4"
+      ]
+    },
+    {
+      "id": "o2",
+      "name": "Artistic Interests",
+      "item_ids": [
+        "neo-o2-1",
+        "neo-o2-2",
+        "neo-o2-3",
+        "neo-o2-4"
+      ]
+    },
+    {
+      "id": "o3",
+      "name": "Emotionality",
+      "item_ids": [
+        "neo-o3-1",
+        "neo-o3-2",
+        "neo-o3-3",
+        "neo-o3-4"
+      ]
+    },
+    {
+      "id": "o4",
+      "name": "Adventurousness",
+      "item_ids": [
+        "neo-o4-1",
+        "neo-o4-2",
+        "neo-o4-3",
+        "neo-o4-4"
+      ]
+    },
+    {
+      "id": "o5",
+      "name": "Intellect",
+      "item_ids": [
+        "neo-o5-1",
+        "neo-o5-2",
+        "neo-o5-3",
+        "neo-o5-4"
+      ]
+    },
+    {
+      "id": "o6",
+      "name": "Liberalism",
+      "item_ids": [
+        "neo-o6-1",
+        "neo-o6-2",
+        "neo-o6-3",
+        "neo-o6-4"
+      ]
+    },
+    {
+      "id": "a1",
+      "name": "Trust",
+      "item_ids": [
+        "neo-a1-1",
+        "neo-a1-2",
+        "neo-a1-3",
+        "neo-a1-4"
+      ]
+    },
+    {
+      "id": "a2",
+      "name": "Morality",
+      "item_ids": [
+        "neo-a2-1",
+        "neo-a2-2",
+        "neo-a2-3",
+        "neo-a2-4"
+      ]
+    },
+    {
+      "id": "a3",
+      "name": "Altruism",
+      "item_ids": [
+        "neo-a3-1",
+        "neo-a3-2",
+        "neo-a3-3",
+        "neo-a3-4"
+      ]
+    },
+    {
+      "id": "a4",
+      "name": "Cooperation",
+      "item_ids": [
+        "neo-a4-1",
+        "neo-a4-2",
+        "neo-a4-3",
+        "neo-a4-4"
+      ]
+    },
+    {
+      "id": "a5",
+      "name": "Modesty",
+      "item_ids": [
+        "neo-a5-1",
+        "neo-a5-2",
+        "neo-a5-3",
+        "neo-a5-4"
+      ]
+    },
+    {
+      "id": "a6",
+      "name": "Sympathy",
+      "item_ids": [
+        "neo-a6-1",
+        "neo-a6-2",
+        "neo-a6-3",
+        "neo-a6-4"
+      ]
+    },
+    {
+      "id": "c1",
+      "name": "Self-Efficacy",
+      "item_ids": [
+        "neo-c1-1",
+        "neo-c1-2",
+        "neo-c1-3",
+        "neo-c1-4"
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Orderliness",
+      "item_ids": [
+        "neo-c2-1",
+        "neo-c2-2",
+        "neo-c2-3",
+        "neo-c2-4"
+      ]
+    },
+    {
+      "id": "c3",
+      "name": "Dutifulness",
+      "item_ids": [
+        "neo-c3-1",
+        "neo-c3-2",
+        "neo-c3-3",
+        "neo-c3-4"
+      ]
+    },
+    {
+      "id": "c4",
+      "name": "Achievement-Striving",
+      "item_ids": [
+        "neo-c4-1",
+        "neo-c4-2",
+        "neo-c4-3",
+        "neo-c4-4"
+      ]
+    },
+    {
+      "id": "c5",
+      "name": "Self-Discipline",
+      "item_ids": [
+        "neo-c5-1",
+        "neo-c5-2",
+        "neo-c5-3",
+        "neo-c5-4"
+      ]
+    },
+    {
+      "id": "c6",
+      "name": "Cautiousness",
+      "item_ids": [
+        "neo-c6-1",
+        "neo-c6-2",
+        "neo-c6-3",
+        "neo-c6-4"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "id": "n",
+      "name": "Neuroticism",
+      "scale_ids": [
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6"
+      ]
+    },
+    {
+      "id": "e",
+      "name": "Extraversion",
+      "scale_ids": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6"
+      ]
+    },
+    {
+      "id": "o",
+      "name": "Openness to Experience",
+      "scale_ids": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6"
+      ]
+    },
+    {
+      "id": "a",
+      "name": "Agreeableness",
+      "scale_ids": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5",
+        "a6"
+      ]
+    },
+    {
+      "id": "c",
+      "name": "Conscientiousness",
+      "scale_ids": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ]
+    }
+  ]
+}

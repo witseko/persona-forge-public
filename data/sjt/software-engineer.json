@@ -1,0 +1,139 @@
+{
+  "id": "software-engineer",
+  "title": "Software engineer situations",
+  "authored": "Project-authored reflective scenarios (2026-10-23). Not a validated situational judgment test; there are no correct answers.",
+  "scenarios": [
+    {
+      "id": "se-senior-pr",
+      "title": "Reviewing a senior's pull request",
+      "prompt": "A principal engineer asks you to review their large pull request. You spot what looks like a race condition, but you are not completely sure.",
+      "options": [
+        {"id": "a", "text": "Leave a clear comment describing the race and how to reproduce it.", "weights": {"directness": 1.0, "assertiveness": 0.75}},
+        {"id": "b", "text": "Ask a question in the review: 'Could this run concurrently here?'", "weights": {"directness": 0.5, "assertiveness": 0.5}},
+        {"id": "c", "text": "Message them privately before commenting publicly.", "weights": {"directness": 0.25, "assertiveness": 0.5}},
+        {"id": "d", "text": "Approve; they have far more context than you do.", "weights": {"directness": 0.0, "assertiveness": 0.0}}
+      ]
+    },
+    {
+      "id": "se-rewrite-urge",
+      "title": "Rewrite temptation",
+      "prompt": "You are asked to add a small feature to a legacy module that you find painful to read. You believe a rewrite would take a week.",
+      "options": [
+        {"id": "a", "text": "Add the feature with minimal changes and leave the module alone.", "weights": {"risk": 0.0, "structure": 0.5}},
+        {"id": "b", "text": "Rewrite the module as part of the feature; it will pay off.", "weights": {"risk": 1.0, "structure": 0.25}},
+        {"id": "c", "text": "Add characterization tests first, then refactor only the part you touch.", "weights": {"risk": 0.25, "structure": 1.0}},
+        {"id": "d", "text": "Add the feature, then pitch a rewrite with a short write-up.", "weights": {"risk": 0.5, "structure": 0.75}}
+      ]
+    },
+    {
+      "id": "se-unclear-ticket",
+      "title": "Unclear ticket",
+      "prompt": "A ticket says 'make export faster'. There is no target, no dataset and no owner listed.",
+      "options": [
+        {"id": "a", "text": "Profile the export, fix the biggest bottleneck and report the gain.", "weights": {"pace": 1.0, "ownership": 1.0}},
+        {"id": "b", "text": "Ask the reporter for a target time and a sample dataset before touching code.", "weights": {"pace": 0.0, "ownership": 0.5}},
+        {"id": "c", "text": "Bring it to refinement so the team can clarify it together.", "weights": {"pace": 0.25, "ownership": 0.0}},
+        {"id": "d", "text": "Spend an hour measuring, then propose a target to the reporter.", "weights": {"pace": 0.5, "ownership": 0.75}}
+      ]
+    },
+    {
+      "id": "se-pairing-junior",
+      "title": "Pairing with a junior",
+      "prompt": "You are pairing with a junior engineer who is slow but eager. The task would take you half the time alone.",
+      "options": [
+        {"id": "a", "text": "Let them drive and guide with questions, accepting the slower pace.", "weights": {"cooperation": 1.0, "pace": 0.0}},
+        {"id": "b", "text": "Drive yourself and explain as you go.", "weights": {"cooperation": 0.5, "pace": 0.75}},
+        {"id": "c", "text": "Split the task: you take the hard part, they take a well-defined piece.", "weights": {"cooperation": 0.25, "pace": 1.0}},
+        {"id": "d", "text": "Agree a learning goal for the session and timebox it.", "weights": {"cooperation": 0.75, "pace": 0.5}}
+      ]
+    },
+    {
+      "id": "se-alert-noise",
+      "title": "Noisy alerts",
+      "prompt": "Your on-call rotation receives dozens of alerts a week that need no action. Everyone complains but nobody fixes it.",
+      "options": [
+        {"id": "a", "text": "Spend your next on-call week tuning or deleting the noisiest alerts.", "weights": {"ownership": 1.0, "structure": 0.5}},
+        {"id": "b", "text": "Propose an alert review policy with owners and a monthly cleanup.", "weights": {"ownership": 0.75, "structure": 1.0}},
+        {"id": "c", "text": "Raise it with the team lead so it gets prioritised properly.", "weights": {"ownership": 0.0, "structure": 0.5}},
+        {"id": "d", "text": "Mute the obvious ones locally and get on with your work.", "weights": {"ownership": 0.25, "structure": 0.0}}
+      ]
+    },
+    {
+      "id": "se-library-choice",
+      "title": "Choosing a library",
+      "prompt": "You need a date-handling library. One is popular and heavy; another is small, elegant and maintained by one person.",
+      "options": [
+        {"id": "a", "text": "Choose the popular one; maintenance risk matters more than size.", "weights": {"risk": 0.0, "pace": 0.75}},
+        {"id": "b", "text": "Choose the small one; it fits better and can be vendored if abandoned.", "weights": {"risk": 1.0, "pace": 0.75}},
+        {"id": "c", "text": "Compare both on a short checklist: licence, activity, size, API.", "weights": {"risk": 0.25, "pace": 0.0}},
+        {"id": "d", "text": "Use the standard library and write the small helpers you need.", "weights": {"risk": 0.5, "pace": 0.25}}
+      ]
+    },
+    {
+      "id": "se-late-regression",
+      "title": "Late performance regression",
+      "prompt": "The day before a release, you notice your feature makes a key page 30 percent slower in staging.",
+      "options": [
+        {"id": "a", "text": "Tell the release owner now and suggest holding your feature back.", "weights": {"directness": 1.0, "risk": 0.0}},
+        {"id": "b", "text": "Work late to optimise it before the release.", "weights": {"directness": 0.25, "risk": 0.5}},
+        {"id": "c", "text": "Ship it behind a flag that is off by default.", "weights": {"directness": 0.5, "risk": 0.25}},
+        {"id": "d", "text": "Ship it; staging is not production and users may not notice.", "weights": {"directness": 0.0, "risk": 1.0}}
+      ]
+    },
+    {
+      "id": "se-architect-disagreement",
+      "title": "Disagreeing with the architect",
+      "prompt": "The architect mandates an event-driven design for a service you think would be simpler as a plain CRUD API.",
+      "options": [
+        {"id": "a", "text": "Write a short comparison and ask for a decision meeting.", "weights": {"assertiveness": 1.0, "structure": 1.0}},
+        {"id": "b", "text": "Raise your concern once, then build what was decided.", "weights": {"assertiveness": 0.5, "structure": 0.5}},
+        {"id": "c", "text": "Build the simpler version as a spike to show the difference.", "weights": {"assertiveness": 0.75, "structure": 0.0}},
+        {"id": "d", "text": "Follow the mandate; consistency across services has its own value.", "weights": {"assertiveness": 0.0, "structure": 0.75}}
+      ]
+    },
+    {
+      "id": "se-cut-tests",
+      "title": "Asked to skip tests",
+      "prompt": "Your lead suggests skipping tests for a feature to hit a demo date, promising time afterwards.",
+      "options": [
+        {"id": "a", "text": "Refuse to skip them for the risky paths, but drop the rest.", "weights": {"assertiveness": 0.75, "risk": 0.25}},
+        {"id": "b", "text": "Agree and create a ticket for the missing tests right away.", "weights": {"assertiveness": 0.25, "risk": 0.75}},
+        {"id": "c", "text": "Write the tests anyway, even if it means working late.", "weights": {"assertiveness": 0.5, "risk": 0.0}},
+        {"id": "d", "text": "Agree; the demo is what matters right now.", "weights": {"assertiveness": 0.0, "risk": 1.0}}
+      ]
+    },
+    {
+      "id": "se-knowledge-silo",
+      "title": "Knowledge silo",
+      "prompt": "You are the only person who understands the billing integration. You are going on holiday for two weeks.",
+      "options": [
+        {"id": "a", "text": "Write a runbook and walk a teammate through it before you leave.", "weights": {"structure": 1.0, "cooperation": 1.0}},
+        {"id": "b", "text": "Stay reachable by phone in case anything breaks.", "weights": {"structure": 0.0, "cooperation": 0.25}},
+        {"id": "c", "text": "Leave notes in the repository README and trust the team.", "weights": {"structure": 0.75, "cooperation": 0.25}},
+        {"id": "d", "text": "Ask your lead to arrange cover; it is a team problem.", "weights": {"structure": 0.5, "cooperation": 0.5}}
+      ]
+    },
+    {
+      "id": "se-refactor-during-feature",
+      "title": "Refactor inside a feature",
+      "prompt": "While implementing a feature, you see a refactor that would clean up three other call sites.",
+      "options": [
+        {"id": "a", "text": "Do it in the same pull request; it is related.", "weights": {"pace": 1.0, "structure": 0.0}},
+        {"id": "b", "text": "Do it in a separate pull request first, then build the feature on top.", "weights": {"pace": 0.25, "structure": 1.0}},
+        {"id": "c", "text": "Note it in a ticket and stay focused on the feature.", "weights": {"pace": 0.75, "structure": 0.75}},
+        {"id": "d", "text": "Ask the team whether they want it before doing anything.", "weights": {"pace": 0.0, "structure": 0.5}}
+      ]
+    },
+    {
+      "id": "se-ai-generated-code",
+      "title": "AI-generated code in review",
+      "prompt": "A teammate submits a large pull request that was clearly generated by an AI assistant. It passes tests, but parts look unfamiliar to them when you ask.",
+      "options": [
+        {"id": "a", "text": "Ask them to walk you through it and to remove anything they cannot explain.", "weights": {"directness": 1.0, "risk": 0.0}},
+        {"id": "b", "text": "Review it like any other code; tests pass and that is what matters.", "weights": {"directness": 0.25, "risk": 1.0}},
+        {"id": "c", "text": "Suggest splitting it into smaller pull requests that are easier to understand.", "weights": {"directness": 0.75, "risk": 0.25}},
+        {"id": "d", "text": "Raise a team discussion about guidelines for AI-assisted changes.", "weights": {"directness": 0.5, "risk": 0.5}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "authored": "Project-authored descriptions (2026-10-23) for the revised IPIP-VIA scales and RIASEC interest areas. They describe what a high self-rating suggests, not a measured ability.",
+  "via": {
+    "appreciation-of-beauty": {"label": "Appreciation of beauty", "tip": "Care about elegant, well-crafted solutions; point out where craft would pay off."},
+    "capacity-for-love": {"label": "Capacity for love", "tip": "Remember that close working relationships matter to me when drafting messages."},
+    "citizenship-teamwork": {"label": "Teamwork", "tip": "Frame work in terms of what helps the team, and suggest ways to share credit."},
+    "curiosity": {"label": "Curiosity", "tip": "Mention interesting related ideas briefly, without derailing the task."},
+    "equity-fairness": {"label": "Fairness", "tip": "Flag decisions that could treat people or teams unequally."},
+    "forgiveness-mercy": {"label": "Forgiveness", "tip": "Keep post-incident analysis blameless and forward-looking."},
+    "gratitude": {"label": "Gratitude", "tip": "Suggest acknowledging people's contributions in summaries and release notes."},
+    "hope-optimism": {"label": "Hope and optimism", "tip": "Balance my optimism with a short, realistic risk check."},
+    "humor-playfulness": {"label": "Humour", "tip": "A light touch is fine, as long as it never obscures the content."},
+    "industry-perseverance-persistence": {"label": "Perseverance", "tip": "Tell me when persisting on an approach is no longer the best use of time."},
+    "integrity-honesty-authenticity": {"label": "Honesty", "tip": "Be straightforward about uncertainty and mistakes, including your own."},
+    "judgment-open-mindedness": {"label": "Open-mindedness", "tip": "Present the strongest version of alternative views before recommending."},
+    "kindness-generosity": {"label": "Kindness", "tip": "Help me make time-boxed offers of help so generosity does not swallow my focus."},
+    "leadership": {"label": "Leadership", "tip": "Give decision-ready summaries suitable for sharing with a team."},
+    "love-of-learning": {"label": "Love of learning", "tip": "Point me to primary documentation and explain new concepts when they come up."},
+    "modesty-humility": {"label": "Modesty", "tip": "Help me make my contributions visible when it matters, such as in reviews or summaries."},
+    "originality-creativity": {"label": "Creativity", "tip": "Offer at least one unconventional option when brainstorming."},
+    "perspective-wisdom": {"label": "Perspective", "tip": "Zoom out when useful: connect details to the bigger goal."},
+    "prudence": {"label": "Prudence", "tip": "Surface long-term consequences of short-term shortcuts."},
+    "self-regulation-self-control": {"label": "Self-control", "tip": "Keep plans realistic and scoped so they can be followed through."},
+    "social-personal-emotional-intelligence": {"label": "Social intelligence", "tip": "When drafting messages, consider how each reader will receive them."},
+    "spirituality-religiousness": {"label": "Sense of purpose", "tip": "Connect tasks to their purpose when prioritising."},
+    "valor-bravery-courage": {"label": "Courage", "tip": "Support me in raising hard issues with clear, evidence-based wording."},
+    "zest-enthusiasm-vitality": {"label": "Zest", "tip": "Keep momentum: short iterations with visible progress."}
+  },
+  "riasec": {
+    "realistic": {"label": "Realistic", "description": "hands-on work with tools, machines and tangible results"},
+    "investigative": {"label": "Investigative", "description": "analysis, research and solving puzzles"},
+    "artistic": {"label": "Artistic", "description": "creating, designing and expressing ideas"},
+    "social": {"label": "Social", "description": "helping, teaching and supporting people"},
+    "enterprising": {"label": "Enterprising", "description": "leading, persuading and making business decisions"},
+    "conventional": {"label": "Conventional", "description": "organising information, data and processes"}
+  }
+}

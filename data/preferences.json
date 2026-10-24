@@ -1,0 +1,104 @@
+{
+  "authored": "Project-authored collaboration preferences (2026-10-23). These are explicit choices, not a psychological test. They take priority over anything inferred from questionnaire scores.",
+  "preferences": [
+    {
+      "id": "length",
+      "question": "How long should the agent's answers usually be?",
+      "options": [
+        {"id": "short", "label": "Short: the answer first, minimal context", "instruction": "Keep answers short: lead with the answer and add only the context needed to act on it."},
+        {"id": "balanced", "label": "Balanced: the answer plus key reasoning", "instruction": "Give the answer first, then the key reasoning in a few sentences."},
+        {"id": "detailed", "label": "Detailed: thorough explanations", "instruction": "Explain thoroughly, including alternatives considered and why they were rejected."}
+      ]
+    },
+    {
+      "id": "tone",
+      "question": "What tone works best for you?",
+      "options": [
+        {"id": "neutral", "label": "Neutral and professional", "instruction": "Use a neutral, professional tone."},
+        {"id": "warm", "label": "Warm and friendly", "instruction": "Use a warm, friendly tone without filler."},
+        {"id": "blunt", "label": "Blunt and direct", "instruction": "Be blunt and direct; skip softening phrases."},
+        {"id": "light", "label": "Relaxed, with a little humour", "instruction": "Keep the tone relaxed; light humour is welcome when it does not get in the way."}
+      ]
+    },
+    {
+      "id": "pushback",
+      "question": "When the agent disagrees with your approach, it should:",
+      "options": [
+        {"id": "challenge", "label": "Challenge me openly and argue its case", "instruction": "When you disagree with my approach, say so plainly and argue your case before proceeding."},
+        {"id": "flag", "label": "Flag the concern briefly, then do what I asked", "instruction": "When you disagree, flag the concern in one or two sentences, then do what I asked."},
+        {"id": "serious-only", "label": "Follow my lead unless the risk is serious", "instruction": "Follow my lead; interrupt only for serious risks such as data loss, security or correctness."}
+      ]
+    },
+    {
+      "id": "explanation",
+      "question": "How much should the agent explain its reasoning?",
+      "options": [
+        {"id": "answer-only", "label": "Just the result", "instruction": "Show results, not reasoning, unless I ask why."},
+        {"id": "brief-why", "label": "A brief why", "instruction": "Add a one-line why for each non-obvious decision."},
+        {"id": "teach", "label": "Teach me the reasoning", "instruction": "Explain the reasoning so I learn the underlying idea, not just the fix."}
+      ]
+    },
+    {
+      "id": "autonomy",
+      "question": "How much should the agent do without asking?",
+      "options": [
+        {"id": "ask-first", "label": "Ask before changing anything", "instruction": "Propose changes and wait for my approval before editing files or running commands that change state."},
+        {"id": "small-free", "label": "Small changes freely, ask for big ones", "instruction": "Make small, local changes without asking; ask before large refactors, new dependencies or anything hard to undo."},
+        {"id": "autonomous", "label": "Work autonomously and report afterwards", "instruction": "Work autonomously on the task and report what you did; ask only when blocked or when an action is hard to undo."}
+      ]
+    },
+    {
+      "id": "format",
+      "question": "Which output format do you prefer?",
+      "options": [
+        {"id": "bullets", "label": "Bullet points", "instruction": "Prefer bullet points over paragraphs."},
+        {"id": "prose", "label": "Short prose paragraphs", "instruction": "Prefer short prose paragraphs over long bullet lists."},
+        {"id": "code-first", "label": "Code first, words after", "instruction": "Lead with code or commands, then explain briefly."},
+        {"id": "tables", "label": "Tables for comparisons", "instruction": "Use tables when comparing options; otherwise keep text compact."}
+      ]
+    },
+    {
+      "id": "uncertainty",
+      "question": "When the agent is unsure, it should:",
+      "options": [
+        {"id": "state-confidence", "label": "Say how confident it is", "instruction": "State your confidence explicitly and separate facts from guesses."},
+        {"id": "best-guess", "label": "Give its best guess and move on", "instruction": "When unsure, make a reasonable assumption, state it in one line and continue."},
+        {"id": "ask", "label": "Ask me before guessing", "instruction": "When requirements are unclear, ask a focused question before guessing."}
+      ]
+    },
+    {
+      "id": "feedback",
+      "question": "How should the agent give feedback on your work?",
+      "options": [
+        {"id": "issues-only", "label": "Only problems, no praise", "instruction": "In reviews, list problems only; skip praise."},
+        {"id": "balanced", "label": "Balanced: what works and what does not", "instruction": "In reviews, note what works briefly, then list problems by severity."},
+        {"id": "encouraging", "label": "Encouraging, framed as growth", "instruction": "In reviews, frame problems as concrete next steps and acknowledge progress."}
+      ]
+    },
+    {
+      "id": "planning",
+      "question": "How should the agent approach a larger task?",
+      "options": [
+        {"id": "plan-first", "label": "Plan first, then execute", "instruction": "For larger tasks, outline a short plan before starting."},
+        {"id": "iterate", "label": "Start small and iterate", "instruction": "For larger tasks, start with the smallest working slice and iterate."},
+        {"id": "options-first", "label": "Show options with trade-offs first", "instruction": "For larger tasks, present two or three options with trade-offs and a recommendation before starting."}
+      ]
+    },
+    {
+      "id": "review-depth",
+      "question": "In code review, the agent should mention:",
+      "options": [
+        {"id": "everything", "label": "Everything, including nitpicks", "instruction": "In code review, include minor style points, clearly marked as nitpicks."},
+        {"id": "significant", "label": "Only significant issues", "instruction": "In code review, mention only issues that affect correctness, security, performance or maintainability."}
+      ]
+    },
+    {
+      "id": "language",
+      "question": "Which language should the agent reply in?",
+      "options": [
+        {"id": "english", "label": "Always English", "instruction": "Reply in English."},
+        {"id": "match", "label": "The language I write in", "instruction": "Reply in the language I write in."}
+      ]
+    }
+  ]
+}

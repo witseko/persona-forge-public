@@ -1,0 +1,214 @@
+{
+  "id": "mini-ipip",
+  "name": "Mini-IPIP (20-item Big Five short form)",
+  "source_url": "https://ipip.ori.org/MiniIPIPKey.htm",
+  "retrieved": "2026-10-23",
+  "citation": "Donnellan, M. B., Oswald, F. L., Baird, B. M., & Lucas, R. E. (2006). The Mini-IPIP scales: Tiny-yet-effective measures of the Big Five factors of personality. Psychological Assessment, 18, 192-203.",
+  "licence": "Public domain. https://ipip.ori.org/newPermission.htm: permission has already been automatically granted for any person to use IPIP items, scales, and inventories for any purpose, commercial or non-commercial.",
+  "attribution": "Items from the International Personality Item Pool (https://ipip.ori.org/).",
+  "instructions": "Describe yourself as you generally are now, not as you wish to be in the future. Describe yourself as you honestly see yourself, in relation to other people you know of the same sex as you are, and roughly your same age. So that you can describe yourself in an honest manner, your responses will be kept in absolute confidence. Indicate for each statement whether it is 1. Very Inaccurate, 2. Moderately Inaccurate, 3. Neither Accurate Nor Inaccurate, 4. Moderately Accurate, or 5. Very Accurate as a description of you.",
+  "notes": "Scale labels follow the IPIP key. As the key notes, the authors score the lexical Emotional Stability scale in reverse and call it Neuroticism. Item order is interleaved across scales, following the IPIP administration advice.",
+  "aggregation": "mean",
+  "response_sets": [
+    {
+      "id": "accuracy",
+      "options": [
+        {
+          "value": 1,
+          "label": "Very Inaccurate"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Inaccurate"
+        },
+        {
+          "value": 3,
+          "label": "Neither Accurate Nor Inaccurate"
+        },
+        {
+          "value": 4,
+          "label": "Moderately Accurate"
+        },
+        {
+          "value": 5,
+          "label": "Very Accurate"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "mini-extraversion-1",
+      "text": "Am the life of the party.",
+      "scale": "extraversion",
+      "reverse": false
+    },
+    {
+      "id": "mini-agreeableness-1",
+      "text": "Sympathize with others' feelings.",
+      "scale": "agreeableness",
+      "reverse": false
+    },
+    {
+      "id": "mini-conscientiousness-1",
+      "text": "Get chores done right away.",
+      "scale": "conscientiousness",
+      "reverse": false
+    },
+    {
+      "id": "mini-neuroticism-1",
+      "text": "Have frequent mood swings.",
+      "scale": "neuroticism",
+      "reverse": false
+    },
+    {
+      "id": "mini-intellect-imagination-1",
+      "text": "Have a vivid imagination.",
+      "scale": "intellect-imagination",
+      "reverse": false
+    },
+    {
+      "id": "mini-extraversion-2",
+      "text": "Talk to a lot of different people at parties.",
+      "scale": "extraversion",
+      "reverse": false
+    },
+    {
+      "id": "mini-agreeableness-2",
+      "text": "Feel others' emotions.",
+      "scale": "agreeableness",
+      "reverse": false
+    },
+    {
+      "id": "mini-conscientiousness-2",
+      "text": "Like order.",
+      "scale": "conscientiousness",
+      "reverse": false
+    },
+    {
+      "id": "mini-neuroticism-2",
+      "text": "Get upset easily.",
+      "scale": "neuroticism",
+      "reverse": false
+    },
+    {
+      "id": "mini-intellect-imagination-2",
+      "text": "Have difficulty understanding abstract ideas.",
+      "scale": "intellect-imagination",
+      "reverse": true
+    },
+    {
+      "id": "mini-extraversion-3",
+      "text": "Don't talk a lot.",
+      "scale": "extraversion",
+      "reverse": true
+    },
+    {
+      "id": "mini-agreeableness-3",
+      "text": "Am not really interested in others.",
+      "scale": "agreeableness",
+      "reverse": true
+    },
+    {
+      "id": "mini-conscientiousness-3",
+      "text": "Often forget to put things back in their proper place.",
+      "scale": "conscientiousness",
+      "reverse": true
+    },
+    {
+      "id": "mini-neuroticism-3",
+      "text": "Am relaxed most of the time.",
+      "scale": "neuroticism",
+      "reverse": true
+    },
+    {
+      "id": "mini-intellect-imagination-3",
+      "text": "Am not interested in abstract ideas.",
+      "scale": "intellect-imagination",
+      "reverse": true
+    },
+    {
+      "id": "mini-extraversion-4",
+      "text": "Keep in the background.",
+      "scale": "extraversion",
+      "reverse": true
+    },
+    {
+      "id": "mini-agreeableness-4",
+      "text": "Am not interested in other people's problems.",
+      "scale": "agreeableness",
+      "reverse": true
+    },
+    {
+      "id": "mini-conscientiousness-4",
+      "text": "Make a mess of things.",
+      "scale": "conscientiousness",
+      "reverse": true
+    },
+    {
+      "id": "mini-neuroticism-4",
+      "text": "Seldom feel blue.",
+      "scale": "neuroticism",
+      "reverse": true
+    },
+    {
+      "id": "mini-intellect-imagination-4",
+      "text": "Do not have a good imagination.",
+      "scale": "intellect-imagination",
+      "reverse": true
+    }
+  ],
+  "scales": [
+    {
+      "id": "extraversion",
+      "name": "Extraversion",
+      "item_ids": [
+        "mini-extraversion-1",
+        "mini-extraversion-2",
+        "mini-extraversion-3",
+        "mini-extraversion-4"
+      ]
+    },
+    {
+      "id": "agreeableness",
+      "name": "Agreeableness",
+      "item_ids": [
+        "mini-agreeableness-1",
+        "mini-agreeableness-2",
+        "mini-agreeableness-3",
+        "mini-agreeableness-4"
+      ]
+    },
+    {
+      "id": "conscientiousness",
+      "name": "Conscientiousness",
+      "item_ids": [
+        "mini-conscientiousness-1",
+        "mini-conscientiousness-2",
+        "mini-conscientiousness-3",
+        "mini-conscientiousness-4"
+      ]
+    },
+    {
+      "id": "neuroticism",
+      "name": "Neuroticism",
+      "item_ids": [
+        "mini-neuroticism-1",
+        "mini-neuroticism-2",
+        "mini-neuroticism-3",
+        "mini-neuroticism-4"
+      ]
+    },
+    {
+      "id": "intellect-imagination",
+      "name": "Intellect or Imagination",
+      "item_ids": [
+        "mini-intellect-imagination-1",
+        "mini-intellect-imagination-2",
+        "mini-intellect-imagination-3",
+        "mini-intellect-imagination-4"
+      ]
+    }
+  ],
+  "domains": []
+}
