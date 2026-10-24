@@ -11,6 +11,12 @@ The catalogue records item provenance, redistribution, commercial use, translati
 and validation separately. Evidence is in the permission research artifact
 (`ai-artifacts/persona-forge/prepare-public-release/00-questionnaire-permissions.md`).
 
+`make public-sync` (`public_sync.py`, added 2026-10-24) updates the public repository
+(`../persona-forge-public`, or `PUBLIC=<path>`): it refuses a dirty or non-git target
+and this repository itself, exports to a temporary folder, mirrors the edition into the
+target (removing tracked files that are gone, never touching `.git`), runs the target's
+`make test lint` and commits "update public edition". Pushing stays manual.
+
 The export copies only files tracked by git (commit new files first; never `out/` or `.git`),
 leaves out `PLAN.md` (internal bootstrap notes), removes withheld ids from language
 manifests and sample answer files, then scans the

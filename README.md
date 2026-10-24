@@ -62,6 +62,8 @@ validated tests.
 - `make public-export DEST=../persona-forge-public` builds the limited public edition
   from committed files, leaving out questionnaires with unclear reuse permission
   (`data/permissions.json`).
+- `make public-sync` refreshes `../persona-forge-public` from a fresh export, runs its
+  tests and lint, and commits. Then push it with `git -C ../persona-forge-public push`.
 - Docs: [white paper](docs/whitepaper.md), [implementation plan](docs/implementation-plan.md),
   [instrument catalogue](docs/instruments.md), [contributing](CONTRIBUTING.md).
 - Code is MIT-licensed ([LICENSE](LICENSE)). Questionnaire content keeps its own terms

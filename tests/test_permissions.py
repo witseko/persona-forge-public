@@ -1,6 +1,8 @@
 """Permission catalogue and the limited public edition built from it."""
 
 import json
+import shutil
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -10,6 +12,7 @@ from persona_forge.files import PROJECT_ROOT
 from persona_forge.instruments import INSTRUMENT_DIR
 from persona_forge.permissions import PermissionCatalogueError, load_permissions
 from persona_forge.public_export import PublicExportError, export_public_edition, main
+from persona_forge.public_sync import COMMIT_MESSAGE, sync_public_repository
 
 # Release decision recorded on 2026-10-24: these may ship publicly. Everything else
 # stays in the private repository until written clarification arrives.
@@ -100,3 +103,52 @@ def test_public_export_refuses_leaks_and_unsafe_destinations(
     destination = tmp_path / "leaky"
     assert main([str(destination)]) == 1
     assert not destination.exists()
+
+
+def _git(repository: Path, *arguments: str) -> str:
+    """Run git in a test repository with a fixed identity."""
+    git = shutil.which("git")
+    assert git is not None
+    return subprocess.run(  # noqa: S603 - fixed git arguments, no shell
+        [git, "-c", "user.name=Test", "-c", "user.email=test@example.com", *arguments],
+        cwd=repository,
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout
+
+
+@private_edition_only
+def test_public_sync_mirrors_the_edition_and_commits(tmp_path: Path) -> None:
+    """Stale tracked files go, the edition arrives, and an unchanged rerun commits nothing."""
+    target = tmp_path / "public"
+    target.mkdir()
+    _git(target, "init", "-q", "-b", "main")
+    (target / "stale.txt").write_text("old\n")
+    _git(target, "add", "-A")
+    _git(target, "commit", "-q", "-m", "start")
+    _git(target, "config", "user.name", "Test")
+    _git(target, "config", "user.email", "test@example.com")
+
+    assert sync_public_repository(target, run_checks=False) is True
+    assert not (target / "stale.txt").exists()
+    assert (target / "README.md").is_file()
+    assert not (target / "data" / "instruments" / "gse.json").exists()
+    assert _git(target, "status", "--porcelain") == ""
+    assert _git(target, "log", "-1", "--format=%s").strip() == COMMIT_MESSAGE
+
+    assert sync_public_repository(target, run_checks=False) is False
+
+
+@private_edition_only
+def test_public_sync_refuses_unsafe_targets(tmp_path: Path) -> None:
+    """A non-repository, a dirty repository or this repository is never overwritten."""
+    with pytest.raises(PublicExportError, match="not a git repository"):
+        sync_public_repository(tmp_path, run_checks=False)
+    _git(tmp_path, "init", "-q")
+    (tmp_path / "notes.txt").write_text("unsaved\n")
+    with pytest.raises(PublicExportError, match="uncommitted changes"):
+        sync_public_repository(tmp_path, run_checks=False)
+    assert (tmp_path / "notes.txt").read_text() == "unsaved\n"
+    with pytest.raises(PublicExportError, match="outside this repository"):
+        sync_public_repository(PROJECT_ROOT, run_checks=False)

@@ -1,9 +1,11 @@
-.PHONY: setup settings ego report link unlink status clean languages profiles retake preserve public-export test lint audit
+.PHONY: setup settings ego report link unlink status clean languages profiles retake preserve public-export public-sync test lint audit
 
 UV ?= uv
 # Export the value as data so an answer filename cannot become shell syntax.
 export ANSWERS
 export DEST
+PUBLIC ?= ../persona-forge-public
+export PUBLIC
 
 setup:
 	$(UV) run persona-forge setup
@@ -15,6 +17,10 @@ settings ego report link unlink status clean languages profiles retake preserve:
 public-export:
 	@test -n "$$DEST" || { echo "Set DEST to a new folder outside this repository"; exit 1; }
 	$(UV) run python -m persona_forge.public_export "$$DEST"
+
+# Refresh and commit the public repository from a fresh export; push stays manual.
+public-sync:
+	$(UV) run python -m persona_forge.public_sync "$$PUBLIC"
 
 test:
 	$(UV) run pytest
