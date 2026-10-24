@@ -44,22 +44,34 @@ def check_target(target: Path, root: Path) -> None:
         raise PublicExportError("the public repository must be outside this repository")
     if not (target / ".git").is_dir():
         raise PublicExportError(f"{target} is not a git repository")
-    if _run(["git", "status", "--porcelain"], target).strip():
+    # Untracked files (for example another tool's work in progress) are left alone;
+    # only unsaved edits to tracked files would be overwritten.
+    if _run(["git", "status", "--porcelain", "--untracked-files=no"], target).strip():
         raise PublicExportError(f"{target} has uncommitted changes; commit or discard them first")
 
 
-def mirror(edition: Path, target: Path) -> None:
-    """Make the target's tracked files match the exported edition exactly."""
+def mirror(edition: Path, target: Path) -> list[str]:
+    """Make the target's tracked files match the exported edition exactly.
+
+    Returns every path the sync wrote or removed, so only those get staged.
+    """
     exported = {
         path.relative_to(edition).as_posix() for path in edition.rglob("*") if path.is_file()
     }
-    for relative in candidate_files(target):
-        if relative not in exported:
-            (target / relative).unlink()
+    untracked = set(
+        _run(["git", "ls-files", "--others", "--exclude-standard"], target).splitlines()
+    )
+    collisions = sorted(exported & untracked)
+    if collisions:
+        raise PublicExportError("untracked files would be overwritten: " + ", ".join(collisions))
+    removed = [relative for relative in candidate_files(target) if relative not in exported]
+    for relative in removed:
+        (target / relative).unlink()
     for relative in sorted(exported):
         destination = target / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(edition / relative, destination)
+    return sorted(exported) + removed
 
 
 def sync_public_repository(
@@ -76,12 +88,14 @@ def sync_public_repository(
     with tempfile.TemporaryDirectory() as temporary:
         edition = Path(temporary) / "edition"
         export_public_edition(edition, root)
-        mirror(edition, target)
-    if not _run(["git", "status", "--porcelain"], target).strip():
+        synced_paths = mirror(edition, target)
+    # Stage only what the sync wrote or removed. Files another tool creates in the
+    # target while the sync runs must never end up in a public commit.
+    _run(["git", "add", "-A", "--", *synced_paths], target)
+    if not _run(["git", "diff", "--cached", "--name-only"], target).strip():
         return False
     if run_checks:
         _run(["make", "test", "lint"], target)
-    _run(["git", "add", "-A"], target)
     _run(["git", "commit", "-q", "-m", COMMIT_MESSAGE], target)
     return True
 

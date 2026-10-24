@@ -12,8 +12,9 @@ and validation separately. Evidence is in the permission research artifact
 (`ai-artifacts/persona-forge/prepare-public-release/00-questionnaire-permissions.md`).
 
 `make public-sync` (`public_sync.py`, added 2026-10-24) updates the public repository
-(`../persona-forge-public`, or `PUBLIC=<path>`): it refuses a dirty or non-git target
-and this repository itself, exports to a temporary folder, mirrors the edition into the
+(`../persona-forge-public`, or `PUBLIC=<path>`): it refuses a non-git target, unsaved
+edits to tracked files, untracked files it would overwrite and this repository itself,
+stages only the paths it wrote or removed (other tools' files stay out of the commit), exports to a temporary folder, mirrors the edition into the
 target (removing tracked files that are gone, never touching `.git`), runs the target's
 `make test lint` and commits "update public edition". Pushing stays manual.
 

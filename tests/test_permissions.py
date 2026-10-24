@@ -141,14 +141,46 @@ def test_public_sync_mirrors_the_edition_and_commits(tmp_path: Path) -> None:
 
 
 @private_edition_only
+def test_public_sync_commits_only_its_own_files(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """A file another tool writes during the sync stays out of the commit."""
+    import persona_forge.public_sync as public_sync
+
+    target = tmp_path / "public"
+    target.mkdir()
+    _git(target, "init", "-q", "-b", "main")
+    _git(target, "config", "user.name", "Test")
+    _git(target, "config", "user.email", "test@example.com")
+    original_mirror = public_sync.mirror
+
+    def mirror_while_another_tool_writes(edition: Path, destination: Path) -> list[str]:
+        (destination / "other-tool.txt").write_text("work in progress\n")
+        return original_mirror(edition, destination)
+
+    monkeypatch.setattr(public_sync, "mirror", mirror_while_another_tool_writes)
+    assert sync_public_repository(target, run_checks=False) is True
+    assert "other-tool.txt" not in _git(target, "ls-files")
+    assert (target / "other-tool.txt").read_text() == "work in progress\n"
+
+
+@private_edition_only
 def test_public_sync_refuses_unsafe_targets(tmp_path: Path) -> None:
     """A non-repository, a dirty repository or this repository is never overwritten."""
     with pytest.raises(PublicExportError, match="not a git repository"):
         sync_public_repository(tmp_path, run_checks=False)
     _git(tmp_path, "init", "-q")
+    (tmp_path / "notes.txt").write_text("saved\n")
+    _git(tmp_path, "add", "notes.txt")
+    _git(tmp_path, "commit", "-q", "-m", "start")
     (tmp_path / "notes.txt").write_text("unsaved\n")
     with pytest.raises(PublicExportError, match="uncommitted changes"):
         sync_public_repository(tmp_path, run_checks=False)
     assert (tmp_path / "notes.txt").read_text() == "unsaved\n"
+    _git(tmp_path, "checkout", "--", "notes.txt")
+    (tmp_path / "README.md").write_text("someone's draft\n")
+    with pytest.raises(PublicExportError, match="would be overwritten"):
+        sync_public_repository(tmp_path, run_checks=False)
+    assert (tmp_path / "README.md").read_text() == "someone's draft\n"
     with pytest.raises(PublicExportError, match="outside this repository"):
         sync_public_repository(PROJECT_ROOT, run_checks=False)
