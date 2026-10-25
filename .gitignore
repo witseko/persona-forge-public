@@ -9,3 +9,5 @@ __pycache__/
 .ruff_cache/
 dist/
 *.egg-info/
+# Agent worktrees for parallel branches
+.claude/worktrees/
