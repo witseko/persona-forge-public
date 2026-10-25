@@ -19,7 +19,9 @@ target (removing tracked files that are gone, never touching `.git`), runs the t
 `make test lint` and commits "update public edition". Pushing stays manual.
 
 The export copies only files tracked by git (commit new files first; never `out/` or `.git`),
-leaves out `PLAN.md` (internal bootstrap notes), removes withheld ids from language
+leaves out private-only paths (`PLAN.md` and the persona evaluation pilot:
+`data/evaluation/`, `src/persona_forge/evaluation/`, `docs/evaluation.md`,
+`tests/test_evaluation.py`), removes withheld ids from language
 manifests and sample answer files, then scans the
 copy for withheld item text and deletes it if any is found. The app skips instruments
 whose data file is absent, and answer files naming one are refused with a clear error.

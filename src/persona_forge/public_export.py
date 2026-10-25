@@ -19,8 +19,16 @@ from pathlib import Path
 from persona_forge.files import PROJECT_ROOT, read_json_file
 from persona_forge.permissions import load_permissions
 
-# Internal planning notes with account details; useful only in the private repository.
-PRIVATE_ONLY_FILES = {"PLAN.md"}
+# Paths that stay in the private repository: internal planning notes with account
+# details, and the persona evaluation pilot (owner decision 2026-10-24, until the owner
+# decides to publish it). A trailing "/" covers a whole folder.
+PRIVATE_ONLY_PATHS = (
+    "PLAN.md",
+    "data/evaluation/",
+    "docs/evaluation.md",
+    "src/persona_forge/evaluation/",
+    "tests/test_evaluation.py",
+)
 
 # Item texts shorter than this are too generic ("Yes", "Often") to flag as a leak.
 MIN_LEAK_TEXT_LENGTH = 20
@@ -61,6 +69,14 @@ def withheld_files(root: Path = PROJECT_ROOT) -> set[str]:
             ):
                 withheld.add(overlay.relative_to(root).as_posix())
     return withheld
+
+
+def is_private_only(relative: str) -> bool:
+    """True when a repository path must stay out of the public edition."""
+    return any(
+        relative.startswith(path) if path.endswith("/") else relative == path
+        for path in PRIVATE_ONLY_PATHS
+    )
 
 
 def withheld_instrument_ids(withheld: set[str]) -> set[str]:
@@ -142,8 +158,9 @@ def export_public_edition(destination: Path, root: Path = PROJECT_ROOT) -> list[
         raise PublicExportError("the destination must be outside this repository")
     withheld = withheld_files(root)
     texts = withheld_texts(root, withheld)
-    left_out = withheld | PRIVATE_ONLY_FILES
-    files = [relative for relative in candidate_files(root) if relative not in left_out]
+    tracked = candidate_files(root)
+    left_out = withheld | {relative for relative in tracked if is_private_only(relative)}
+    files = [relative for relative in tracked if relative not in left_out]
     links = [relative for relative in files if (root / relative).is_symlink()]
     if links:
         # A link could pull a file from outside the repository into the release.

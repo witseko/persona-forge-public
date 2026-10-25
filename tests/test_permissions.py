@@ -11,7 +11,12 @@ from helpers import private_edition_only
 from persona_forge.files import PROJECT_ROOT
 from persona_forge.instruments import INSTRUMENT_DIR
 from persona_forge.permissions import PermissionCatalogueError, load_permissions
-from persona_forge.public_export import PublicExportError, export_public_edition, main
+from persona_forge.public_export import (
+    PublicExportError,
+    export_public_edition,
+    is_private_only,
+    main,
+)
 from persona_forge.public_sync import COMMIT_MESSAGE, sync_public_repository
 
 # Release decision recorded on 2026-10-24: these may ship publicly. Everything else
@@ -103,6 +108,24 @@ def test_public_export_refuses_leaks_and_unsafe_destinations(
     destination = tmp_path / "leaky"
     assert main([str(destination)]) == 1
     assert not destination.exists()
+
+
+@pytest.mark.parametrize(
+    ("relative", "private"),
+    [
+        ("PLAN.md", True),
+        ("data/evaluation/pilot-v1/profiles/a.json", True),
+        ("src/persona_forge/evaluation/run.py", True),
+        ("docs/evaluation.md", True),
+        ("tests/test_evaluation.py", True),
+        ("docs/evaluation-notes.md", False),
+        ("data/evaluation.json", False),
+        ("README.md", False),
+    ],
+)
+def test_private_only_paths(relative: str, private: bool) -> None:
+    """Planning notes and the evaluation pilot never reach the public edition."""
+    assert is_private_only(relative) is private
 
 
 def _git(repository: Path, *arguments: str) -> str:
