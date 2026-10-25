@@ -152,7 +152,7 @@ def test_new_plugin_is_discovered_without_python_registration(plugin_root: Path)
     overlay["language"] = "fr"  # Synthetic coverage fixture, not a real French translation.
     _write(folder / "instruments" / "mini-ipip.json", overlay)
     (folder / "__init__.py").write_text("raise AssertionError('plugin code must never execute')")
-    assert available_languages(plugin_root) == ("en", "fr", "uk")
+    assert {"en", "fr", "uk"} <= set(available_languages(plugin_root))
     assert (
         load_language("fr", plugin_root).text("Privacy and consent")
         == "Confidentialité et consentement"
@@ -196,7 +196,8 @@ def test_draft_packs_are_not_selectable(plugin_root: Path) -> None:
     manifest = json.loads(path.read_text())
     manifest["status"] = "draft"
     _write(path, manifest)
-    assert available_languages(plugin_root) == ("en",)
+    assert "uk" not in available_languages(plugin_root)
+    assert "en" in available_languages(plugin_root)
     with pytest.raises(ValueError, match="not complete"):
         load_language("uk", plugin_root)
 
@@ -261,9 +262,11 @@ def test_languages_command_validates_the_installed_plugins(
     assert main(["languages"]) == 0
     assert "en: English (8)" in caplog.text
     assert "uk: Українська (6)" in caplog.text
+    assert "fr-BE: Français (Belgique) (4)" in caplog.text
+    assert "nl-BE: Nederlands (België) (4)" in caplog.text
 
 
-@pytest.mark.parametrize("language", ["en", "uk"])
+@pytest.mark.parametrize("language", ["en", "uk", "fr-BE", "nl-BE"])
 def test_new_setup_asks_language_first_and_preserves_it_on_resume(
     tmp_path: Path, language: str
 ) -> None:

@@ -1,0 +1,42 @@
+{
+  "instrument_id": "mini-ipip",
+  "language": "fr-BE",
+  "revision": 1,
+  "translated": "2026-10-25",
+  "source_url": "https://ipip.ori.org/MiniIPIPKey.htm",
+  "citation": "Donnellan, M. B., Oswald, F. L., Baird, B. M., & Lucas, R. E. (2006). The Mini-IPIP scales: Tiny-yet-effective measures of the Big Five factors of personality. Psychological Assessment, 18, 192-203.",
+  "licence": "IPIP public domain. French (Belgium) translation authored by Persona Forge, not psychometrically validated. No published French adaptation is claimed.",
+  "permission_url": "https://ipip.ori.org/",
+  "instructions": "Décrivez la personne que vous êtes généralement aujourd'hui, et non celle que vous aimeriez être à l'avenir. Décrivez-vous honnêtement, selon la manière dont vous vous voyez, par rapport aux autres personnes de votre sexe que vous connaissez et qui ont à peu près votre âge. Afin que vous puissiez vous décrire de manière honnête, vos réponses resteront strictement confidentielles. Pour chaque affirmation, indiquez dans quelle mesure elle vous décrit : 1. Très inexact, 2. Plutôt inexact, 3. Ni exact ni inexact, 4. Plutôt exact ou 5. Très exact.",
+  "items": {
+    "mini-extraversion-1": "Je suis l'âme de la fête.",
+    "mini-agreeableness-1": "Je compatis aux sentiments des autres.",
+    "mini-conscientiousness-1": "Je fais les tâches ménagères sans attendre.",
+    "mini-neuroticism-1": "J'ai de fréquentes sautes d'humeur.",
+    "mini-intellect-imagination-1": "J'ai une imagination vive.",
+    "mini-extraversion-2": "Je parle à beaucoup de personnes différentes lors des fêtes.",
+    "mini-agreeableness-2": "Je ressens les émotions des autres.",
+    "mini-conscientiousness-2": "J'aime l'ordre.",
+    "mini-neuroticism-2": "Un rien me contrarie.",
+    "mini-intellect-imagination-2": "J'ai du mal à comprendre les idées abstraites.",
+    "mini-extraversion-3": "Je ne parle pas beaucoup.",
+    "mini-agreeableness-3": "Je ne m'intéresse pas vraiment aux autres.",
+    "mini-conscientiousness-3": "J'oublie souvent de remettre les choses à leur place.",
+    "mini-neuroticism-3": "La plupart du temps, je suis calme.",
+    "mini-intellect-imagination-3": "Je ne m'intéresse pas aux idées abstraites.",
+    "mini-extraversion-4": "Je reste en retrait.",
+    "mini-agreeableness-4": "Je ne m'intéresse pas aux problèmes des autres.",
+    "mini-conscientiousness-4": "Je fais les choses n'importe comment.",
+    "mini-neuroticism-4": "J'ai rarement le cafard.",
+    "mini-intellect-imagination-4": "Je n'ai pas beaucoup d'imagination."
+  },
+  "response_sets": {
+    "accuracy": {
+      "1": "Très inexact",
+      "2": "Plutôt inexact",
+      "3": "Ni exact ni inexact",
+      "4": "Plutôt exact",
+      "5": "Très exact"
+    }
+  }
+}

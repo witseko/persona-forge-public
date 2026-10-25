@@ -53,8 +53,11 @@ questionnaire, estimates and progress totals. Packs with different coverage do n
 produce directly comparable assessments.
 
 English supports eight instruments. Ukrainian currently supports four IPIP instruments,
-NCS-6 and CBI (406 library items). GSE and O*NET are excluded until translation
-permission is verified. Optional wellbeing is offered only when its overlay exists.
+NCS-6 and CBI (406 library items). French (Belgium, `fr-BE`) and Dutch (Belgium,
+`nl-BE`) support the four IPIP instruments only (393 items), the ones whose translation
+permission is granted in `data/permissions.json`; they offer no optional wellbeing check.
+GSE and O*NET are excluded until translation permission is verified. Optional wellbeing
+is offered only when its overlay exists.
 
 Use the Ukrainian overlays as schema examples. Each `<instrument-id>.json` records
 `instrument_id`, `language`, `revision`, `translated`, `source_url`, `citation`,

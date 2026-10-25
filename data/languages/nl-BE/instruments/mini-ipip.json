@@ -1,0 +1,42 @@
+{
+  "instrument_id": "mini-ipip",
+  "language": "nl-BE",
+  "revision": 1,
+  "translated": "2026-10-25",
+  "source_url": "https://ipip.ori.org/MiniIPIPKey.htm",
+  "citation": "Donnellan, M. B., Oswald, F. L., Baird, B. M., & Lucas, R. E. (2006). The Mini-IPIP scales: Tiny-yet-effective measures of the Big Five factors of personality. Psychological Assessment, 18, 192-203.",
+  "licence": "IPIP public domain. Dutch (Belgium) translation authored by Persona Forge, not psychometrically validated. No published Dutch adaptation is claimed.",
+  "permission_url": "https://ipip.ori.org/",
+  "instructions": "Beschrijf uzelf zoals u nu over het algemeen bent, niet zoals u in de toekomst zou willen zijn. Beschrijf uzelf zoals u uzelf eerlijk ziet, in vergelijking met andere mensen die u kent, van hetzelfde geslacht als u en ongeveer even oud. Opdat u uzelf eerlijk kunt beschrijven, worden uw antwoorden strikt vertrouwelijk behandeld. Geef bij elke uitspraak aan of ze als beschrijving van u 1. Zeer onjuist, 2. Eerder onjuist, 3. Niet juist en niet onjuist, 4. Eerder juist of 5. Zeer juist is.",
+  "items": {
+    "mini-extraversion-1": "Ik ben het middelpunt van elk feestje.",
+    "mini-agreeableness-1": "Ik leef mee met de gevoelens van anderen.",
+    "mini-conscientiousness-1": "Ik doe huishoudelijke klusjes meteen.",
+    "mini-neuroticism-1": "Ik heb vaak stemmingswisselingen.",
+    "mini-intellect-imagination-1": "Ik heb een levendige verbeelding.",
+    "mini-extraversion-2": "Op feestjes praat ik met veel verschillende mensen.",
+    "mini-agreeableness-2": "Ik voel de emoties van anderen aan.",
+    "mini-conscientiousness-2": "Ik hou van orde.",
+    "mini-neuroticism-2": "Ik raak snel van streek.",
+    "mini-intellect-imagination-2": "Ik heb moeite om abstracte ideeën te begrijpen.",
+    "mini-extraversion-3": "Ik praat niet veel.",
+    "mini-agreeableness-3": "Ik ben niet echt geïnteresseerd in anderen.",
+    "mini-conscientiousness-3": "Ik vergeet vaak dingen terug op hun plaats te leggen.",
+    "mini-neuroticism-3": "Ik ben meestal ontspannen.",
+    "mini-intellect-imagination-3": "Ik ben niet geïnteresseerd in abstracte ideeën.",
+    "mini-extraversion-4": "Ik blijf op de achtergrond.",
+    "mini-agreeableness-4": "Ik ben niet geïnteresseerd in de problemen van anderen.",
+    "mini-conscientiousness-4": "Ik maak er een rommeltje van.",
+    "mini-neuroticism-4": "Ik voel me zelden somber.",
+    "mini-intellect-imagination-4": "Ik heb geen goede verbeelding."
+  },
+  "response_sets": {
+    "accuracy": {
+      "1": "Zeer onjuist",
+      "2": "Eerder onjuist",
+      "3": "Niet juist en niet onjuist",
+      "4": "Eerder juist",
+      "5": "Zeer juist"
+    }
+  }
+}

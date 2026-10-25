@@ -55,6 +55,11 @@ incompatible partial session stops rather than mixing wording. See the
 [instrument catalogue](instruments.md#ukrainian-questionnaires-requested-2026-10-23)
 for coverage and plans.
 
+French (Belgium) and Dutch (Belgium) work the same way. They cover the four IPIP
+questionnaires only, the ones with granted translation permission, so they have no
+optional wellbeing check. Their wording is a project translation, not a validated
+adaptation, and still needs review by fluent speakers.
+
 `make languages` lists and validates installed language packs. To add one, follow
 [the language guide](languages.md) and [CONTRIBUTING](../CONTRIBUTING.md).
 

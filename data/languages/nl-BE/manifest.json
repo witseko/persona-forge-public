@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "code": "nl-BE",
+  "name": "Nederlands (België)",
+  "status": "complete",
+  "instrument_ids": [
+    "mini-ipip",
+    "ipip-neo-120",
+    "ipip-hexaco-hh",
+    "ipip-via"
+  ]
+}

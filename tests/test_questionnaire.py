@@ -55,9 +55,9 @@ class ScriptedPrompter:
 
     def text(self, message: str, limit: int) -> str:
         self.messages.append(message)
-        return (
-            "Tester" if "name" in message.lower() or "ім'я" in message or "Назва" in message else ""
-        )
+        # Name prompts in every installed pack: English, Ukrainian, French, Dutch.
+        keywords = ("name", "ім'я", "назва", "nom", "naam")
+        return "Tester" if any(word in message.lower() for word in keywords) else ""
 
     def confirm(self, message: str, default: bool) -> bool:
         self.messages.append(message)

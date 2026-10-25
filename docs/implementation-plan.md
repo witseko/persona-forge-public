@@ -1,5 +1,24 @@
 # Plan: persona-forge (psychometric work profile and alter egos for Claude Code and Codex)
 
+## French and Dutch for Belgium (2026-10-25)
+
+Owner request: French and Dutch for Belgium. Added language packs `fr-BE` (Français
+(Belgique)) and `nl-BE` (Nederlands (België)): the full interface (743 messages, formal
+vous / u) and project-authored overlays for the four IPIP instruments only (Mini-IPIP,
+IPIP-NEO-120, IPIP Honesty-Humility proxy, revised IPIP-VIA; 393 items), the instruments
+whose translation permission is granted in `data/permissions.json`. GSE, NCS-6, O*NET
+and CBI are left out, so these packs offer no optional wellbeing check. IT terms stay in
+English where Belgian IT teams use them, as in the Ukrainian pack (role titles, Medior,
+reviewer, pull request, sprint, deploy). Items are full first-person sentences
+translated from the English source, keeping each item's direction; "liberal" political
+candidates became progressive in both languages because "liberal" means the centre-right
+in Belgium. Overlays are labelled as unvalidated project translations. Open: fluent
+human review of both packs (docs/languages.md, Review and submit). Tests: complete flows
+for every role and depth in both languages without English interface text, placeholder
+and hyphen checks, IPIP-only coverage, and the scripted test prompter now recognises
+name prompts in French and Dutch. Security: data files only, validated by the existing
+loaders; no code paths, network or dependencies added.
+
 ## Positioning and public graphics (2026-10-25)
 
 Owner decision: position persona-forge as "Teach your AI assistant how you work"
