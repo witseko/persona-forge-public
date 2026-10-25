@@ -124,8 +124,10 @@ def test_all_authored_content_and_metadata_has_coverage() -> None:
                 scenario["prompt"],
                 *(option["text"] for option in scenario["options"]),
             ]
-    for source in sources:
-        assert pack.text(source) != source
+    # Check for an entry rather than different text: IT terms such as "Junior" or
+    # "Scope creep" stay in English on purpose.
+    missing = [source for source in sources if not pack.messages.get(source)]
+    assert missing == []
 
 
 def test_new_plugin_is_discovered_without_python_registration(plugin_root: Path) -> None:
