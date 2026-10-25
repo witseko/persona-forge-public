@@ -97,7 +97,7 @@ def validate_polished(text: str) -> str:
     lines = text.splitlines()
     for heading in HEADINGS:
         if heading not in lines:
-            raise PolishError(f"the polished profile lost the heading {heading!r}")
+            raise PolishError(f"the polished profile lost the heading: {heading}")
         positions.append(lines.index(heading))
     if positions != sorted(positions):
         raise PolishError("the polished profile reordered its headings")

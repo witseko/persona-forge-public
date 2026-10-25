@@ -227,6 +227,21 @@ def test_no_missing_message_can_silently_fall_back_to_english() -> None:
         load_language("uk").text("A new scenario full of untranslated words")
 
 
+def test_polish_tool_names_and_errors_are_translated() -> None:
+    """The polish tool picker and its failure reasons render in Ukrainian without crashing."""
+    pack = load_language("uk")
+    assert pack.text("claude") == "claude"
+    assert pack.text("codex") == "codex"
+    assert (
+        pack.text(
+            "Polish skipped: {error}. The template wording is kept.",
+            error="claude did not finish: timed out",
+        )
+        == "Покращення пропущено: claude не завершив роботу: timed out. Збережено початковий текст."
+    )
+    assert pack.text("codex exited with status 2") == "codex завершився з кодом 2"
+
+
 @private_edition_only
 def test_language_capabilities_keep_english_only_modules_out_of_ukrainian() -> None:
     """Depths remain useful while showing only fully translated instruments."""
