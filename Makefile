@@ -1,4 +1,4 @@
-.PHONY: setup settings ego report link unlink status clean languages profiles retake preserve public-export public-sync test lint audit
+.PHONY: setup settings ego report link unlink status clean languages profiles retake preserve public-export public-sync graphics test lint audit
 
 UV ?= uv
 # Export the value as data so an answer filename cannot become shell syntax.
@@ -19,6 +19,9 @@ public-export:
 	$(UV) run python -m persona_forge.public_export "$$DEST"
 
 # Refresh and commit the public repository from a fresh export; push stays manual.
+graphics:
+	$(UV) run python -m persona_forge.graphics
+
 public-sync:
 	$(UV) run python -m persona_forge.public_sync "$$PUBLIC"
 

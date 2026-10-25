@@ -1,0 +1,28 @@
+{
+  "note": "Aggregated results of the synthetic persona evaluation pilot (run pilot-1, 2026-10-24/25, Claude judge). Fictional users, not people. Source of truth: docs/evaluation.md in the private repository. Used by `make graphics` to draw docs/images.",
+  "trials": 192,
+  "kinds": {
+    "none": "No instructions",
+    "note": "A short note (5 lines)",
+    "settings": "Settings only",
+    "profile": "persona-forge profile"
+  },
+  "fit_out_of_8": {
+    "Claude Code": {"none": 7.13, "note": 7.92, "settings": 7.46, "profile": 7.46},
+    "Codex": {"none": 7.54, "note": 7.83, "settings": 7.58, "profile": 7.63}
+  },
+  "judge": {
+    "comment": "Profile against each other kind: [profile better, same, other better, judge changed its mind when the order was swapped]; 24 comparisons per assistant.",
+    "Claude Code": {"none": [14, 0, 6, 4], "note": [0, 0, 20, 4], "settings": [8, 2, 5, 9]},
+    "Codex": {"none": [8, 4, 1, 11], "note": [0, 4, 16, 4], "settings": [2, 9, 1, 12]}
+  },
+  "short_answer_words": {
+    "comment": "Average words per reply for the made-up person who asked for short answers.",
+    "Claude Code": {"none": 902, "note": 483, "settings": 667, "profile": 902},
+    "Codex": {"none": 536, "note": 397, "settings": 446, "profile": 426}
+  },
+  "formats_out_of_8": [
+    {"label": "Added a comparison table (Claude Code)", "without": 2, "with_low": 8, "with_high": 8},
+    {"label": "Said how sure it was (both assistants)", "without": 1, "with_low": 7, "with_high": 8}
+  ]
+}

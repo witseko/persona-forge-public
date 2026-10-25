@@ -7,6 +7,12 @@ and explicit preferences into instructions for AI coding assistants. It combines
 questionnaire, a user review of the resulting statements, switchable agent personas,
 and a private HTML report. The user remains the authority on how they want to work.
 
+Mission: make AI assistants work the way you do, not the other way round. A synthetic
+pilot ([plain summary](evaluation-summary.md)) found that explicit, written preferences
+drive the benefit, while questionnaire-derived statements added no measurable value. The
+questionnaire is therefore positioned as guided reflection that helps people find and
+word their preferences, not as a measurement of who they are.
+
 ## Problem and audience
 
 Generic assistant behavior does not account for differences in feedback preferences,

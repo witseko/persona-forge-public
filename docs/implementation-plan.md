@@ -1,5 +1,22 @@
 # Plan: persona-forge (psychometric work profile and alter egos for Claude Code and Codex)
 
+## Positioning and public graphics (2026-10-25)
+
+Owner decision: position persona-forge as "Teach your AI assistant how you work"
+(mission: make AI assistants work the way you do, not the other way round), with the
+questionnaire as guided reflection for writing preferences, not a measurement. README
+leads with the mission, a how-it-works diagram and a "Does it work?" section linking
+`docs/evaluation-summary.md`, a plain-words page for readers; the white paper abstract
+states the mission. Graphics: `make graphics` (`src/persona_forge/graphics.py`, standard
+library only) draws `docs/images/*.svg` from `data/evaluation-summary.json`, which holds
+only aggregated numbers. Rules from the design system's Charts section: the title is the
+answer, plain words, at most five items, the profile is the blue mark, zero-based bars,
+a caveat on every pilot image, light and dark via prefers-color-scheme, and a text-fit
+check that stops the build instead of overflowing. Tests check that committed images
+match the generator, plain wording, captions and descriptions. Security: no new user
+input, network, subprocess or dependency; the generator reads one committed JSON file
+and writes into docs/images.
+
 ## Private repository and limited public edition (2026-10-24)
 
 Owner decision: this repository stays private and keeps every instrument. The public

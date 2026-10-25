@@ -1,7 +1,14 @@
 # persona-forge
 
-A private questionnaire about how you work. It teaches Claude Code and Codex how to
-work with you, adds switchable agent personas and writes an offline report.
+**Teach your AI assistant how you work.**
+
+Write down your work style once - with a guided questionnaire, on your own computer -
+and Claude Code and Codex follow it in every session. Add switchable personas like a
+mentor or a strict reviewer when you want a different voice.
+
+![How persona-forge works: questionnaire, you review, your profile, then Claude Code and Codex](docs/images/how-it-works.svg)
+
+Our mission: make AI assistants work the way you do, not the other way round.
 
 ## Start (about 30 minutes)
 
@@ -15,6 +22,15 @@ work with you, adds switchable agent personas and writes an offline report.
 Stopping is safe. Press **P** or Ctrl-C; `make setup` continues where you stopped.
 
 Keys under each question: `←` Back, `→` Next, `P` Pause, `R` Start over.
+
+## Does it work?
+
+![The short answer: correct answers same, a bit better than nothing, worse than a short note](docs/images/short-answer.svg)
+
+We tested it with made-up people and two AI assistants. Your written preferences made
+the difference; the personality questions on their own did not. So treat the
+questionnaire as a guided way to find and word how you like to work, and review every
+statement it suggests. Plain-words results: [Does it work?](docs/evaluation-summary.md)
 
 ## Use the result
 
@@ -64,7 +80,8 @@ validated tests.
   (`data/permissions.json`).
 - `make public-sync` refreshes `../persona-forge-public` from a fresh export, runs its
   tests and lint, and commits. Then push it with `git -C ../persona-forge-public push`.
-- Docs: [white paper](docs/whitepaper.md), [implementation plan](docs/implementation-plan.md),
+- `make graphics` redraws `docs/images/` from `data/evaluation-summary.json`.
+- Docs: [evaluation summary](docs/evaluation-summary.md), [white paper](docs/whitepaper.md), [implementation plan](docs/implementation-plan.md),
   [instrument catalogue](docs/instruments.md), [contributing](CONTRIBUTING.md).
 - Code is MIT-licensed ([LICENSE](LICENSE)). Questionnaire content keeps its own terms
   ([NOTICE](NOTICE)).
